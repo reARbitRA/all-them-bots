@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "autofreelance-pipeline"
+version = "0.1.0"
+description = "Compliant, asynchronous freelance delivery pipeline using authorized sessions and official APIs."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Autofreelance maintainers" }]
+dependencies = [
+  "aiosqlite>=0.21,<1",
+  "fastapi>=0.115,<1",
+  "httpx>=0.28,<1",
+  "playwright>=1.58,<2",
+  "PyGithub>=2.8,<3",
+  "pydantic>=2.10,<3",
+  "pydantic-settings>=2.7,<3",
+  "python-json-logger>=3.2,<4",
+  "uvicorn[standard]>=0.34,<1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3,<9",
+  "pytest-asyncio>=0.25,<1",
+  "respx>=0.22,<1",
+  "ruff>=0.9,<1",
+]
+
+[project.scripts]
+autofreelance = "autofreelance.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/autofreelance"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "ASYNC", "RUF"]
+ignore = ["E501", "RUF001"]
