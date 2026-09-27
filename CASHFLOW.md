@@ -1,5 +1,34 @@
 ---
-id: 01KCSBNE4CH9WK72YH7W4W66E8
+fable_schema: "5.1.0"
+urn: "urn:tgn:blueprint:monetization_engine:c8a942ff-2cea-4461-8586-4b6b36393033"
+title: "CashFlow Architect: Monetization Engine & Bot Assessment Dashboard"
+transport: "BotAPI"
+concurrency:
+  paradigm: "AsyncIO"
+  max_throughput_est: "500 req/s"
+fsm:
+  defined: true
+  states:
+    - "LANDING"
+    - "ASSESSMENT_PROFILE"
+    - "ASSESSMENT_BUDGET"
+    - "ASSESSMENT_TIME"
+    - "CALCULATING_METRICS"
+    - "DASHBOARD_VIEW"
+    - "EXPORT_REPORT"
+  storage_driver: "Memory"
+dependencies:
+  external:
+    - "react>=18.2.0"
+    - "react-dom>=18.2.0"
+    - "lucide-react>=0.263.0"
+    - "tailwindcss>=3.3.0"
+  internal_urns:
+    - "urn:tgn:blueprint:market_intelligence:64db5273-9cb7-44fe-bc94-27ba78234a00"
+    - "urn:tgn:blueprint:financial_model:e38481dd-cdfa-4cf3-88b2-fc3ab82873f4"
+breaking_changes_detected:
+  - "React 18 concurrent rendering root API (createRoot) requirement"
+verification_checksum: "1a1d2689d8171cb1bdd36b573daed2a17e29a6cda11d6b6133f7aa721892e0c5"
 ---
 # CashFlow Architect - Complete Implementation
 

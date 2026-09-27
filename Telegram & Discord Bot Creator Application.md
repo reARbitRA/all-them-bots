@@ -1,5 +1,37 @@
 ---
-id: 01KBSY2EQ3986JQBBKX2BB1BV3
+fable_schema: "5.1.0"
+urn: "urn:tgn:blueprint:visual_builder:44301e97-5eec-4302-8af9-d34361791295"
+title: "Multi-Platform Visual Bot Creator Studio Specification"
+transport: "HybridBridge"
+concurrency:
+  paradigm: "AsyncIO"
+  max_throughput_est: "1000 req/s"
+fsm:
+  defined: true
+  states:
+    - "NODE_INITIALIZED"
+    - "CANVAS_EDITING"
+    - "SYNTAX_VALIDATING"
+    - "CONTAINER_PROVISIONING"
+    - "DEPLOYING"
+    - "ACTIVE"
+    - "PAUSED"
+  storage_driver: "SQL"
+dependencies:
+  external:
+    - "next>=14.0.0"
+    - "react>=18.2.0"
+    - "prisma>=5.0.0"
+    - "fastapi>=0.100.0"
+    - "docker>=6.1.0"
+    - "pydantic>=2.0"
+  internal_urns:
+    - "urn:tgn:blueprint:core_architecture:c91326b5-0ac7-4543-83f6-54bcbc855c1b"
+    - "urn:tgn:blueprint:root_manifest:b3356305-5168-4c19-a781-afebcf4d07bf"
+breaking_changes_detected:
+  - "Next.js 14 App Router migration from Pages Router"
+  - "Prisma client edge runtime restrictions"
+verification_checksum: "be29b3f314ef4e6e28c47bfea0ec50bbcecc8cbafd57551f784c698877eb7b65"
 ---
 # Sophisticated Prompt for Gemini AI Studio
 ## Telegram & Discord Bot Creator Application

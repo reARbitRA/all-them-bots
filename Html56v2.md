@@ -1,3 +1,25 @@
+---
+fable_schema: "5.1.0"
+urn: "urn:tgn:blueprint:dashboard_app:761f20c6-84e9-4da6-8dc4-f2e7faf3b4f4"
+title: "Domestic Opportunity Matrix Interactive Dashboard v2"
+transport: "HybridBridge"
+concurrency:
+  paradigm: "AsyncIO"
+  max_throughput_est: "100 req/s"
+fsm:
+  defined: false
+  states: []
+  storage_driver: "Memory"
+dependencies:
+  external:
+    - "tailwindcss>=3.0.0"
+    - "vanilla-js"
+  internal_urns:
+    - "urn:tgn:blueprint:dashboard_app:b2b528ef-91ce-4de5-98df-ba8346e7b7d3"
+    - "urn:tgn:blueprint:market_inventory:2dccf812-2d1b-425a-80b6-0504ec1e1009"
+breaking_changes_detected: []
+verification_checksum: "72838d47b97387b71d73e99e154a53c6165bd5789fbdf835f529397552aa41dc"
+---
 حتماً. این یک فایل `index.html` کامل، مستقل، بدون وابستگی خارجی، responsive، RTL، production-ready و شامل این قابلیت‌هاست:
 
 - Intro/Hero متحرک

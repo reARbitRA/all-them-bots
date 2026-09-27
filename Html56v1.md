@@ -1,3 +1,24 @@
+---
+fable_schema: "5.1.0"
+urn: "urn:tgn:blueprint:dashboard_app:b2b528ef-91ce-4de5-98df-ba8346e7b7d3"
+title: "Domestic Opportunity Matrix Interactive Dashboard v1"
+transport: "HybridBridge"
+concurrency:
+  paradigm: "AsyncIO"
+  max_throughput_est: "100 req/s"
+fsm:
+  defined: false
+  states: []
+  storage_driver: "Memory"
+dependencies:
+  external:
+    - "html5"
+    - "vanilla-js"
+  internal_urns:
+    - "urn:tgn:blueprint:market_inventory:2dccf812-2d1b-425a-80b6-0504ec1e1009"
+breaking_changes_detected: []
+verification_checksum: "6b966a6e63578da021a68d32a09a1ced32c0ccc3490b8a572149120eaa58ce1e"
+---
 عالی — حالا همه ردیف‌ها را داریم و می‌توانم فایل نهایی را بدهم.
 
 چون شما گفتی فقط «فایل HTML کامل و production-ready» می‌خواهی، مستقیم خود فایل را می‌دهم.  

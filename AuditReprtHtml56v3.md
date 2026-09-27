@@ -1,3 +1,25 @@
+---
+fable_schema: "5.1.0"
+urn: "urn:tgn:blueprint:quality_audit:518a3d5a-77d2-4570-aa22-c387d7b36b23"
+title: "Quality Audit & Metric Scoring Report: HTML56 Dashboard v3"
+transport: "HybridBridge"
+concurrency:
+  paradigm: "AsyncIO"
+  max_throughput_est: "100 req/s"
+fsm:
+  defined: false
+  states: []
+  storage_driver: "Memory"
+dependencies:
+  external:
+    - "chart.js>=4.0.0"
+    - "lucide-icons>=0.263.0"
+  internal_urns:
+    - "urn:tgn:blueprint:dashboard_app:39a918c5-03e0-4437-a220-608698836d36"
+    - "urn:tgn:blueprint:market_inventory:2dccf812-2d1b-425a-80b6-0504ec1e1009"
+breaking_changes_detected: []
+verification_checksum: "4f41854ce5b462a419c8a587409066de21a799947e806cca1282fe23434cf3f3"
+---
 صادقانه؟ **نه، این نسخه بیشتر حدود 88 تا 91 از 100 است، نه 95.**
 
 برای یک فایل مستقل و بدون وابستگی خارجی، خروجی **خیلی خوب و قابل ارائه** است؛ ولی اگر معیارمان واقعاً **95/100 production-grade** باشد، هنوز چند جا کم دارد.

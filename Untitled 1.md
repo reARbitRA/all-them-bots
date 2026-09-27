@@ -1,5 +1,22 @@
 ---
-id: 01KE9C66XQMS7X25S4WJNVXR6B
+fable_schema: "5.1.0"
+urn: "urn:tgn:blueprint:financial_model:e38481dd-cdfa-4cf3-88b2-fc3ab82873f4"
+title: "Economic Feasibility & Portfolio Revenue Model for Telegram Bots"
+transport: "BotAPI"
+concurrency:
+  paradigm: "AsyncIO"
+  max_throughput_est: "100 req/s"
+fsm:
+  defined: false
+  states: []
+  storage_driver: "Memory"
+dependencies:
+  external: []
+  internal_urns:
+    - "urn:tgn:blueprint:monetization_catalog:7f9f568f-8787-4a10-a7ee-ae286cd2ff07"
+    - "urn:tgn:blueprint:education_productivity_batch:a31aafd9-98e5-48ea-ba5d-0c1e73744c4d"
+breaking_changes_detected: []
+verification_checksum: "e103d9cdb7f848e5c98c442b836228d9582d1d43b456337f4dbeccbe768a93b6"
 ---
 ### خلاصه‌ی واقع‌گرایانه (اگر ۷۰ باتِ اول واقعاً ساخته و «در بازار» جا بیفتند)
 - **درآمدِ ماهانه‌ی محتمل بعد از ۱۲ ماه** (وقتی رشد و بهینه‌سازی اتفاق افتاده باشد) معمولاً در یک بازه‌ی **حدود ۰.۳ تا ۲.۸ میلیارد تومان** می‌افتد (سناریوی محافظه‌کارانه تا پایه). سناریوی خیلی موفق می‌تواند **بالای ۱۰ میلیارد تومان/ماه** هم بشود، ولی احتمال آن به‌مراتب کمتر است و به توزیع/مارکتینگ خیلی قوی نیاز دارد.

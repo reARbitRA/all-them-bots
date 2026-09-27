@@ -1,0 +1,4461 @@
+{
+  "timestamp": 1790502614.467868,
+  "total_bots_tested": 445,
+  "passed_count": 445,
+  "failed_count": 0,
+  "success_rate_percent": 100.0,
+  "total_duration_seconds": 3.45,
+  "avg_bot_lifecycle_latency_ms": 7.75,
+  "test_results": [
+    {
+      "bot_id": "opus_001",
+      "title": "Opus #1: Daily Language Learning Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 10.78,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_002",
+      "title": "Opus #2: Quiz Maker for University Entrance Exam (Konkur)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 36.17,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_003",
+      "title": "Opus #3: Smart Flashcard Bot (Anki-style)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.12,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_004",
+      "title": "Opus #4: IELTS Writing Correction Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.7,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_005",
+      "title": "Opus #5: Personal IELTS Coach Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.1,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_006",
+      "title": "Opus #6: Math Homework Helper Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.39,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_007",
+      "title": "Opus #7: Interactive Programming Tutorial Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 33.96,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_008",
+      "title": "Opus #8: Summary Audiobook Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.9,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_009",
+      "title": "Opus #9: AI Tutor Bot (All Subjects)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.04,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_010",
+      "title": "Opus #10: Job Interview Coach Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.52,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_011",
+      "title": "Opus #11: Study Coach / Academic Planner",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.49,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_012",
+      "title": "Opus #12: Quran Learning Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.09,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_013",
+      "title": "Opus #13: Excel/Google Sheets Course Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.22,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_014",
+      "title": "Opus #14: Live Quiz Competition Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.31,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_015",
+      "title": "Opus #15: AI Startup Mentor Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.33,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_016",
+      "title": "Opus #16: Photoshop Tutorial Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.01,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_017",
+      "title": "Opus #17: MBTI Personality Test & Insights Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.85,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_018",
+      "title": "Opus #18: Guitar Lessons Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.66,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_019",
+      "title": "Opus #19: Public Speaking Coach Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.88,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_020",
+      "title": "Opus #20: PMP Certification Prep Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 10.73,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_021",
+      "title": "Opus #21: Simple Telegram CRM",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.96,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_026",
+      "title": "Opus #26: Customer Feedback & Survey Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 11.11,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_027",
+      "title": "Opus #27: Inventory Management Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.15,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_028",
+      "title": "Opus #28: Automated Customer Support Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 10.9,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_029",
+      "title": "Opus #29: B2B Lead Generator Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.58,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_030",
+      "title": "Opus #30: Competitor Price Monitor Bot (Continued)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 10.3,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_031",
+      "title": "Opus #31: Email Marketing Automation Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.1,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_032",
+      "title": "Opus #32: Recruitment / Job Candidate Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.54,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_033",
+      "title": "Opus #33: Simple Project Management Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.84,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_034",
+      "title": "Opus #34: Contract Generator Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.74,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_035",
+      "title": "Opus #35: Instagram Competitor Analyzer Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.49,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_036",
+      "title": "Opus #36: Meeting Scheduler Bot (Continued)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.5,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_037",
+      "title": "Opus #37: Customer Loyalty Points System Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.53,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_038",
+      "title": "Opus #38: Daily Sales Report Bot (Continued)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.5,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_039",
+      "title": "Opus #39: Social Media Post Scheduler Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.66,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_040",
+      "title": "Opus #40: Ad ROI Calculator Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.73,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_044",
+      "title": "Opus #44: Gold/Dollar Price Alert Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.91,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_045",
+      "title": "Opus #45: AI Financial Advisor Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.7,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_046",
+      "title": "Opus #46: Bank Deposit Interest Calculator Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.87,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_047",
+      "title": "Opus #47: Crypto Portfolio Tracker Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.16,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_048",
+      "title": "Opus #48: Smart Installment Calculator Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.8,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_049",
+      "title": "Opus #49: Alert for Interest Rate Changes Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.65,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_050",
+      "title": "Opus #50: Tax Calculator Bot (continued)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.86,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_051",
+      "title": "Opus #51: Group Investment Pool Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.83,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_052",
+      "title": "Opus #52: Financial Literacy Education Bot (continued)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.04,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_053",
+      "title": "Opus #53: IPO and Primary Offering Alert Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.01,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_054",
+      "title": "Opus #54: Bank Loan Comparison Bot (continued)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.22,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_055",
+      "title": "Opus #55: Recurring Payment Tracker Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.89,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_056",
+      "title": "Opus #56: Technical Analysis Education Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.41,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_057",
+      "title": "Opus #57: Currency Alert Bot (continued)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.08,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_058",
+      "title": "Opus #58: Household Budget Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.56,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_059",
+      "title": "Opus #59: NFT and Metaverse Education Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.45,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_060",
+      "title": "Opus #60: P2P Lending Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 11.18,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_061",
+      "title": "Opus #61: Medication Reminder Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.47,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_062",
+      "title": "Opus #62: Calorie Counter Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.77,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_063",
+      "title": "Opus #63: Personalized Diet Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.36,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_064",
+      "title": "Opus #64: Sleep Tracker Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.72,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_065",
+      "title": "Opus #65: Quit Smoking Coach Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.54,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_066",
+      "title": "Opus #66: Water Reminder Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.68,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_067",
+      "title": "Opus #67: AI Nutrition Consultation Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.07,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_068",
+      "title": "Opus #68: Period Tracker Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.16,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_069",
+      "title": "Opus #69: Breathing & Meditation Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.38,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_070",
+      "title": "Opus #70: Daily Health Checklist Bot",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.01,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_071",
+      "title": "Opus #71: بات ردیاب فشار خون (Blood Pressure Tracker Bot)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.12,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_072",
+      "title": "Opus #72: نوبت‌دهی پزشک (Doctor Appointment Bot)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.76,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_073",
+      "title": "Opus #73: بات اطلاعات دارو (Drug Information Bot)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.5,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_074",
+      "title": "Opus #74: مربی کاهش وزن (Weight Loss Coach Bot)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.94,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_075",
+      "title": "Opus #75: بات ردیاب علائم بیماری (Symptom Tracker Bot)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.25,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_076",
+      "title": "Opus #76: چالش سلامتی گروهی (Group Health Challenge Bot)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.65,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_077",
+      "title": "Opus #77: بات مشاوره پوست و مو (Skin & Hair Consultation Bot)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.61,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_078",
+      "title": "Opus #78: ردیاب قند خون (Blood Sugar Tracker Bot)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.71,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_079",
+      "title": "Opus #79: بات یوگا روزانه (Daily Yoga Bot)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.72,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_080",
+      "title": "Opus #80: آلرت آلودگی هوا (Air Pollution Alert Bot)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.57,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_081",
+      "title": "Opus #81: بازی حدس کلمه Wordle (Word Guessing Game Bot)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.3,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_082",
+      "title": "Opus #82: Trivia Quiz Bot (مسابقه اطلاعات عمومی)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.31,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_083",
+      "title": "Opus #83: Friendly Betting Bot (شرط‌بندی دوستانه)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.7,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_084",
+      "title": "Opus #84: Online Mafia Game Bot (بازی مافیا آنلاین)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.05,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_085",
+      "title": "Opus #85: Fortune Telling Bot (فال و طالع‌بینی)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.84,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_086",
+      "title": "Opus #86: Online Backgammon Bot (تخته‌نرد آنلاین)",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.16,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_087",
+      "title": "Opus #87: Movie Recommendation Bot (پیشنهاد فیلم) - NORMAL DEPTH",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.89,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_088",
+      "title": "Opus #88: Music Quiz Bot (کوئیز موزیکال) - NORMAL DEPTH",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.81,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_089",
+      "title": "Opus #89: Interactive Story Bot (داستان تعاملی) - XXL DEPTH",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 13.58,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_090",
+      "title": "Opus #90: Football Prediction Bot (پیش‌بینی فوتبال) - XL DEPTH",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.47,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_091",
+      "title": "Opus #91: Daily Challenge Bot (چالش روزانه) - LARGE",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.43,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_092",
+      "title": "Opus #92: Math Duel Bot (دوئل ریاضی) - XL DEPTH",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.68,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_093",
+      "title": "Opus #93: Meme Generator Bot (میم‌ساز) - NORMAL",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.36,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_094",
+      "title": "Opus #94: Podcast Recommender Bot (پیشنهاد پادکست) - NORMAL",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.81,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_095",
+      "title": "Opus #95: Joke Bot (لطیفه و جوک) - NORMAL",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.24,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_096",
+      "title": "Opus #96: Personal Workout Bot (برنامه تمرین شخصی) - XL DEPTH",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.49,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_097",
+      "title": "Opus #97: Gym Record Tracker (ردیاب رکورد باشگاه) - NORMAL",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.74,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_098",
+      "title": "Opus #98: Workout Partner Finder (پیداکردن هم‌تمرین) - NORMAL",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.71,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_099",
+      "title": "Opus #99: Group Fitness Challenge (چالش ورزشی گروهی) - NORMAL",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.86,
+      "errors": []
+    },
+    {
+      "bot_id": "opus_100",
+      "title": "Opus #100: Exercise Form Bot (آموزش حرکات بدنسازی) - NORMAL",
+      "source": "Opus 150 (Full Python Code)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.85,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_001",
+      "title": "GPT #1: بات ثبت سفارش ساده",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.45,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_002",
+      "title": "GPT #2: بات نوبت‌دهی سالن/کلینیک",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.52,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_003",
+      "title": "GPT #3: بات پیگیری فاکتور و بدهی",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.61,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_004",
+      "title": "GPT #4: بات مدیریت مشتری (Mini-CRM)",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.58,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_005",
+      "title": "GPT #5: بات جمع‌آوری لید از کانال",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.59,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_006",
+      "title": "GPT #6: بات پیگیری موجودی ساده",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.66,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_007",
+      "title": "GPT #7: بات پیشنهاد محصول با چند سوال",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.46,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_008",
+      "title": "GPT #8: بات پشتیبانی با تیکت",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.26,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_009",
+      "title": "GPT #9: بات گزارش فروش روزانه",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.75,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_010",
+      "title": "GPT #10: بات مدیریت شکایات مشتری",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.9,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_011",
+      "title": "GPT #11: بات عضویت پولی کانال خصوصی",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 10.79,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_012",
+      "title": "GPT #12: بات فروش فایل/قالب",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.81,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_013",
+      "title": "GPT #13: بات “پست پیشنهادی پولی” برای کانال‌ها",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.54,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_014",
+      "title": "GPT #14: بات باندل دوره‌های کوتاه",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.86,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_015",
+      "title": "GPT #15: بات مدیریت تبلیغات کانال",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.91,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_016",
+      "title": "GPT #16: بات نظرسنجی پولی از مخاطب",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.89,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_017",
+      "title": "GPT #17: بات “VIP Q&A”",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.53,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_018",
+      "title": "GPT #18: بات فروش بلیت لایو/وبینار",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.73,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_019",
+      "title": "GPT #19: بات آرشیو هوشمند محتوا",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.81,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_020",
+      "title": "GPT #20: بات مدیریت چالش ۳۰روزه",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 15.88,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_021",
+      "title": "GPT #21: بات فلش‌کارت با Spaced Repetition",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.79,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_022",
+      "title": "GPT #22: بات تصحیح رایتینگ",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.73,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_023",
+      "title": "GPT #23: بات تمرین لغت روزانه",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.81,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_024",
+      "title": "GPT #24: بات آزمون‌ساز معلم‌ها",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.6,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_025",
+      "title": "GPT #25: بات مدیریت تکلیف دانش‌آموز",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.87,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_026",
+      "title": "GPT #26: بات “واژه‌نامه تخصصی”",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.05,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_027",
+      "title": "GPT #27: بات تمرین مکالمه موضوعی",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.82,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_028",
+      "title": "GPT #28: بات برنامه‌ریزی مطالعه",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.86,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_029",
+      "title": "GPT #29: بات آماده‌سازی مصاحبه شغلی",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.08,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_030",
+      "title": "GPT #30: بات آموزش مهارت با میکرو-درس",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.85,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_031",
+      "title": "GPT #31: بات To‑Do با گزارش هفتگی",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.5,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_032",
+      "title": "GPT #32: بات مدیریت عادت‌ها",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.95,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_033",
+      "title": "GPT #33: بات “Inbox صفر”",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.01,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_034",
+      "title": "GPT #34: بات پیگیری تایم‌تراکینگ",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.91,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_035",
+      "title": "GPT #35: بات چک‌لیست پروژه",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.33,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_036",
+      "title": "GPT #36: بات مدیریت جلسه",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.21,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_037",
+      "title": "GPT #37: بات یادآور قبض/تمدیدها",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.21,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_038",
+      "title": "GPT #38: بات پیگیری هدف مالی/شخصی",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.54,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_039",
+      "title": "GPT #39: بات “مدیریت مطالعه عمیق”",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.86,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_040",
+      "title": "GPT #40: بات یادآور تولد/مناسبت",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.76,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_041",
+      "title": "GPT #41: بات بودجه‌بندی 50/30/20",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.04,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_042",
+      "title": "GPT #42: بات اسکن رسید (ساده)",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.23,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_043",
+      "title": "GPT #43: بات هشدار سررسید وام/قسط",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.28,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_044",
+      "title": "GPT #44: بات پیگیری اشتراک‌ها (Netflix/… )",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.91,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_045",
+      "title": "GPT #45: بات برنامه‌ریزی خرید بزرگ",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.03,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_046",
+      "title": "GPT #46: بات مقایسه قیمت سبد خرید (دستی/لینک)",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.53,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_047",
+      "title": "GPT #47: بات محاسبه‌گر مالیات فریلنسر",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.92,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_048",
+      "title": "GPT #48: بات مدیریت درآمد/هزینه پروژه‌ای",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.87,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_049",
+      "title": "GPT #49: بات یادآور پرداخت اجاره",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.4,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_050",
+      "title": "GPT #50: بات “چک‌لیست قبل خرید”",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.1,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_051",
+      "title": "GPT #51: بات جمع‌آوری رزومه با فرم استاندارد",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.28,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_052",
+      "title": "GPT #52: بات غربالگری اولیه با سوالات",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.03,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_053",
+      "title": "GPT #53: بات زمان‌بندی مصاحبه",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.84,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_054",
+      "title": "GPT #54: بات آن‌بوردینگ نیروی جدید",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.94,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_055",
+      "title": "GPT #55: بات پیگیری مرخصی",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.59,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_056",
+      "title": "GPT #56: بات “پالس تیم” ناشناس",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.13,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_057",
+      "title": "GPT #57: بات اعلام فرصت‌های فریلنس",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.89,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_058",
+      "title": "GPT #58: بات قرارداد/پیشنهاد قیمت فریلنسر",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.34,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_059",
+      "title": "GPT #59: بات مدیریت تحویل پروژه",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.74,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_060",
+      "title": "GPT #60: بات ردیابی مهارت کارکنان",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.43,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_061",
+      "title": "GPT #61: بات یادآور آب خوردن",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.34,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_062",
+      "title": "GPT #62: بات برنامه خواب",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.54,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_063",
+      "title": "GPT #63: بات ژورنال خلق‌وخو",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.19,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_064",
+      "title": "GPT #64: بات پیگیری کالری ساده",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.39,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_065",
+      "title": "GPT #65: بات برنامه پیاده‌روی",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.85,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_066",
+      "title": "GPT #66: بات مدیتیشن ۵ دقیقه‌ای",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.77,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_067",
+      "title": "GPT #67: بات پیگیری دارو (Reminder)",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.87,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_068",
+      "title": "GPT #68: بات برنامه غذایی “تصمیم‌یار”",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.59,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_069",
+      "title": "GPT #69: بات چالش ترک قند/فست‌فود",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.18,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_070",
+      "title": "GPT #70: بات تمرینات کششی پشت‌میزنشینی",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.13,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_071",
+      "title": "GPT #71: بات برنامه سفر ۲ روزه",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 13.22,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_072",
+      "title": "GPT #72: بات چک‌لیست سفر",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.26,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_073",
+      "title": "GPT #73: بات یادآور پرواز/قطار",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.72,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_074",
+      "title": "GPT #74: بات پیدا کردن رویدادهای شهر",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.42,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_075",
+      "title": "GPT #75: بات رزرو رستوران (لید)",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.6,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_076",
+      "title": "GPT #76: بات پیشنهاد تفریح بر اساس بودجه",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.53,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_077",
+      "title": "GPT #77: بات مدیریت گروه سفر",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.81,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_078",
+      "title": "GPT #78: بات راهنمای محله (Local guide)",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.36,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_079",
+      "title": "GPT #79: بات “کوپن و تخفیف”",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.34,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_080",
+      "title": "GPT #80: بات برنامه‌ریز مهمانی",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.92,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_081",
+      "title": "GPT #81: بات ثبت درخواست تعمیرکار",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.64,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_082",
+      "title": "GPT #82: بات مدیریت اجاره‌نشینی",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.5,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_083",
+      "title": "GPT #83: بات چک‌لیست تحویل خانه",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.95,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_084",
+      "title": "GPT #84: بات محاسبه‌گر متراژ/هزینه بازسازی",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.95,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_085",
+      "title": "GPT #85: بات یادآور سرویس دوره‌ای منزل",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.85,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_086",
+      "title": "GPT #86: بات “یافتن خانه” با فیلتر",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 11.07,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_087",
+      "title": "GPT #87: بات ارزیابی اولیه ملک (فرم)",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 11.24,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_088",
+      "title": "GPT #88: بات مدیریت اسباب‌کشی",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.38,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_089",
+      "title": "GPT #89: بات یافتن هم‌خانه",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.24,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_090",
+      "title": "GPT #90: بات مدیریت قبض‌های ساختمان",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.02,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_091",
+      "title": "GPT #91: بات پیگیری وضعیت سفارش (پس از خرید)",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.7,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_092",
+      "title": "GPT #92: بات ثبت مرجوعی",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.41,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_093",
+      "title": "GPT #93: بات “راهنمای سایز”",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.47,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_094",
+      "title": "GPT #94: بات مقایسه محصولات فروشگاه",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.25,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_095",
+      "title": "GPT #95: بات پیشنهاد مکمل خرید",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.41,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_096",
+      "title": "GPT #96: بات ضمانت و گارانتی دیجیتال",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.78,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_097",
+      "title": "GPT #97: بات جمع‌آوری نظرات مشتری",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.63,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_098",
+      "title": "GPT #98: بات آموزش استفاده از محصول",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.35,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_099",
+      "title": "GPT #99: بات اطلاع‌رسانی موجودشدن کالا",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.57,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_100",
+      "title": "GPT #100: بات باشگاه مشتریان ساده",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.74,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_101",
+      "title": "GPT #101: بات مانیتورینگ آپ‌تایم",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.92,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_102",
+      "title": "GPT #102: بات اعلان CI/CD",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.25,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_103",
+      "title": "GPT #103: بات مدیریت Incident",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.89,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_104",
+      "title": "GPT #104: بات خلاصه‌ساز لاگ/ارور",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.2,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_105",
+      "title": "GPT #105: بات “Release notes” کانال داخلی",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.3,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_106",
+      "title": "GPT #106: بات مدیریت دسترسی‌ها/رمزها (سبک)",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.25,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_107",
+      "title": "GPT #107: بات جست‌وجوی داکیومنت داخلی",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.85,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_108",
+      "title": "GPT #108: بات یادآور تمدید دامنه/SSL",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.75,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_109",
+      "title": "GPT #109: بات جمع‌آوری باگ از کاربران",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.0,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_110",
+      "title": "GPT #110: بات “Standup” روزانه",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.76,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_111",
+      "title": "GPT #111: بات تولید کپشن با قالب برند",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.04,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_112",
+      "title": "GPT #112: بات ایده پست بر اساس محصول",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.08,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_113",
+      "title": "GPT #113: بات زمان‌بندی محتوا (Reminder)",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.11,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_114",
+      "title": "GPT #114: بات جمع‌آوری UGC",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.46,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_115",
+      "title": "GPT #115: بات مدیریت کمپین اینفلوئنسر",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.22,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_116",
+      "title": "GPT #116: بات تحلیل دستی رقبا (چک‌لیست)",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.25,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_117",
+      "title": "GPT #117: بات ساخت لندینگ مینی (در Mini App)",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.4,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_118",
+      "title": "GPT #118: بات فرم سفارش تبلیغات",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.49,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_119",
+      "title": "GPT #119: بات ساخت QR/لینک کوتاه با UTM",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.17,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_120",
+      "title": "GPT #120: بات “فروش از طریق چت” برای تیم فروش",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.92,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_121",
+      "title": "GPT #121: بات سازنده قراردادهای تمپلیتی",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.92,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_122",
+      "title": "GPT #122: بات چک‌لیست ثبت شرکت/کار",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.34,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_123",
+      "title": "GPT #123: بات مدیریت مدارک",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.87,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_124",
+      "title": "GPT #124: بات ثبت رضایت‌نامه (Consent) برای محتوا",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.77,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_125",
+      "title": "GPT #125: بات سیاست حفظ حریم خصوصی ساده",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.8,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_126",
+      "title": "GPT #126: بات یادآور تمدید مجوزها",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.14,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_127",
+      "title": "GPT #127: بات ثبت گزارش حادثه (HSE)",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.33,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_128",
+      "title": "GPT #128: بات آموزش کوتاه کامپلاینس کارکنان",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.19,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_129",
+      "title": "GPT #129: بات ثبت صورتجلسه رسمی",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.95,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_130",
+      "title": "GPT #130: بات چک‌لیست خرید امن (Scam checklist)",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.28,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_131",
+      "title": "GPT #131: بات تبدیل فرمت فایل",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.25,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_132",
+      "title": "GPT #132: بات فشرده‌سازی تصویر",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.16,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_133",
+      "title": "GPT #133: بات واترمارک خودکار",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.13,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_134",
+      "title": "GPT #134: بات ساخت کاور پست",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.15,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_135",
+      "title": "GPT #135: بات زیرنویس‌ساز ساده",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.33,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_136",
+      "title": "GPT #136: بات استخراج متن از PDF/عکس",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.64,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_137",
+      "title": "GPT #137: بات خلاصه‌سازی PDF",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.6,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_138",
+      "title": "GPT #138: بات ساخت فایل رزومه از فرم",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.2,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_139",
+      "title": "GPT #139: بات مدیریت لینک‌ها/بوکمارک",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.57,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_140",
+      "title": "GPT #140: بات آرشیو پیام‌های مهم",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.65,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_141",
+      "title": "GPT #141: بات لیگ پیش‌بینی دوستانه",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.04,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_142",
+      "title": "GPT #142: بات بازی “Trivia” برای گروه‌ها",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 11.0,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_143",
+      "title": "GPT #143: بات مدیریت باشگاه کتاب",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.66,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_144",
+      "title": "GPT #144: بات پیشنهاد فیلم/سریال با سوال",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.55,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_145",
+      "title": "GPT #145: بات برنامه تمرین موسیقی",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.02,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_146",
+      "title": "GPT #146: بات برنامه رژیم مطالعه کنکور/…",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.05,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_147",
+      "title": "GPT #147: بات شبکه‌سازی (Matchmaking کاری)",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.23,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_148",
+      "title": "GPT #148: بات خرید گروهی (Group buy)",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.35,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_149",
+      "title": "GPT #149: بات چالش عکاسی هفتگی",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.02,
+      "errors": []
+    },
+    {
+      "bot_id": "chatgpt_150",
+      "title": "GPT #150: بات “ماموریت شهری”",
+      "source": "ChatGPT 150 (Playbooks)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.24,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_001",
+      "title": "Gemini #1: Telegram Store Builder (SaaS) (10.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.14,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_002",
+      "title": "Gemini #2: Crypto Whale & Arbitrage Bot (9.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 15.92,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_003",
+      "title": "Gemini #3: Paid Membership Bot for Private Channels (9.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.05,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_004",
+      "title": "Gemini #4: All-in-One Media Downloader (8.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.22,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_005",
+      "title": "Gemini #5: Digital File Seller Bot (9.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.92,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_006",
+      "title": "Gemini #6: Crypto Signals Bot (9.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 10.14,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_007",
+      "title": "Gemini #7: Viral Referral Engine (9.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.62,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_008",
+      "title": "Gemini #8: Video Course Sales with License Lock (9.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.14,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_009",
+      "title": "Gemini #9: OTP/SMS Seller Bot (8.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.71,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_010",
+      "title": "Gemini #10: Premium Community Bot (9.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.33,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_011",
+      "title": "Gemini #11: Subscription Community (9.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.48,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_012",
+      "title": "Gemini #12: Crypto Price Alert Bot (8.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.94,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_013",
+      "title": "Gemini #13: Virtual Number Seller Bot (8.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.02,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_014",
+      "title": "Gemini #14: Trading Signals Bot (9.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.83,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_015",
+      "title": "Gemini #15: Airdrop Hunter Bot (8.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.31,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_016",
+      "title": "Gemini #16: Flash Sale Alert Bot (8.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.46,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_017",
+      "title": "Gemini #17: Flight Price Alert Bot (8.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.22,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_018",
+      "title": "Gemini #18: Referral System with Discount Vouchers (8.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.34,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_019",
+      "title": "Gemini #19: QR Menu & Order Bot (9.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.88,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_020",
+      "title": "Gemini #20: Loyalty Points System (9.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.46,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_021",
+      "title": "Gemini #21: Invoice Generator (8.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.47,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_022",
+      "title": "Gemini #22: Appointment Booking Bot (Salon/Clinic) (9.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 10.7,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_023",
+      "title": "Gemini #23: Contest & Giveaway Picker (7.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.96,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_024",
+      "title": "Gemini #24: Meme Generator Bot (7.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.95,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_025",
+      "title": "Gemini #25: AI CV Builder (CV-Pro Bot) (8.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.72,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_026",
+      "title": "Gemini #26: Link Shortener with Stats (7.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 10.92,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_027",
+      "title": "Gemini #27: Auto-Watermarker Bot (7.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.26,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_028",
+      "title": "Gemini #28: PDF Toolkit (Merge/Convert) (7.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 10.7,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_029",
+      "title": "Gemini #29: Telegram Post Scheduler (8.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.27,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_030",
+      "title": "Gemini #30: Anonymous Chat (Chat Roulette) (7.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.35,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_031",
+      "title": "Gemini #31: Customer Support (FAQ) Bot (9.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.52,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_032",
+      "title": "Gemini #32: Dropshipping Manager (9.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.97,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_033",
+      "title": "Gemini #33: Crypto Portfolio Tracker (8.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.0,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_034",
+      "title": "Gemini #34: Group Buying Bot (8.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.4,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_035",
+      "title": "Gemini #35: SEO Analyzer & Auditor (8.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.85,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_036",
+      "title": "Gemini #36: Influencer Marketplace Bot (9.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.29,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_037",
+      "title": "Gemini #37: Book Summarizer (8.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.79,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_038",
+      "title": "Gemini #38: Football Prediction Game (7.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 10.24,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_039",
+      "title": "Gemini #39: Habit Tracker Bot (7.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.93,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_040",
+      "title": "Gemini #40: Expense Tracker (7.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.83,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_041",
+      "title": "Gemini #41: Wholesale B2B Ordering Bot (9.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.65,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_042",
+      "title": "Gemini #42: Sticker from Face Bot (6.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.08,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_043",
+      "title": "Gemini #43: Quiz Maker Bot (7.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.83,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_044",
+      "title": "Gemini #44: Resume Builder Bot (7.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 10.59,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_045",
+      "title": "Gemini #45: Calorie Counter (Photo-Based) (8.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.09,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_046",
+      "title": "Gemini #46: IELTS Writing Grader (8.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.93,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_047",
+      "title": "Gemini #47: Job Alert Bot (7.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.61,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_048",
+      "title": "Gemini #48: Real-time Price Ticker (7.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.89,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_049",
+      "title": "Gemini #49: Freelance Job Scraper (7.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.09,
+      "errors": []
+    },
+    {
+      "bot_id": "gemini_050",
+      "title": "Gemini #50: Gift Recommender Bot (7.0/10)",
+      "source": "Gemini 730 (Market Landscape)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.45,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_01",
+      "title": "روبیکا/بله #1: FAQ & Ready Replies Pack for Sellers",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.58,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_05",
+      "title": "روبیکا/بله #5: 4",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.7,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_02",
+      "title": "روبیکا/بله #2: Sales Channel Organization Kit",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.8,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_03",
+      "title": "روبیکا/بله #3: Mini CRM Sheet for Order Tracking",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.09,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_04",
+      "title": "روبیکا/بله #4: 5",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.53,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_06",
+      "title": "روبیکا/بله #6: Order Intake Form Setup",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.97,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_07",
+      "title": "روبیکا/بله #7: Appointment Booking Kit for Service Providers",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.57,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_08",
+      "title": "روبیکا/بله #8: 30-Day Content Calendar Pack",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.87,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_09",
+      "title": "روبیکا/بله #9: Group Rules & Anti-Spam Pack",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.86,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_10",
+      "title": "روبیکا/بله #10: Trust Mini-Landing for Sellers",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.2,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_11",
+      "title": "روبیکا/بله #11: Sales Follow-up & Win-back Message Bank",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.64,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_12",
+      "title": "روبیکا/بله #12: Manual Channel Analytics Sheet",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.54,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_13",
+      "title": "روبیکا/بله #13: Paid Educational Channel Launch Kit",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.41,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_14",
+      "title": "روبیکا/بله #14: Niche Directory of Channels/Groups",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.81,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_15",
+      "title": "روبیکا/بله #15: Done-for-You Seller Ops Setup",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.63,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_16",
+      "title": "روبیکا/بله #16: DM Customer Support Outsourcing for Sellers",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.11,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_17",
+      "title": "روبیکا/بله #17: Payment Receipt Verification Service",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.13,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_18",
+      "title": "روبیکا/بله #18: Membership Access Management Service",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.25,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_19",
+      "title": "روبیکا/بله #19: Moderation-as-a-Service for Groups",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.17,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_20",
+      "title": "روبیکا/بله #20: Seller Storefront Builder for Messaging Commerce",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.56,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_21",
+      "title": "روبیکا/بله #21: Inventory & Price Update Dashboard",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.23,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_22",
+      "title": "روبیکا/بله #22: Broadcast Campaign Planner for Sellers",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.19,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_23",
+      "title": "روبیکا/بله #23: Cross-Platform Social Commerce Ops Kit",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.26,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_24",
+      "title": "روبیکا/بله #24: Tutor/Class Admin Operations Kit",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.15,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_25",
+      "title": "روبیکا/بله #25: Homework Submission & Tracking Workflow",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.6,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_26",
+      "title": "روبیکا/بله #26: Creator Membership Operations Stack",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.25,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_27",
+      "title": "روبیکا/بله #27: Channel Growth Audit Service",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.8,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_28",
+      "title": "روبیکا/بله #28: Sales Funnel Audit for Messaging Sellers",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.7,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_29",
+      "title": "روبیکا/بله #29: Channel Post Template Studio",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.63,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_30",
+      "title": "روبیکا/بله #30: Admin SOP & Operations Manual Pack",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.86,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_31",
+      "title": "روبیکا/بله #31: Messaging Commerce CRM SaaS",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.3,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_32",
+      "title": "روبیکا/بله #32: Paid Community Membership SaaS",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.18,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_33",
+      "title": "روبیکا/بله #33: Messaging-Based Customer Support Desk",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.21,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_34",
+      "title": "روبیکا/بله #34: Chatbot for FAQs and Lead Qualification",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 12.14,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_35",
+      "title": "روبیکا/بله #35: Auto Reminder Bot for Renewals/Payments",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.92,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_36",
+      "title": "روبیکا/بله #36: Group Moderation Bot",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.65,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_37",
+      "title": "روبیکا/بله #37: Community Discovery & Recommendation App",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.12,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_00",
+      "title": "روبیکا/بله #0: 10M",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.3,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_38",
+      "title": "روبیکا/بله #38: Rubika/Baleh Ad Network for Channels",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.78,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_39",
+      "title": "روبیکا/بله #39: Escrow/Trusted Deal Layer for Informal Sellers",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.45,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_40",
+      "title": "روبیکا/بله #40: Informal Commerce Marketplace Built on Messaging Demand",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.91,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_41",
+      "title": "روبیکا/بله #41: Channel/Group Benchmarking Intelligence Tool",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.08,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_42",
+      "title": "روبیکا/بله #42: Seller Credit Scoring / Trust Index",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.3,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_43",
+      "title": "روبیکا/بله #43: Local Creator CRM for Paid Communities",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.28,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_44",
+      "title": "روبیکا/بله #44: Message Template Generator by Industry",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.87,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_45",
+      "title": "روبیکا/بله #45: Channel Monetization Consultant for Creators",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.78,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_46",
+      "title": "روبیکا/بله #46: Seller Training Course for Messaging Commerce",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.55,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_47",
+      "title": "روبیکا/بله #47: Community Manager Training & Certification",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.32,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_48",
+      "title": "روبیکا/بله #48: Shared Admin Inbox for Small Teams",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.18,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_49",
+      "title": "روبیکا/بله #49: Lead Capture & Qualification Workflow for Service Businesses",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.05,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_50",
+      "title": "روبیکا/بله #50: Channel Revenue Leak Audit",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.22,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_51",
+      "title": "روبیکا/بله #51: Local Payments + Membership Ops Layer",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.49,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_52",
+      "title": "روبیکا/بله #52: Seller Reputation & Review Collection Tool",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.01,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_53",
+      "title": "روبیکا/بله #53: Messaging Commerce Training + Templates Subscription",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.32,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_54",
+      "title": "روبیکا/بله #54: Rubika/Baleh Business Ops Agency",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.22,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_55",
+      "title": "روبیکا/بله #55: Enterprise Messaging Compliance / Archiving Layer",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.13,
+      "errors": []
+    },
+    {
+      "bot_id": "rubika_56",
+      "title": "روبیکا/بله #56: Messaging Commerce ERP-lite for Small Sellers",
+      "source": "Rubika & Baleh 56 (Domestic Micro-SaaS)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.79,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_001",
+      "title": "AI-Biz #1: I Blog Writing Service $50-$500/مقاله ⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.24,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_002",
+      "title": "AI-Biz #2: I Copywriting Agency $100-$2000/پروژه ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.84,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_003",
+      "title": "AI-Biz #3: I Book/eBook Writing $500-$5000/کتاب ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.88,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_004",
+      "title": "AI-Biz #4: I Ghostwriting Service $1000-$10000/پروژه ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.74,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_005",
+      "title": "AI-Biz #5: I Newsletter Writing $200-$1000/ماه ⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.53,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_006",
+      "title": "AI-Biz #6: I Social Media Content $300-$2000/ماه ⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.21,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_007",
+      "title": "AI-Biz #7: I SEO Content Factory $100-$500/مقاله ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.39,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_008",
+      "title": "AI-Biz #8: I Product Descriptions $5-$50/محصول ⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.23,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_009",
+      "title": "AI-Biz #9: I Email Sequence Writing $200-$1000/sequence ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.64,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_010",
+      "title": "AI-Biz #10: I Press Release Writing $100-$500/PR ⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.17,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_011",
+      "title": "AI-Biz #11: I Script Writing (YouTube) $100-$1000/script ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.84,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_012",
+      "title": "AI-Biz #12: I Resume/CV Writing $50-$300/resume ⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.93,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_013",
+      "title": "AI-Biz #13: I Grant Proposal Writing $500-$5000/proposal ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.43,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_014",
+      "title": "AI-Biz #14: I White Paper Writing $1000-$10000/paper ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.54,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_015",
+      "title": "AI-Biz #15: I Translation + Localization $0.05-$0.20/word ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.97,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_016",
+      "title": "AI-Biz #16: I Code Generation Service $50-$500/task ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.36,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_017",
+      "title": "AI-Biz #17: I Code Review & Debug $100-$300/hour ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.43,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_018",
+      "title": "AI-Biz #18: I App Prototyping $500-$5000/prototype ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.91,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_019",
+      "title": "AI-Biz #19: I Website Builder Service $500-$5000/site ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.96,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_020",
+      "title": "AI-Biz #20: I API Integration $200-$2000/integration ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.18,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_021",
+      "title": "AI-Biz #21: I Chatbot Development $500-$10000/bot ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.6,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_022",
+      "title": "AI-Biz #22: I Automation Scripts $100-$1000/script ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.12,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_023",
+      "title": "AI-Biz #23: I Data Pipeline Building $1000-$10000/pipeline ⭐⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.1,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_024",
+      "title": "AI-Biz #24: I No-Code Solutions $300-$3000/solution ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.75,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_025",
+      "title": "AI-Biz #25: I WordPress/Shopify Setup $200-$2000/site ⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.43,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_026",
+      "title": "AI-Biz #26: I Technical Documentation $500-$3000/project ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.86,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_027",
+      "title": "AI-Biz #27: I Code Conversion (Legacy) $1000-$20000/project ⭐⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.71,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_028",
+      "title": "AI-Biz #28: I Logo Design $50-$500/logo ⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.56,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_029",
+      "title": "AI-Biz #29: I Brand Identity Package $300-$3000/brand ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.85,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_030",
+      "title": "AI-Biz #30: I Social Media Graphics $100-$500/ماه ⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.51,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_031",
+      "title": "AI-Biz #31: I Product Photography $20-$100/image ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.86,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_032",
+      "title": "AI-Biz #32: I Video Editing Service $100-$1000/video ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.98,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_033",
+      "title": "AI-Biz #33: I Thumbnail Creation $10-$50/thumbnail ⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.91,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_034",
+      "title": "AI-Biz #34: I Infographic Design $50-$300/infographic ⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.65,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_035",
+      "title": "AI-Biz #35: I Presentation Design $100-$1000/deck ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.25,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_036",
+      "title": "AI-Biz #36: I Video Generation (Sora) $200-$2000/video ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.11,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_037",
+      "title": "AI-Biz #37: I Animation Service $500-$5000/animation ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.07,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_038",
+      "title": "AI-Biz #38: I Photo Restoration $20-$100/photo ⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.59,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_039",
+      "title": "AI-Biz #39: I Headshot Generation $20-$100/person ⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.11,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_040",
+      "title": "AI-Biz #40: I Ad Creative Generation $100-$500/campaign ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.56,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_041",
+      "title": "AI-Biz #41: I UX/UI Design $500-$5000/project ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.24,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_042",
+      "title": "AI-Biz #42: I Voiceover Service $50-$500/project ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.71,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_043",
+      "title": "AI-Biz #43: I Podcast Editing $50-$200/episode ⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.16,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_044",
+      "title": "AI-Biz #44: I Music Generation $100-$1000/track ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.01,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_045",
+      "title": "AI-Biz #45: I Audiobook Narration $200-$2000/book ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.96,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_046",
+      "title": "AI-Biz #46: I Transcription Service $0.10-$1/minute ⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.6,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_047",
+      "title": "AI-Biz #47: I Voice Cloning $200-$2000/voice ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.89,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_048",
+      "title": "AI-Biz #48: I Sound Effects Creation $50-$500/pack ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 5.94,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_049",
+      "title": "AI-Biz #49: I Jingle/Ad Music $200-$2000/jingle ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.06,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_050",
+      "title": "AI-Biz #50: I Prompt Engineering Training $500-$5000/course ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.46,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_051",
+      "title": "AI-Biz #51: I Implementation Consulting $200-$500/hour ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.59,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_052",
+      "title": "AI-Biz #52: I Strategy Consulting $5000-$50000/project ⭐⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.44,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_053",
+      "title": "AI-Biz #53: I Tool Selection Advisory $500-$5000/project ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.45,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_054",
+      "title": "AI-Biz #54: I Workflow Design $1000-$10000/workflow ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.4,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_055",
+      "title": "AI-Biz #55: orporate AI Training $2000-$20000/workshop ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.7,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_056",
+      "title": "AI-Biz #56: I Coaching (1-on-1) $100-$500/hour ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.33,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_057",
+      "title": "AI-Biz #57: I Course Creation Service $2000-$20000/course ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.45,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_058",
+      "title": "AI-Biz #58: I Certification Programs $500-$5000/cert ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.24,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_059",
+      "title": "AI-Biz #59: I Bootcamp Facilitation $5000-$50000/bootcamp ⭐⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 12.49,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_060",
+      "title": "AI-Biz #60: I Market Research $500-$5000/report ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.11,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_061",
+      "title": "AI-Biz #61: I Competitor Analysis $300-$3000/analysis ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.4,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_062",
+      "title": "AI-Biz #62: I Data Analysis Service $200-$2000/project ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.18,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_063",
+      "title": "AI-Biz #63: I Academic Research Assistant $100-$1000/project ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.33,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_064",
+      "title": "AI-Biz #64: I Literature Review $200-$2000/review ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.15,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_065",
+      "title": "AI-Biz #65: I Patent Research $500-$5000/search ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.11,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_066",
+      "title": "AI-Biz #66: I Trend Analysis $300-$3000/report ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.3,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_067",
+      "title": "AI-Biz #67: I Sentiment Analysis $200-$2000/project ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.6,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_068",
+      "title": "AI-Biz #68: I Due Diligence Research $1000-$10000/report ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.32,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_069",
+      "title": "AI-Biz #69: I Email Automation Setup $500-$5000/setup ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.67,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_070",
+      "title": "AI-Biz #70: I CRM Automation $1000-$10000/setup ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.61,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_071",
+      "title": "AI-Biz #71: I Customer Support Setup $2000-$20000/setup ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.08,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_072",
+      "title": "AI-Biz #72: I Lead Generation System $1000-$10000/system ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.87,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_073",
+      "title": "AI-Biz #73: I Social Media Automation $500-$3000/setup ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 11.91,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_074",
+      "title": "AI-Biz #74: I Reporting Automation $500-$5000/setup ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.77,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_075",
+      "title": "AI-Biz #75: I Document Processing $1000-$10000/system ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 11.14,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_076",
+      "title": "AI-Biz #76: I Workflow Automation (Zapier+) $300-$3000/workflow ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.83,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_077",
+      "title": "AI-Biz #77: I Meeting Automation $200-$2000/setup ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 11.29,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_078",
+      "title": "AI-Biz #78: I Inventory Management $2000-$20000/system ⭐⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.31,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_079",
+      "title": "AI-Biz #79: I HR Automation $2000-$20000/system ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 11.16,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_080",
+      "title": "AI-Biz #80: I Legal Document Drafting حقوقی $200-$2000/doc ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.42,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_081",
+      "title": "AI-Biz #81: I Contract Analysis حقوقی $100-$1000/contract ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 10.75,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_082",
+      "title": "AI-Biz #82: I Compliance Framework حقوقی $5000-$50000/framework ⭐⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.5,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_083",
+      "title": "AI-Biz #83: I Medical Report Writing پزشکی $100-$500/report ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 10.76,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_084",
+      "title": "AI-Biz #84: I Clinical Documentation پزشکی $500-$5000/project ⭐⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.24,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_085",
+      "title": "AI-Biz #85: I Financial Analysis مالی $500-$5000/analysis ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 10.0,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_086",
+      "title": "AI-Biz #86: I Trading Signals مالی $100-$1000/ماه ⭐⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.28,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_087",
+      "title": "AI-Biz #87: I Real Estate Analysis املاک $200-$2000/property ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.94,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_088",
+      "title": "AI-Biz #88: I Property Descriptions املاک $20-$100/listing ⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 9.69,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_089",
+      "title": "AI-Biz #89: I Recruitment Screening HR $50-$200/candidate ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.47,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_090",
+      "title": "AI-Biz #90: I Job Description Writing HR $50-$200/JD ⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.39,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_091",
+      "title": "AI-Biz #91: I Educational Content آموزش $200-$2000/course ⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.84,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_092",
+      "title": "AI-Biz #92: I Tutoring System آموزش $1000-$10000/system ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 6.88,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_093",
+      "title": "AI-Biz #93: I E-commerce Optimization خرده‌فروشی $500-$5000/project ⭐⭐⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.35,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_094",
+      "title": "AI-Biz #94: I Menu/Recipe Generation رستوران $100-$1000/menu ⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 7.11,
+      "errors": []
+    },
+    {
+      "bot_id": "ai_biz_095",
+      "title": "AI-Biz #95: I Travel Itinerary گردشگری $50-$500/itinerary ⭐",
+      "source": "AI Business Taxonomy (Listaibusinesses)",
+      "passed_stages": 5,
+      "total_stages": 5,
+      "status": "PASSED",
+      "latency_ms": 8.12,
+      "errors": []
+    }
+  ]
+}

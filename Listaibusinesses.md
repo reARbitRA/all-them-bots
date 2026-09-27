@@ -1,5 +1,20 @@
 ---
-id: 01KD215B7VTYNACX9PKY05MZNN
+fable_schema: "5.1.0"
+urn: "urn:tgn:blueprint:business_taxonomy:9f61d51e-441f-4415-999c-d8be7958501b"
+title: "Comprehensive AI Business Taxonomy & Service Opportunities Catalog"
+transport: "HybridBridge"
+concurrency:
+  paradigm: "AsyncIO"
+  max_throughput_est: "100 req/s"
+fsm:
+  defined: false
+  states: []
+  storage_driver: "Memory"
+dependencies:
+  external: []
+  internal_urns: []
+breaking_changes_detected: []
+verification_checksum: "9dc4a29df29f5e8b1fccac9f603e337b403eed57d6dd64f144eb0d788a1e5a6f"
 ---
 🧠 لیست کامل کسب‌وکارهای AI (دسامبر ۲۰۲۵)
 📋 دسته‌بندی کلی

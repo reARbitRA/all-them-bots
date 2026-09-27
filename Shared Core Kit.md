@@ -1,5 +1,32 @@
 ---
-id: 01KD9AYAPY8P3VJJ2ZHAFGC2XN
+fable_schema: "5.1.0"
+urn: "urn:tgn:blueprint:core_architecture:c91326b5-0ac7-4543-83f6-54bcbc855c1b"
+title: "Shared Core Architectural Kit & Reusable Bot Services"
+transport: "BotAPI"
+concurrency:
+  paradigm: "AsyncIO"
+  max_throughput_est: "500 req/s"
+fsm:
+  defined: true
+  states:
+    - "START"
+    - "AUTH_VERIFICATION"
+    - "INPUT_AWAITING"
+    - "RATE_LIMITED"
+    - "PROCESSING"
+    - "ERROR_RETRY"
+    - "COMPLETED"
+  storage_driver: "Redis"
+dependencies:
+  external:
+    - "python-telegram-bot>=20.0"
+    - "aioredis>=2.0.0"
+    - "pydantic>=2.0"
+    - "fastapi>=0.100.0"
+  internal_urns: []
+breaking_changes_detected:
+  - "aioredis package merged into redis-py >= 4.2.0 (redis.asyncio)"
+verification_checksum: "7211b1928778a8f4af1894cf0e47e6084d9b94a88f6dab187992f0c6330c07df"
 ---
 # Shared Core Kit (you’ll reuse in 90% of these bots)
 

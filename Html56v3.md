@@ -1,3 +1,26 @@
+---
+fable_schema: "5.1.0"
+urn: "urn:tgn:blueprint:dashboard_app:39a918c5-03e0-4437-a220-608698836d36"
+title: "Domestic Opportunity Matrix Interactive Dashboard v3 (Self-Contained LTR)"
+transport: "HybridBridge"
+concurrency:
+  paradigm: "AsyncIO"
+  max_throughput_est: "100 req/s"
+fsm:
+  defined: false
+  states: []
+  storage_driver: "Memory"
+dependencies:
+  external:
+    - "chart.js>=4.0.0"
+    - "tailwindcss>=3.3.0"
+    - "lucide-icons>=0.263.0"
+  internal_urns:
+    - "urn:tgn:blueprint:dashboard_app:761f20c6-84e9-4da6-8dc4-f2e7faf3b4f4"
+    - "urn:tgn:blueprint:market_inventory:2dccf812-2d1b-425a-80b6-0504ec1e1009"
+breaking_changes_detected: []
+verification_checksum: "ff50bbd460305c23f457442b12e7018737f2ecc20d482ee1d1131de01cd89729"
+---
 Below is the **final self-contained `index.html`**.  
 It uses the 56-row Rubika/Baleh opportunity dataset from `pasted-text.txt` lines 3–56 and KONKRED brand direction from `KONKRED.XYZ DEVELOPMENT.md`.
 

@@ -1,5 +1,23 @@
 ---
-id: 01KD98MXW3HY3C80B5QBQ1JWA5
+fable_schema: "5.1.0"
+urn: "urn:tgn:blueprint:monetization_catalog:7f9f568f-8787-4a10-a7ee-ae286cd2ff07"
+title: "Master 150 Monetizable Telegram Bot Concepts Catalog"
+transport: "BotAPI"
+concurrency:
+  paradigm: "AsyncIO"
+  max_throughput_est: "100 req/s"
+fsm:
+  defined: false
+  states: []
+  storage_driver: "Memory"
+dependencies:
+  external:
+    - "python-telegram-bot>=20.0"
+  internal_urns:
+    - "urn:tgn:blueprint:mvp_catalog:c08c1362-554d-4639-8f08-f9f885e1711f"
+    - "urn:tgn:blueprint:core_architecture:c91326b5-0ac7-4543-83f6-54bcbc855c1b"
+breaking_changes_detected: []
+verification_checksum: "e9840763a740d369d00e3aee0dc9ae52591f5adc271cfc6d1a6bfd3cd2087f8f"
 ---
 ## خلاصه خیلی کوتاه
 پایین‌تر **۱۵۰ ایده بات تلگرام** آورده‌ام که:

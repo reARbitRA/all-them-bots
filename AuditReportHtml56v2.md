@@ -1,3 +1,25 @@
+---
+fable_schema: "5.1.0"
+urn: "urn:tgn:blueprint:quality_audit:51b96812-1fa9-486e-846a-73d8f25da1c8"
+title: "Quality Audit & Production Readiness Report: HTML56 Dashboard v2"
+transport: "HybridBridge"
+concurrency:
+  paradigm: "AsyncIO"
+  max_throughput_est: "100 req/s"
+fsm:
+  defined: false
+  states: []
+  storage_driver: "Memory"
+dependencies:
+  external:
+    - "chart.js>=4.0.0"
+    - "tailwindcss>=3.3.0"
+  internal_urns:
+    - "urn:tgn:blueprint:dashboard_app:761f20c6-84e9-4da6-8dc4-f2e7faf3b4f4"
+    - "urn:tgn:blueprint:market_inventory:2dccf812-2d1b-425a-80b6-0504ec1e1009"
+breaking_changes_detected: []
+verification_checksum: "178cb6963e6794ae960dbc72a206739347066fe061d259a2fd9d08e4fc39140f"
+---
 باشه — بهترین مسیر برای رسیدن به خروجی **95/100** اینه که از اینجا به بعد داشبورد را نه به‌عنوان یک “table viewer”، بلکه به‌عنوان یک **KONKRED-grade market intelligence product** برای **Iran / Rubika / Baleh** طراحی کنیم.
 
 ## تصمیم درست

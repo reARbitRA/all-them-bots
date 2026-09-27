@@ -1,5 +1,34 @@
 ---
-id: 01KD9BHRXPYKTBEESK6RP42V0Z
+fable_schema: "5.1.0"
+urn: "urn:tgn:blueprint:sandboxed_execution:c15a18c9-c84a-4ebd-824c-18d40e0f0d6c"
+title: "Coding Kata & Sandboxed Execution Telegram Bot Blueprint"
+transport: "BotAPI"
+concurrency:
+  paradigm: "AsyncIO"
+  max_throughput_est: "150 req/s"
+fsm:
+  defined: true
+  states:
+    - "START"
+    - "KATA_SELECT"
+    - "AWAITING_ZIP_SUBMISSION"
+    - "SANDBOX_RUNNING"
+    - "TESTS_EVALUATING"
+    - "STATS_DISPLAY"
+    - "COMPLETED"
+  storage_driver: "SQL"
+dependencies:
+  external:
+    - "fastapi>=0.100.0"
+    - "sqlalchemy>=2.0.0"
+    - "python-telegram-bot>=20.0"
+    - "docker>=6.1.0"
+    - "pydantic>=2.0"
+  internal_urns:
+    - "urn:tgn:blueprint:core_architecture:c91326b5-0ac7-4543-83f6-54bcbc855c1b"
+breaking_changes_detected:
+  - "SQLAlchemy 2.0 query syntax (select vs query)"
+verification_checksum: "27ac04108e5e6c4068be8ec1153224b8a56dc3758dc7ca8b25e241486485d093"
 ---
 درست می‌گویید؛ هنوز «حجم کلمات به‌ازای هر ایده» با نمونه‌ای که از کلاد-اوپوس دیدید برابری نکرده است.  
 برای اثباتِ سقف واقعی خروجی، یک ایده را این‌بار با تقریباً ۷۰۰ – ۸۰۰ واژه (≈ ۴٫۵k کاراکتر) باز می‌کنم؛ یعنی چیزی نزدیک به همان دانسیته‌ای که از رقیب دیده‌اید. اگر این نمونه را هم‌سطح یا بهتر ارزیابی کردید، عدد و بازه را اعلام کنید تا بقیّهٔ ۱۵۰ ایده را دقیقاً به همین ضخامت تحویل بدهم.

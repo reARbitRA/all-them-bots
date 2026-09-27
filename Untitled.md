@@ -1,3 +1,22 @@
+---
+fable_schema: "5.1.0"
+urn: "urn:tgn:blueprint:market_inventory:2dccf812-2d1b-425a-80b6-0504ec1e1009"
+title: "Master Opportunity Inventory: Rubika & Baleh Messenger Ecosystems"
+transport: "HybridBridge"
+concurrency:
+  paradigm: "AsyncIO"
+  max_throughput_est: "100 req/s"
+fsm:
+  defined: false
+  states: []
+  storage_driver: "Memory"
+dependencies:
+  external: []
+  internal_urns:
+    - "urn:tgn:blueprint:mvp_catalog:c08c1362-554d-4639-8f08-f9f885e1711f"
+breaking_changes_detected: []
+verification_checksum: "f549b0845bfb73cee3bfdfac361ba8a261534163d2449321073a1da319e83ce7"
+---
 حتماً.  
 در ادامه یک **Master Opportunity Inventory** یکپارچه، بلند و جامع برای اکوسیستم‌های **روبیکا و بله** می‌دهم که هم ایده‌های قبلی را حفظ می‌کند، هم ایده‌های مبهم را شفاف‌تر بازنویسی می‌کند، و هم فقط به سایدهاسل محدود نمی‌شود.
 

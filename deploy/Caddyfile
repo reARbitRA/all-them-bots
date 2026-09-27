@@ -1,0 +1,18 @@
+{
+    email admin@example.com
+}
+
+# Replace your-domain.com with your actual domain or VPS IP
+your-domain.com {
+    reverse_proxy localhost:8000
+    
+    # Auto Gzip & Zstd compression
+    encode gzip zstd
+    
+    # Security Headers
+    header {
+        X-Content-Type-Options nosniff
+        X-Frame-Options DENY
+        Referrer-Policy strict-origin-when-cross-origin
+    }
+}
