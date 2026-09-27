@@ -1,0 +1,30 @@
+{
+  "timestamp": 1790525566.6002657,
+  "total_requests": 1000,
+  "concurrency": 50,
+  "success_rate_percent": 99.3,
+  "total_time_seconds": 1.732,
+  "throughput_rps": 577.37,
+  "latencies_ms": {
+    "avg": 85.06,
+    "p50": 79.43,
+    "p95": 124.16,
+    "p99": 147.09,
+    "event_loop_lag": 0.181
+  },
+  "bot_pool": {
+    "active_cached": 0,
+    "max_capacity": 64,
+    "hit_ratio_percent": 13.6,
+    "total_evictions": 850
+  },
+  "resource_footprint": {
+    "initial_rss_mb": 37.75,
+    "under_load_rss_mb": 49.98,
+    "post_gc_rss_mb": 49.95,
+    "peak_rss_mb": 403.93,
+    "baseline_445_processes_mb": 22250.0,
+    "memory_saved_mb": 22200.0,
+    "memory_reduction_percent": 99.78
+  }
+}

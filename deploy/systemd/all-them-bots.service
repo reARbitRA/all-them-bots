@@ -1,0 +1,28 @@
+[Unit]
+Description=Fable-Omega 445+ Telegram Bot Super Fleet (Low-Resource Kernel)
+After=network.target
+
+[Service]
+Type=simple
+User=user
+WorkingDirectory=/home/user/all-them-bots
+ExecStart=/usr/bin/python3 run.py
+Restart=always
+RestartSec=3
+KillMode=mixed
+TimeoutStopSec=10
+
+# Memory & CPU Guardrails
+MemoryMax=150M
+MemoryHigh=120M
+CPUQuota=100%
+Nice=-5
+
+# Environment Optimization
+Environment="PYTHONUNBUFFERED=1"
+Environment="PYTHONOPTIMIZE=2"
+Environment="MALLOC_TRIM_THRESHOLD_=100000"
+Environment="APP_PORT=8000"
+
+[Install]
+WantedBy=multi-user.target
