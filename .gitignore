@@ -5,3 +5,21 @@ data/*.db
 data/*.db-wal
 data/*.db-shm
 .pytest_cache/
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+
+# Runtime state and credentials
+.env
+var/
+artifacts/
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+
+# Playwright
+playwright-report/
+test-results/
