@@ -1,11 +1,11 @@
 {
-  "timestamp": 1790502614.467868,
+  "timestamp": 1790525562.5885112,
   "total_bots_tested": 445,
   "passed_count": 445,
   "failed_count": 0,
   "success_rate_percent": 100.0,
-  "total_duration_seconds": 3.45,
-  "avg_bot_lifecycle_latency_ms": 7.75,
+  "total_duration_seconds": 2.64,
+  "avg_bot_lifecycle_latency_ms": 5.94,
   "test_results": [
     {
       "bot_id": "opus_001",
@@ -14,7 +14,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 10.78,
+      "latency_ms": 10.83,
       "errors": []
     },
     {
@@ -24,7 +24,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 36.17,
+      "latency_ms": 18.25,
       "errors": []
     },
     {
@@ -34,7 +34,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.12,
+      "latency_ms": 5.21,
       "errors": []
     },
     {
@@ -44,7 +44,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.7,
+      "latency_ms": 7.09,
       "errors": []
     },
     {
@@ -54,7 +54,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.1,
+      "latency_ms": 4.67,
       "errors": []
     },
     {
@@ -64,7 +64,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.39,
+      "latency_ms": 6.12,
       "errors": []
     },
     {
@@ -74,7 +74,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 33.96,
+      "latency_ms": 24.43,
       "errors": []
     },
     {
@@ -84,7 +84,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.9,
+      "latency_ms": 5.49,
       "errors": []
     },
     {
@@ -94,7 +94,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.04,
+      "latency_ms": 4.36,
       "errors": []
     },
     {
@@ -104,7 +104,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.52,
+      "latency_ms": 5.61,
       "errors": []
     },
     {
@@ -114,7 +114,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.49,
+      "latency_ms": 4.4,
       "errors": []
     },
     {
@@ -124,7 +124,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.09,
+      "latency_ms": 5.81,
       "errors": []
     },
     {
@@ -134,7 +134,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.22,
+      "latency_ms": 4.4,
       "errors": []
     },
     {
@@ -144,7 +144,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.31,
+      "latency_ms": 7.06,
       "errors": []
     },
     {
@@ -154,7 +154,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.33,
+      "latency_ms": 4.93,
       "errors": []
     },
     {
@@ -164,7 +164,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.01,
+      "latency_ms": 7.97,
       "errors": []
     },
     {
@@ -174,7 +174,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.85,
+      "latency_ms": 4.86,
       "errors": []
     },
     {
@@ -184,7 +184,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.66,
+      "latency_ms": 9.03,
       "errors": []
     },
     {
@@ -194,7 +194,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.88,
+      "latency_ms": 5.28,
       "errors": []
     },
     {
@@ -204,7 +204,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 10.73,
+      "latency_ms": 6.7,
       "errors": []
     },
     {
@@ -214,7 +214,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.96,
+      "latency_ms": 5.94,
       "errors": []
     },
     {
@@ -224,7 +224,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 11.11,
+      "latency_ms": 6.41,
       "errors": []
     },
     {
@@ -234,7 +234,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.15,
+      "latency_ms": 5.87,
       "errors": []
     },
     {
@@ -244,7 +244,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 10.9,
+      "latency_ms": 6.65,
       "errors": []
     },
     {
@@ -254,7 +254,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.58,
+      "latency_ms": 4.74,
       "errors": []
     },
     {
@@ -264,7 +264,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 10.3,
+      "latency_ms": 6.31,
       "errors": []
     },
     {
@@ -274,7 +274,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.1,
+      "latency_ms": 5.7,
       "errors": []
     },
     {
@@ -284,7 +284,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.54,
+      "latency_ms": 6.44,
       "errors": []
     },
     {
@@ -294,7 +294,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.84,
+      "latency_ms": 5.02,
       "errors": []
     },
     {
@@ -304,7 +304,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.74,
+      "latency_ms": 6.14,
       "errors": []
     },
     {
@@ -314,7 +314,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.49,
+      "latency_ms": 5.61,
       "errors": []
     },
     {
@@ -324,7 +324,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.5,
+      "latency_ms": 6.55,
       "errors": []
     },
     {
@@ -334,7 +334,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.53,
+      "latency_ms": 4.54,
       "errors": []
     },
     {
@@ -344,7 +344,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.5,
+      "latency_ms": 6.09,
       "errors": []
     },
     {
@@ -354,7 +354,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.66,
+      "latency_ms": 5.84,
       "errors": []
     },
     {
@@ -364,7 +364,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.73,
+      "latency_ms": 5.21,
       "errors": []
     },
     {
@@ -374,7 +374,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.91,
+      "latency_ms": 7.1,
       "errors": []
     },
     {
@@ -384,7 +384,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.7,
+      "latency_ms": 5.56,
       "errors": []
     },
     {
@@ -394,7 +394,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.87,
+      "latency_ms": 9.31,
       "errors": []
     },
     {
@@ -404,7 +404,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.16,
+      "latency_ms": 5.77,
       "errors": []
     },
     {
@@ -414,7 +414,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.8,
+      "latency_ms": 5.88,
       "errors": []
     },
     {
@@ -424,7 +424,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.65,
+      "latency_ms": 4.77,
       "errors": []
     },
     {
@@ -434,7 +434,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.86,
+      "latency_ms": 5.73,
       "errors": []
     },
     {
@@ -444,7 +444,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.83,
+      "latency_ms": 4.64,
       "errors": []
     },
     {
@@ -454,7 +454,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.04,
+      "latency_ms": 5.59,
       "errors": []
     },
     {
@@ -464,7 +464,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.01,
+      "latency_ms": 4.64,
       "errors": []
     },
     {
@@ -474,7 +474,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.22,
+      "latency_ms": 5.54,
       "errors": []
     },
     {
@@ -484,7 +484,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.89,
+      "latency_ms": 4.46,
       "errors": []
     },
     {
@@ -494,7 +494,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.41,
+      "latency_ms": 4.81,
       "errors": []
     },
     {
@@ -504,7 +504,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.08,
+      "latency_ms": 4.69,
       "errors": []
     },
     {
@@ -514,7 +514,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.56,
+      "latency_ms": 5.04,
       "errors": []
     },
     {
@@ -524,7 +524,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.45,
+      "latency_ms": 3.99,
       "errors": []
     },
     {
@@ -534,7 +534,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 11.18,
+      "latency_ms": 5.32,
       "errors": []
     },
     {
@@ -544,7 +544,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.47,
+      "latency_ms": 4.69,
       "errors": []
     },
     {
@@ -554,7 +554,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.77,
+      "latency_ms": 5.73,
       "errors": []
     },
     {
@@ -564,7 +564,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.36,
+      "latency_ms": 4.5,
       "errors": []
     },
     {
@@ -574,7 +574,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.72,
+      "latency_ms": 5.01,
       "errors": []
     },
     {
@@ -584,7 +584,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.54,
+      "latency_ms": 4.09,
       "errors": []
     },
     {
@@ -594,7 +594,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.68,
+      "latency_ms": 5.27,
       "errors": []
     },
     {
@@ -604,7 +604,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.07,
+      "latency_ms": 4.91,
       "errors": []
     },
     {
@@ -614,7 +614,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.16,
+      "latency_ms": 5.55,
       "errors": []
     },
     {
@@ -624,7 +624,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.38,
+      "latency_ms": 4.67,
       "errors": []
     },
     {
@@ -634,7 +634,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.01,
+      "latency_ms": 6.33,
       "errors": []
     },
     {
@@ -644,7 +644,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.12,
+      "latency_ms": 4.86,
       "errors": []
     },
     {
@@ -654,7 +654,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.76,
+      "latency_ms": 5.69,
       "errors": []
     },
     {
@@ -664,7 +664,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.5,
+      "latency_ms": 4.93,
       "errors": []
     },
     {
@@ -674,7 +674,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.94,
+      "latency_ms": 5.84,
       "errors": []
     },
     {
@@ -684,7 +684,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.25,
+      "latency_ms": 4.39,
       "errors": []
     },
     {
@@ -694,7 +694,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.65,
+      "latency_ms": 4.68,
       "errors": []
     },
     {
@@ -704,7 +704,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.61,
+      "latency_ms": 4.55,
       "errors": []
     },
     {
@@ -714,7 +714,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.71,
+      "latency_ms": 6.32,
       "errors": []
     },
     {
@@ -724,7 +724,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.72,
+      "latency_ms": 6.87,
       "errors": []
     },
     {
@@ -734,7 +734,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.57,
+      "latency_ms": 6.74,
       "errors": []
     },
     {
@@ -744,7 +744,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.3,
+      "latency_ms": 4.76,
       "errors": []
     },
     {
@@ -754,7 +754,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.31,
+      "latency_ms": 5.77,
       "errors": []
     },
     {
@@ -764,7 +764,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.7,
+      "latency_ms": 4.78,
       "errors": []
     },
     {
@@ -774,7 +774,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.05,
+      "latency_ms": 5.31,
       "errors": []
     },
     {
@@ -784,7 +784,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.84,
+      "latency_ms": 4.34,
       "errors": []
     },
     {
@@ -794,7 +794,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.16,
+      "latency_ms": 5.62,
       "errors": []
     },
     {
@@ -804,7 +804,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.89,
+      "latency_ms": 4.41,
       "errors": []
     },
     {
@@ -814,7 +814,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.81,
+      "latency_ms": 5.11,
       "errors": []
     },
     {
@@ -824,7 +824,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 13.58,
+      "latency_ms": 4.12,
       "errors": []
     },
     {
@@ -834,7 +834,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.47,
+      "latency_ms": 5.32,
       "errors": []
     },
     {
@@ -844,7 +844,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.43,
+      "latency_ms": 4.87,
       "errors": []
     },
     {
@@ -854,7 +854,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.68,
+      "latency_ms": 6.37,
       "errors": []
     },
     {
@@ -864,7 +864,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.36,
+      "latency_ms": 5.69,
       "errors": []
     },
     {
@@ -874,7 +874,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.81,
+      "latency_ms": 6.17,
       "errors": []
     },
     {
@@ -884,7 +884,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.24,
+      "latency_ms": 4.76,
       "errors": []
     },
     {
@@ -894,7 +894,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.49,
+      "latency_ms": 5.6,
       "errors": []
     },
     {
@@ -904,7 +904,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.74,
+      "latency_ms": 4.51,
       "errors": []
     },
     {
@@ -914,7 +914,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.71,
+      "latency_ms": 5.65,
       "errors": []
     },
     {
@@ -924,7 +924,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.86,
+      "latency_ms": 4.83,
       "errors": []
     },
     {
@@ -934,7 +934,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.85,
+      "latency_ms": 5.58,
       "errors": []
     },
     {
@@ -944,7 +944,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.45,
+      "latency_ms": 5.96,
       "errors": []
     },
     {
@@ -954,7 +954,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.52,
+      "latency_ms": 6.2,
       "errors": []
     },
     {
@@ -964,7 +964,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.61,
+      "latency_ms": 4.28,
       "errors": []
     },
     {
@@ -974,7 +974,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.58,
+      "latency_ms": 5.81,
       "errors": []
     },
     {
@@ -984,7 +984,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.59,
+      "latency_ms": 4.97,
       "errors": []
     },
     {
@@ -994,7 +994,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.66,
+      "latency_ms": 6.0,
       "errors": []
     },
     {
@@ -1004,7 +1004,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.46,
+      "latency_ms": 5.15,
       "errors": []
     },
     {
@@ -1014,7 +1014,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.26,
+      "latency_ms": 6.38,
       "errors": []
     },
     {
@@ -1024,7 +1024,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.75,
+      "latency_ms": 7.41,
       "errors": []
     },
     {
@@ -1034,7 +1034,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.9,
+      "latency_ms": 7.06,
       "errors": []
     },
     {
@@ -1044,7 +1044,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 10.79,
+      "latency_ms": 6.59,
       "errors": []
     },
     {
@@ -1054,7 +1054,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.81,
+      "latency_ms": 6.4,
       "errors": []
     },
     {
@@ -1064,7 +1064,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.54,
+      "latency_ms": 5.55,
       "errors": []
     },
     {
@@ -1074,7 +1074,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.86,
+      "latency_ms": 7.51,
       "errors": []
     },
     {
@@ -1084,7 +1084,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.91,
+      "latency_ms": 6.26,
       "errors": []
     },
     {
@@ -1094,7 +1094,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.89,
+      "latency_ms": 7.9,
       "errors": []
     },
     {
@@ -1104,7 +1104,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.53,
+      "latency_ms": 9.35,
       "errors": []
     },
     {
@@ -1114,7 +1114,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.73,
+      "latency_ms": 12.32,
       "errors": []
     },
     {
@@ -1124,7 +1124,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.81,
+      "latency_ms": 5.29,
       "errors": []
     },
     {
@@ -1134,7 +1134,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 15.88,
+      "latency_ms": 13.04,
       "errors": []
     },
     {
@@ -1144,7 +1144,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.79,
+      "latency_ms": 4.92,
       "errors": []
     },
     {
@@ -1154,7 +1154,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.73,
+      "latency_ms": 5.45,
       "errors": []
     },
     {
@@ -1164,7 +1164,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.81,
+      "latency_ms": 5.2,
       "errors": []
     },
     {
@@ -1174,7 +1174,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.6,
+      "latency_ms": 7.43,
       "errors": []
     },
     {
@@ -1184,7 +1184,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.87,
+      "latency_ms": 5.86,
       "errors": []
     },
     {
@@ -1194,7 +1194,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.05,
+      "latency_ms": 6.49,
       "errors": []
     },
     {
@@ -1204,7 +1204,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.82,
+      "latency_ms": 9.83,
       "errors": []
     },
     {
@@ -1214,7 +1214,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.86,
+      "latency_ms": 7.06,
       "errors": []
     },
     {
@@ -1224,7 +1224,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.08,
+      "latency_ms": 5.98,
       "errors": []
     },
     {
@@ -1234,7 +1234,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.85,
+      "latency_ms": 7.41,
       "errors": []
     },
     {
@@ -1244,7 +1244,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.5,
+      "latency_ms": 6.16,
       "errors": []
     },
     {
@@ -1254,7 +1254,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.95,
+      "latency_ms": 7.92,
       "errors": []
     },
     {
@@ -1264,7 +1264,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.01,
+      "latency_ms": 6.83,
       "errors": []
     },
     {
@@ -1274,7 +1274,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.91,
+      "latency_ms": 6.55,
       "errors": []
     },
     {
@@ -1284,7 +1284,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.33,
+      "latency_ms": 4.73,
       "errors": []
     },
     {
@@ -1294,7 +1294,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.21,
+      "latency_ms": 5.92,
       "errors": []
     },
     {
@@ -1304,7 +1304,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.21,
+      "latency_ms": 4.5,
       "errors": []
     },
     {
@@ -1314,7 +1314,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.54,
+      "latency_ms": 6.06,
       "errors": []
     },
     {
@@ -1324,7 +1324,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.86,
+      "latency_ms": 4.92,
       "errors": []
     },
     {
@@ -1334,7 +1334,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.76,
+      "latency_ms": 6.12,
       "errors": []
     },
     {
@@ -1344,7 +1344,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.04,
+      "latency_ms": 4.49,
       "errors": []
     },
     {
@@ -1354,7 +1354,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.23,
+      "latency_ms": 6.27,
       "errors": []
     },
     {
@@ -1364,7 +1364,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.28,
+      "latency_ms": 5.61,
       "errors": []
     },
     {
@@ -1374,7 +1374,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.91,
+      "latency_ms": 6.9,
       "errors": []
     },
     {
@@ -1384,7 +1384,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.03,
+      "latency_ms": 4.88,
       "errors": []
     },
     {
@@ -1394,7 +1394,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.53,
+      "latency_ms": 5.87,
       "errors": []
     },
     {
@@ -1404,7 +1404,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.92,
+      "latency_ms": 5.41,
       "errors": []
     },
     {
@@ -1414,7 +1414,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.87,
+      "latency_ms": 6.29,
       "errors": []
     },
     {
@@ -1424,7 +1424,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.4,
+      "latency_ms": 4.95,
       "errors": []
     },
     {
@@ -1434,7 +1434,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.1,
+      "latency_ms": 5.9,
       "errors": []
     },
     {
@@ -1444,7 +1444,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.28,
+      "latency_ms": 5.32,
       "errors": []
     },
     {
@@ -1454,7 +1454,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.03,
+      "latency_ms": 7.23,
       "errors": []
     },
     {
@@ -1464,7 +1464,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.84,
+      "latency_ms": 5.97,
       "errors": []
     },
     {
@@ -1474,7 +1474,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.94,
+      "latency_ms": 6.83,
       "errors": []
     },
     {
@@ -1484,7 +1484,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.59,
+      "latency_ms": 4.77,
       "errors": []
     },
     {
@@ -1494,7 +1494,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.13,
+      "latency_ms": 5.85,
       "errors": []
     },
     {
@@ -1504,7 +1504,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.89,
+      "latency_ms": 5.07,
       "errors": []
     },
     {
@@ -1514,7 +1514,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.34,
+      "latency_ms": 5.93,
       "errors": []
     },
     {
@@ -1524,7 +1524,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.74,
+      "latency_ms": 4.6,
       "errors": []
     },
     {
@@ -1534,7 +1534,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.43,
+      "latency_ms": 5.77,
       "errors": []
     },
     {
@@ -1544,7 +1544,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.34,
+      "latency_ms": 5.63,
       "errors": []
     },
     {
@@ -1554,7 +1554,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.54,
+      "latency_ms": 12.09,
       "errors": []
     },
     {
@@ -1564,7 +1564,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.19,
+      "latency_ms": 11.68,
       "errors": []
     },
     {
@@ -1574,7 +1574,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.39,
+      "latency_ms": 10.84,
       "errors": []
     },
     {
@@ -1584,7 +1584,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.85,
+      "latency_ms": 6.53,
       "errors": []
     },
     {
@@ -1594,7 +1594,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.77,
+      "latency_ms": 7.52,
       "errors": []
     },
     {
@@ -1604,7 +1604,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.87,
+      "latency_ms": 7.58,
       "errors": []
     },
     {
@@ -1614,7 +1614,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.59,
+      "latency_ms": 6.47,
       "errors": []
     },
     {
@@ -1624,7 +1624,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.18,
+      "latency_ms": 4.55,
       "errors": []
     },
     {
@@ -1634,7 +1634,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.13,
+      "latency_ms": 6.41,
       "errors": []
     },
     {
@@ -1644,7 +1644,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 13.22,
+      "latency_ms": 5.93,
       "errors": []
     },
     {
@@ -1654,7 +1654,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.26,
+      "latency_ms": 6.99,
       "errors": []
     },
     {
@@ -1664,7 +1664,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.72,
+      "latency_ms": 5.88,
       "errors": []
     },
     {
@@ -1674,7 +1674,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.42,
+      "latency_ms": 6.09,
       "errors": []
     },
     {
@@ -1684,7 +1684,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.6,
+      "latency_ms": 4.57,
       "errors": []
     },
     {
@@ -1694,7 +1694,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.53,
+      "latency_ms": 6.61,
       "errors": []
     },
     {
@@ -1704,7 +1704,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.81,
+      "latency_ms": 5.63,
       "errors": []
     },
     {
@@ -1714,7 +1714,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.36,
+      "latency_ms": 5.71,
       "errors": []
     },
     {
@@ -1724,7 +1724,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.34,
+      "latency_ms": 4.63,
       "errors": []
     },
     {
@@ -1734,7 +1734,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.92,
+      "latency_ms": 5.77,
       "errors": []
     },
     {
@@ -1744,7 +1744,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.64,
+      "latency_ms": 4.61,
       "errors": []
     },
     {
@@ -1754,7 +1754,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.5,
+      "latency_ms": 5.78,
       "errors": []
     },
     {
@@ -1764,7 +1764,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.95,
+      "latency_ms": 4.73,
       "errors": []
     },
     {
@@ -1774,7 +1774,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.95,
+      "latency_ms": 5.84,
       "errors": []
     },
     {
@@ -1784,7 +1784,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.85,
+      "latency_ms": 4.6,
       "errors": []
     },
     {
@@ -1794,7 +1794,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 11.07,
+      "latency_ms": 5.88,
       "errors": []
     },
     {
@@ -1804,7 +1804,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 11.24,
+      "latency_ms": 4.83,
       "errors": []
     },
     {
@@ -1814,7 +1814,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.38,
+      "latency_ms": 5.77,
       "errors": []
     },
     {
@@ -1824,7 +1824,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.24,
+      "latency_ms": 4.62,
       "errors": []
     },
     {
@@ -1834,7 +1834,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.02,
+      "latency_ms": 5.66,
       "errors": []
     },
     {
@@ -1844,7 +1844,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.7,
+      "latency_ms": 5.35,
       "errors": []
     },
     {
@@ -1854,7 +1854,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.41,
+      "latency_ms": 6.02,
       "errors": []
     },
     {
@@ -1864,7 +1864,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.47,
+      "latency_ms": 4.66,
       "errors": []
     },
     {
@@ -1874,7 +1874,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.25,
+      "latency_ms": 5.75,
       "errors": []
     },
     {
@@ -1884,7 +1884,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.41,
+      "latency_ms": 4.29,
       "errors": []
     },
     {
@@ -1894,7 +1894,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.78,
+      "latency_ms": 5.7,
       "errors": []
     },
     {
@@ -1904,7 +1904,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.63,
+      "latency_ms": 4.35,
       "errors": []
     },
     {
@@ -1914,7 +1914,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.35,
+      "latency_ms": 5.75,
       "errors": []
     },
     {
@@ -1924,7 +1924,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.57,
+      "latency_ms": 4.64,
       "errors": []
     },
     {
@@ -1934,7 +1934,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.74,
+      "latency_ms": 5.78,
       "errors": []
     },
     {
@@ -1944,7 +1944,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.92,
+      "latency_ms": 4.16,
       "errors": []
     },
     {
@@ -1954,7 +1954,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.25,
+      "latency_ms": 5.6,
       "errors": []
     },
     {
@@ -1964,7 +1964,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.89,
+      "latency_ms": 4.76,
       "errors": []
     },
     {
@@ -1974,7 +1974,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.2,
+      "latency_ms": 6.24,
       "errors": []
     },
     {
@@ -1984,7 +1984,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.3,
+      "latency_ms": 5.05,
       "errors": []
     },
     {
@@ -1994,7 +1994,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.25,
+      "latency_ms": 5.84,
       "errors": []
     },
     {
@@ -2004,7 +2004,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.85,
+      "latency_ms": 4.19,
       "errors": []
     },
     {
@@ -2014,7 +2014,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.75,
+      "latency_ms": 5.62,
       "errors": []
     },
     {
@@ -2024,7 +2024,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.0,
+      "latency_ms": 4.65,
       "errors": []
     },
     {
@@ -2034,7 +2034,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.76,
+      "latency_ms": 10.29,
       "errors": []
     },
     {
@@ -2044,7 +2044,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.04,
+      "latency_ms": 4.66,
       "errors": []
     },
     {
@@ -2054,7 +2054,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.08,
+      "latency_ms": 5.62,
       "errors": []
     },
     {
@@ -2064,7 +2064,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.11,
+      "latency_ms": 4.57,
       "errors": []
     },
     {
@@ -2074,7 +2074,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.46,
+      "latency_ms": 6.62,
       "errors": []
     },
     {
@@ -2084,7 +2084,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.22,
+      "latency_ms": 4.78,
       "errors": []
     },
     {
@@ -2094,7 +2094,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.25,
+      "latency_ms": 6.04,
       "errors": []
     },
     {
@@ -2104,7 +2104,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.4,
+      "latency_ms": 4.74,
       "errors": []
     },
     {
@@ -2114,7 +2114,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.49,
+      "latency_ms": 6.06,
       "errors": []
     },
     {
@@ -2124,7 +2124,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.17,
+      "latency_ms": 4.21,
       "errors": []
     },
     {
@@ -2134,7 +2134,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.92,
+      "latency_ms": 4.86,
       "errors": []
     },
     {
@@ -2144,7 +2144,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.92,
+      "latency_ms": 4.47,
       "errors": []
     },
     {
@@ -2154,7 +2154,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.34,
+      "latency_ms": 5.71,
       "errors": []
     },
     {
@@ -2164,7 +2164,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.87,
+      "latency_ms": 4.4,
       "errors": []
     },
     {
@@ -2174,7 +2174,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.77,
+      "latency_ms": 5.58,
       "errors": []
     },
     {
@@ -2184,7 +2184,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.8,
+      "latency_ms": 4.61,
       "errors": []
     },
     {
@@ -2194,7 +2194,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.14,
+      "latency_ms": 6.06,
       "errors": []
     },
     {
@@ -2204,7 +2204,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.33,
+      "latency_ms": 4.46,
       "errors": []
     },
     {
@@ -2214,7 +2214,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.19,
+      "latency_ms": 5.63,
       "errors": []
     },
     {
@@ -2224,7 +2224,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.95,
+      "latency_ms": 4.6,
       "errors": []
     },
     {
@@ -2234,7 +2234,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.28,
+      "latency_ms": 5.7,
       "errors": []
     },
     {
@@ -2244,7 +2244,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.25,
+      "latency_ms": 4.46,
       "errors": []
     },
     {
@@ -2254,7 +2254,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.16,
+      "latency_ms": 5.39,
       "errors": []
     },
     {
@@ -2264,7 +2264,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.13,
+      "latency_ms": 4.61,
       "errors": []
     },
     {
@@ -2274,7 +2274,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.15,
+      "latency_ms": 5.68,
       "errors": []
     },
     {
@@ -2284,7 +2284,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.33,
+      "latency_ms": 4.2,
       "errors": []
     },
     {
@@ -2294,7 +2294,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.64,
+      "latency_ms": 5.18,
       "errors": []
     },
     {
@@ -2304,7 +2304,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.6,
+      "latency_ms": 4.63,
       "errors": []
     },
     {
@@ -2314,7 +2314,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.2,
+      "latency_ms": 5.94,
       "errors": []
     },
     {
@@ -2324,7 +2324,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.57,
+      "latency_ms": 4.87,
       "errors": []
     },
     {
@@ -2334,7 +2334,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.65,
+      "latency_ms": 7.67,
       "errors": []
     },
     {
@@ -2344,7 +2344,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.04,
+      "latency_ms": 5.89,
       "errors": []
     },
     {
@@ -2354,7 +2354,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 11.0,
+      "latency_ms": 6.95,
       "errors": []
     },
     {
@@ -2364,7 +2364,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.66,
+      "latency_ms": 8.26,
       "errors": []
     },
     {
@@ -2374,7 +2374,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.55,
+      "latency_ms": 8.24,
       "errors": []
     },
     {
@@ -2384,7 +2384,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.02,
+      "latency_ms": 6.22,
       "errors": []
     },
     {
@@ -2394,7 +2394,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.05,
+      "latency_ms": 6.27,
       "errors": []
     },
     {
@@ -2404,7 +2404,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.23,
+      "latency_ms": 4.71,
       "errors": []
     },
     {
@@ -2414,7 +2414,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.35,
+      "latency_ms": 6.49,
       "errors": []
     },
     {
@@ -2424,7 +2424,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.02,
+      "latency_ms": 5.67,
       "errors": []
     },
     {
@@ -2434,7 +2434,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.24,
+      "latency_ms": 7.44,
       "errors": []
     },
     {
@@ -2444,7 +2444,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.14,
+      "latency_ms": 5.51,
       "errors": []
     },
     {
@@ -2454,7 +2454,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 15.92,
+      "latency_ms": 6.23,
       "errors": []
     },
     {
@@ -2464,7 +2464,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.05,
+      "latency_ms": 6.02,
       "errors": []
     },
     {
@@ -2474,7 +2474,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.22,
+      "latency_ms": 6.43,
       "errors": []
     },
     {
@@ -2484,7 +2484,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.92,
+      "latency_ms": 5.99,
       "errors": []
     },
     {
@@ -2494,7 +2494,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 10.14,
+      "latency_ms": 7.1,
       "errors": []
     },
     {
@@ -2504,7 +2504,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.62,
+      "latency_ms": 7.02,
       "errors": []
     },
     {
@@ -2514,7 +2514,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.14,
+      "latency_ms": 7.9,
       "errors": []
     },
     {
@@ -2524,7 +2524,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.71,
+      "latency_ms": 6.27,
       "errors": []
     },
     {
@@ -2534,7 +2534,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.33,
+      "latency_ms": 8.71,
       "errors": []
     },
     {
@@ -2544,7 +2544,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.48,
+      "latency_ms": 6.48,
       "errors": []
     },
     {
@@ -2554,7 +2554,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.94,
+      "latency_ms": 6.9,
       "errors": []
     },
     {
@@ -2564,7 +2564,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.02,
+      "latency_ms": 7.16,
       "errors": []
     },
     {
@@ -2574,7 +2574,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.83,
+      "latency_ms": 7.62,
       "errors": []
     },
     {
@@ -2584,7 +2584,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.31,
+      "latency_ms": 5.67,
       "errors": []
     },
     {
@@ -2594,7 +2594,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.46,
+      "latency_ms": 6.78,
       "errors": []
     },
     {
@@ -2604,7 +2604,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.22,
+      "latency_ms": 6.84,
       "errors": []
     },
     {
@@ -2614,7 +2614,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.34,
+      "latency_ms": 7.29,
       "errors": []
     },
     {
@@ -2624,7 +2624,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.88,
+      "latency_ms": 4.82,
       "errors": []
     },
     {
@@ -2634,7 +2634,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.46,
+      "latency_ms": 6.47,
       "errors": []
     },
     {
@@ -2644,7 +2644,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.47,
+      "latency_ms": 5.44,
       "errors": []
     },
     {
@@ -2654,7 +2654,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 10.7,
+      "latency_ms": 6.9,
       "errors": []
     },
     {
@@ -2664,7 +2664,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.96,
+      "latency_ms": 4.66,
       "errors": []
     },
     {
@@ -2674,7 +2674,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.95,
+      "latency_ms": 6.85,
       "errors": []
     },
     {
@@ -2684,7 +2684,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.72,
+      "latency_ms": 4.8,
       "errors": []
     },
     {
@@ -2694,7 +2694,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 10.92,
+      "latency_ms": 7.78,
       "errors": []
     },
     {
@@ -2704,7 +2704,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.26,
+      "latency_ms": 5.79,
       "errors": []
     },
     {
@@ -2714,7 +2714,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 10.7,
+      "latency_ms": 7.4,
       "errors": []
     },
     {
@@ -2724,7 +2724,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.27,
+      "latency_ms": 5.5,
       "errors": []
     },
     {
@@ -2734,7 +2734,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.35,
+      "latency_ms": 6.69,
       "errors": []
     },
     {
@@ -2744,7 +2744,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.52,
+      "latency_ms": 4.96,
       "errors": []
     },
     {
@@ -2754,7 +2754,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.97,
+      "latency_ms": 6.35,
       "errors": []
     },
     {
@@ -2764,7 +2764,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.0,
+      "latency_ms": 5.78,
       "errors": []
     },
     {
@@ -2774,7 +2774,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.4,
+      "latency_ms": 7.12,
       "errors": []
     },
     {
@@ -2784,7 +2784,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.85,
+      "latency_ms": 5.61,
       "errors": []
     },
     {
@@ -2794,7 +2794,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.29,
+      "latency_ms": 6.59,
       "errors": []
     },
     {
@@ -2804,7 +2804,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.79,
+      "latency_ms": 5.06,
       "errors": []
     },
     {
@@ -2814,7 +2814,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 10.24,
+      "latency_ms": 7.42,
       "errors": []
     },
     {
@@ -2824,7 +2824,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.93,
+      "latency_ms": 5.13,
       "errors": []
     },
     {
@@ -2834,7 +2834,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.83,
+      "latency_ms": 6.57,
       "errors": []
     },
     {
@@ -2844,7 +2844,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.65,
+      "latency_ms": 10.08,
       "errors": []
     },
     {
@@ -2854,7 +2854,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.08,
+      "latency_ms": 6.53,
       "errors": []
     },
     {
@@ -2864,7 +2864,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.83,
+      "latency_ms": 4.56,
       "errors": []
     },
     {
@@ -2874,7 +2874,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 10.59,
+      "latency_ms": 5.94,
       "errors": []
     },
     {
@@ -2884,7 +2884,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.09,
+      "latency_ms": 4.55,
       "errors": []
     },
     {
@@ -2894,7 +2894,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.93,
+      "latency_ms": 6.64,
       "errors": []
     },
     {
@@ -2904,7 +2904,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.61,
+      "latency_ms": 7.42,
       "errors": []
     },
     {
@@ -2914,7 +2914,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.89,
+      "latency_ms": 8.89,
       "errors": []
     },
     {
@@ -2924,7 +2924,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.09,
+      "latency_ms": 6.9,
       "errors": []
     },
     {
@@ -2934,7 +2934,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.45,
+      "latency_ms": 8.63,
       "errors": []
     },
     {
@@ -2944,7 +2944,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.58,
+      "latency_ms": 6.94,
       "errors": []
     },
     {
@@ -2954,7 +2954,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.7,
+      "latency_ms": 8.29,
       "errors": []
     },
     {
@@ -2964,7 +2964,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.8,
+      "latency_ms": 6.58,
       "errors": []
     },
     {
@@ -2974,7 +2974,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.09,
+      "latency_ms": 6.1,
       "errors": []
     },
     {
@@ -2984,7 +2984,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.53,
+      "latency_ms": 5.34,
       "errors": []
     },
     {
@@ -2994,7 +2994,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.97,
+      "latency_ms": 6.11,
       "errors": []
     },
     {
@@ -3004,7 +3004,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.57,
+      "latency_ms": 7.03,
       "errors": []
     },
     {
@@ -3014,7 +3014,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.87,
+      "latency_ms": 7.45,
       "errors": []
     },
     {
@@ -3024,7 +3024,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.86,
+      "latency_ms": 6.17,
       "errors": []
     },
     {
@@ -3034,7 +3034,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.2,
+      "latency_ms": 7.47,
       "errors": []
     },
     {
@@ -3044,7 +3044,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.64,
+      "latency_ms": 5.91,
       "errors": []
     },
     {
@@ -3054,7 +3054,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.54,
+      "latency_ms": 8.3,
       "errors": []
     },
     {
@@ -3064,7 +3064,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.41,
+      "latency_ms": 6.47,
       "errors": []
     },
     {
@@ -3074,7 +3074,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.81,
+      "latency_ms": 7.01,
       "errors": []
     },
     {
@@ -3084,7 +3084,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.63,
+      "latency_ms": 5.49,
       "errors": []
     },
     {
@@ -3094,7 +3094,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.11,
+      "latency_ms": 6.95,
       "errors": []
     },
     {
@@ -3104,7 +3104,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.13,
+      "latency_ms": 5.82,
       "errors": []
     },
     {
@@ -3114,7 +3114,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.25,
+      "latency_ms": 6.97,
       "errors": []
     },
     {
@@ -3124,7 +3124,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.17,
+      "latency_ms": 7.23,
       "errors": []
     },
     {
@@ -3134,7 +3134,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.56,
+      "latency_ms": 7.99,
       "errors": []
     },
     {
@@ -3144,7 +3144,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.23,
+      "latency_ms": 5.22,
       "errors": []
     },
     {
@@ -3154,7 +3154,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.19,
+      "latency_ms": 8.0,
       "errors": []
     },
     {
@@ -3164,7 +3164,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.26,
+      "latency_ms": 5.81,
       "errors": []
     },
     {
@@ -3174,7 +3174,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.15,
+      "latency_ms": 6.25,
       "errors": []
     },
     {
@@ -3184,7 +3184,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.6,
+      "latency_ms": 4.62,
       "errors": []
     },
     {
@@ -3194,7 +3194,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.25,
+      "latency_ms": 5.67,
       "errors": []
     },
     {
@@ -3204,7 +3204,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.8,
+      "latency_ms": 4.62,
       "errors": []
     },
     {
@@ -3214,7 +3214,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.7,
+      "latency_ms": 5.53,
       "errors": []
     },
     {
@@ -3224,7 +3224,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.63,
+      "latency_ms": 4.6,
       "errors": []
     },
     {
@@ -3234,7 +3234,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.86,
+      "latency_ms": 5.84,
       "errors": []
     },
     {
@@ -3244,7 +3244,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.3,
+      "latency_ms": 4.54,
       "errors": []
     },
     {
@@ -3254,7 +3254,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.18,
+      "latency_ms": 5.79,
       "errors": []
     },
     {
@@ -3264,7 +3264,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.21,
+      "latency_ms": 5.43,
       "errors": []
     },
     {
@@ -3274,7 +3274,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 12.14,
+      "latency_ms": 5.63,
       "errors": []
     },
     {
@@ -3284,7 +3284,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.92,
+      "latency_ms": 4.56,
       "errors": []
     },
     {
@@ -3294,7 +3294,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.65,
+      "latency_ms": 6.97,
       "errors": []
     },
     {
@@ -3304,7 +3304,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.12,
+      "latency_ms": 5.83,
       "errors": []
     },
     {
@@ -3314,7 +3314,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.3,
+      "latency_ms": 7.59,
       "errors": []
     },
     {
@@ -3324,7 +3324,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.78,
+      "latency_ms": 6.54,
       "errors": []
     },
     {
@@ -3334,7 +3334,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.45,
+      "latency_ms": 7.5,
       "errors": []
     },
     {
@@ -3344,7 +3344,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.91,
+      "latency_ms": 6.05,
       "errors": []
     },
     {
@@ -3354,7 +3354,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.08,
+      "latency_ms": 7.35,
       "errors": []
     },
     {
@@ -3364,7 +3364,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.3,
+      "latency_ms": 6.4,
       "errors": []
     },
     {
@@ -3374,7 +3374,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.28,
+      "latency_ms": 7.27,
       "errors": []
     },
     {
@@ -3384,7 +3384,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.87,
+      "latency_ms": 4.93,
       "errors": []
     },
     {
@@ -3394,7 +3394,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.78,
+      "latency_ms": 5.76,
       "errors": []
     },
     {
@@ -3404,7 +3404,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.55,
+      "latency_ms": 4.78,
       "errors": []
     },
     {
@@ -3414,7 +3414,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.32,
+      "latency_ms": 5.87,
       "errors": []
     },
     {
@@ -3424,7 +3424,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.18,
+      "latency_ms": 4.51,
       "errors": []
     },
     {
@@ -3434,7 +3434,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.05,
+      "latency_ms": 5.97,
       "errors": []
     },
     {
@@ -3444,7 +3444,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.22,
+      "latency_ms": 4.71,
       "errors": []
     },
     {
@@ -3454,7 +3454,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.49,
+      "latency_ms": 5.65,
       "errors": []
     },
     {
@@ -3464,7 +3464,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.01,
+      "latency_ms": 4.46,
       "errors": []
     },
     {
@@ -3474,7 +3474,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.32,
+      "latency_ms": 5.77,
       "errors": []
     },
     {
@@ -3484,7 +3484,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.22,
+      "latency_ms": 4.54,
       "errors": []
     },
     {
@@ -3494,7 +3494,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.13,
+      "latency_ms": 5.55,
       "errors": []
     },
     {
@@ -3504,7 +3504,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.79,
+      "latency_ms": 4.5,
       "errors": []
     },
     {
@@ -3514,7 +3514,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.24,
+      "latency_ms": 5.68,
       "errors": []
     },
     {
@@ -3524,7 +3524,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.84,
+      "latency_ms": 4.39,
       "errors": []
     },
     {
@@ -3534,7 +3534,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.88,
+      "latency_ms": 6.33,
       "errors": []
     },
     {
@@ -3544,7 +3544,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.74,
+      "latency_ms": 4.36,
       "errors": []
     },
     {
@@ -3554,7 +3554,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.53,
+      "latency_ms": 5.59,
       "errors": []
     },
     {
@@ -3564,7 +3564,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.21,
+      "latency_ms": 4.59,
       "errors": []
     },
     {
@@ -3574,7 +3574,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.39,
+      "latency_ms": 6.06,
       "errors": []
     },
     {
@@ -3584,7 +3584,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.23,
+      "latency_ms": 4.56,
       "errors": []
     },
     {
@@ -3594,7 +3594,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.64,
+      "latency_ms": 5.72,
       "errors": []
     },
     {
@@ -3604,7 +3604,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.17,
+      "latency_ms": 4.48,
       "errors": []
     },
     {
@@ -3614,7 +3614,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.84,
+      "latency_ms": 5.91,
       "errors": []
     },
     {
@@ -3624,7 +3624,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.93,
+      "latency_ms": 4.69,
       "errors": []
     },
     {
@@ -3634,7 +3634,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.43,
+      "latency_ms": 5.63,
       "errors": []
     },
     {
@@ -3644,7 +3644,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.54,
+      "latency_ms": 4.58,
       "errors": []
     },
     {
@@ -3654,7 +3654,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.97,
+      "latency_ms": 9.79,
       "errors": []
     },
     {
@@ -3664,7 +3664,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.36,
+      "latency_ms": 5.25,
       "errors": []
     },
     {
@@ -3674,7 +3674,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.43,
+      "latency_ms": 5.75,
       "errors": []
     },
     {
@@ -3684,7 +3684,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.91,
+      "latency_ms": 4.61,
       "errors": []
     },
     {
@@ -3694,7 +3694,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.96,
+      "latency_ms": 5.69,
       "errors": []
     },
     {
@@ -3704,7 +3704,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.18,
+      "latency_ms": 4.92,
       "errors": []
     },
     {
@@ -3714,7 +3714,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.6,
+      "latency_ms": 5.94,
       "errors": []
     },
     {
@@ -3724,7 +3724,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.12,
+      "latency_ms": 4.54,
       "errors": []
     },
     {
@@ -3734,7 +3734,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.1,
+      "latency_ms": 5.76,
       "errors": []
     },
     {
@@ -3744,7 +3744,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.75,
+      "latency_ms": 4.71,
       "errors": []
     },
     {
@@ -3754,7 +3754,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.43,
+      "latency_ms": 6.18,
       "errors": []
     },
     {
@@ -3764,7 +3764,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.86,
+      "latency_ms": 4.49,
       "errors": []
     },
     {
@@ -3774,7 +3774,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.71,
+      "latency_ms": 6.27,
       "errors": []
     },
     {
@@ -3784,7 +3784,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.56,
+      "latency_ms": 4.69,
       "errors": []
     },
     {
@@ -3794,7 +3794,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.85,
+      "latency_ms": 5.71,
       "errors": []
     },
     {
@@ -3804,7 +3804,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.51,
+      "latency_ms": 4.69,
       "errors": []
     },
     {
@@ -3814,7 +3814,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.86,
+      "latency_ms": 5.87,
       "errors": []
     },
     {
@@ -3824,7 +3824,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.98,
+      "latency_ms": 4.51,
       "errors": []
     },
     {
@@ -3834,7 +3834,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.91,
+      "latency_ms": 5.65,
       "errors": []
     },
     {
@@ -3844,7 +3844,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.65,
+      "latency_ms": 4.5,
       "errors": []
     },
     {
@@ -3854,7 +3854,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.25,
+      "latency_ms": 5.63,
       "errors": []
     },
     {
@@ -3864,7 +3864,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.11,
+      "latency_ms": 4.52,
       "errors": []
     },
     {
@@ -3874,7 +3874,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.07,
+      "latency_ms": 6.39,
       "errors": []
     },
     {
@@ -3884,7 +3884,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.59,
+      "latency_ms": 4.16,
       "errors": []
     },
     {
@@ -3894,7 +3894,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.11,
+      "latency_ms": 5.61,
       "errors": []
     },
     {
@@ -3904,7 +3904,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.56,
+      "latency_ms": 4.71,
       "errors": []
     },
     {
@@ -3914,7 +3914,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.24,
+      "latency_ms": 5.65,
       "errors": []
     },
     {
@@ -3924,7 +3924,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.71,
+      "latency_ms": 4.63,
       "errors": []
     },
     {
@@ -3934,7 +3934,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.16,
+      "latency_ms": 5.73,
       "errors": []
     },
     {
@@ -3944,7 +3944,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.01,
+      "latency_ms": 5.1,
       "errors": []
     },
     {
@@ -3954,7 +3954,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.96,
+      "latency_ms": 5.84,
       "errors": []
     },
     {
@@ -3964,7 +3964,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.6,
+      "latency_ms": 4.87,
       "errors": []
     },
     {
@@ -3974,7 +3974,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.89,
+      "latency_ms": 5.79,
       "errors": []
     },
     {
@@ -3984,7 +3984,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 5.94,
+      "latency_ms": 4.65,
       "errors": []
     },
     {
@@ -3994,7 +3994,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.06,
+      "latency_ms": 7.01,
       "errors": []
     },
     {
@@ -4004,7 +4004,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.46,
+      "latency_ms": 6.37,
       "errors": []
     },
     {
@@ -4014,7 +4014,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.59,
+      "latency_ms": 6.34,
       "errors": []
     },
     {
@@ -4024,7 +4024,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.44,
+      "latency_ms": 4.61,
       "errors": []
     },
     {
@@ -4034,7 +4034,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.45,
+      "latency_ms": 5.86,
       "errors": []
     },
     {
@@ -4044,7 +4044,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.4,
+      "latency_ms": 4.66,
       "errors": []
     },
     {
@@ -4054,7 +4054,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.7,
+      "latency_ms": 5.74,
       "errors": []
     },
     {
@@ -4064,7 +4064,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.33,
+      "latency_ms": 4.62,
       "errors": []
     },
     {
@@ -4074,7 +4074,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.45,
+      "latency_ms": 6.11,
       "errors": []
     },
     {
@@ -4084,7 +4084,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.24,
+      "latency_ms": 4.81,
       "errors": []
     },
     {
@@ -4094,7 +4094,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 12.49,
+      "latency_ms": 5.88,
       "errors": []
     },
     {
@@ -4104,7 +4104,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.11,
+      "latency_ms": 4.57,
       "errors": []
     },
     {
@@ -4114,7 +4114,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.4,
+      "latency_ms": 5.87,
       "errors": []
     },
     {
@@ -4124,7 +4124,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.18,
+      "latency_ms": 4.65,
       "errors": []
     },
     {
@@ -4134,7 +4134,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.33,
+      "latency_ms": 5.87,
       "errors": []
     },
     {
@@ -4144,7 +4144,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.15,
+      "latency_ms": 4.53,
       "errors": []
     },
     {
@@ -4154,7 +4154,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.11,
+      "latency_ms": 5.9,
       "errors": []
     },
     {
@@ -4164,7 +4164,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.3,
+      "latency_ms": 4.42,
       "errors": []
     },
     {
@@ -4174,7 +4174,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.6,
+      "latency_ms": 5.88,
       "errors": []
     },
     {
@@ -4184,7 +4184,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.32,
+      "latency_ms": 4.74,
       "errors": []
     },
     {
@@ -4194,7 +4194,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.67,
+      "latency_ms": 5.88,
       "errors": []
     },
     {
@@ -4204,7 +4204,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.61,
+      "latency_ms": 4.73,
       "errors": []
     },
     {
@@ -4214,7 +4214,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.08,
+      "latency_ms": 5.83,
       "errors": []
     },
     {
@@ -4224,7 +4224,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.87,
+      "latency_ms": 3.79,
       "errors": []
     },
     {
@@ -4234,7 +4234,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 11.91,
+      "latency_ms": 5.72,
       "errors": []
     },
     {
@@ -4244,7 +4244,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.77,
+      "latency_ms": 4.5,
       "errors": []
     },
     {
@@ -4254,7 +4254,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 11.14,
+      "latency_ms": 6.28,
       "errors": []
     },
     {
@@ -4264,7 +4264,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.83,
+      "latency_ms": 6.49,
       "errors": []
     },
     {
@@ -4274,7 +4274,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 11.29,
+      "latency_ms": 5.92,
       "errors": []
     },
     {
@@ -4284,7 +4284,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.31,
+      "latency_ms": 4.58,
       "errors": []
     },
     {
@@ -4294,7 +4294,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 11.16,
+      "latency_ms": 5.89,
       "errors": []
     },
     {
@@ -4304,7 +4304,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.42,
+      "latency_ms": 4.66,
       "errors": []
     },
     {
@@ -4314,7 +4314,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 10.75,
+      "latency_ms": 6.31,
       "errors": []
     },
     {
@@ -4324,7 +4324,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.5,
+      "latency_ms": 7.65,
       "errors": []
     },
     {
@@ -4334,7 +4334,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 10.76,
+      "latency_ms": 11.62,
       "errors": []
     },
     {
@@ -4344,7 +4344,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.24,
+      "latency_ms": 4.94,
       "errors": []
     },
     {
@@ -4354,7 +4354,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 10.0,
+      "latency_ms": 6.7,
       "errors": []
     },
     {
@@ -4364,7 +4364,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.28,
+      "latency_ms": 5.66,
       "errors": []
     },
     {
@@ -4374,7 +4374,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.94,
+      "latency_ms": 5.76,
       "errors": []
     },
     {
@@ -4384,7 +4384,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 9.69,
+      "latency_ms": 4.64,
       "errors": []
     },
     {
@@ -4394,7 +4394,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.47,
+      "latency_ms": 5.53,
       "errors": []
     },
     {
@@ -4404,7 +4404,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.39,
+      "latency_ms": 4.78,
       "errors": []
     },
     {
@@ -4414,7 +4414,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.84,
+      "latency_ms": 5.78,
       "errors": []
     },
     {
@@ -4424,7 +4424,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 6.88,
+      "latency_ms": 4.56,
       "errors": []
     },
     {
@@ -4434,7 +4434,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.35,
+      "latency_ms": 5.85,
       "errors": []
     },
     {
@@ -4444,7 +4444,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 7.11,
+      "latency_ms": 4.93,
       "errors": []
     },
     {
@@ -4454,7 +4454,7 @@
       "passed_stages": 5,
       "total_stages": 5,
       "status": "PASSED",
-      "latency_ms": 8.12,
+      "latency_ms": 5.81,
       "errors": []
     }
   ]

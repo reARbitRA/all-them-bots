@@ -33,7 +33,9 @@ CATEGORIES = {
 
 def load_all_150_bots() -> Dict[str, Dict[str, Any]]:
     """Parse all 150 bot blueprints directly from 150 TELEGRAM BOT.md."""
-    md_file = BASE_DIR / "150 TELEGRAM BOT.md"
+    md_file = BASE_DIR / "docs" / "original_blueprints" / "150 TELEGRAM BOT.md"
+    if not md_file.exists():
+        md_file = BASE_DIR / "150 TELEGRAM BOT.md"
     with open(md_file, "r", encoding="utf-8") as f:
         text = f.read()
 

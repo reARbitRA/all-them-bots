@@ -12,9 +12,20 @@ from typing import Dict, Any, List
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 
+def find_md_file(filename: str) -> Path:
+    """Resolve markdown file from docs/original_blueprints or root."""
+    p1 = BASE_DIR / "docs" / "original_blueprints" / filename
+    if p1.exists():
+        return p1
+    p2 = BASE_DIR / "docs" / filename
+    if p2.exists():
+        return p2
+    return BASE_DIR / filename
+
+
 def extract_opus_150() -> Dict[str, Dict[str, Any]]:
     """Extract Opus 150 Full-Code bot implementations from FULLOPUSTELBOT.md."""
-    md_file = BASE_DIR / "FULLOPUSTELBOT.md"
+    md_file = find_md_file("FULLOPUSTELBOT.md")
     if not md_file.exists():
         return {}
     with open(md_file, "r", encoding="utf-8") as f:
@@ -48,7 +59,7 @@ def extract_opus_150() -> Dict[str, Dict[str, Any]]:
 
 def extract_chatgpt_150() -> Dict[str, Dict[str, Any]]:
     """Extract ChatGPT 150 Playbook bots from 150 TELEGRAM BOT.md."""
-    md_file = BASE_DIR / "150 TELEGRAM BOT.md"
+    md_file = find_md_file("150 TELEGRAM BOT.md")
     if not md_file.exists():
         return {}
     with open(md_file, "r", encoding="utf-8") as f:
@@ -81,7 +92,7 @@ def extract_chatgpt_150() -> Dict[str, Dict[str, Any]]:
 
 def extract_gemini_730() -> Dict[str, Dict[str, Any]]:
     """Extract Gemini 730 Ranked Bot Market Analysis from ANALYZE730.md."""
-    md_file = BASE_DIR / "ANALYZE730.md"
+    md_file = find_md_file("ANALYZE730.md")
     if not md_file.exists():
         return {}
     with open(md_file, "r", encoding="utf-8") as f:
@@ -118,7 +129,7 @@ def extract_gemini_730() -> Dict[str, Dict[str, Any]]:
 
 def extract_rubika_56() -> Dict[str, Dict[str, Any]]:
     """Extract 56 Rubika/Baleh Domestic Micro-SaaS Opportunities from Untitled.md."""
-    md_file = BASE_DIR / "Untitled.md"
+    md_file = find_md_file("Untitled.md")
     if not md_file.exists():
         return {}
     with open(md_file, "r", encoding="utf-8") as f:
@@ -157,7 +168,7 @@ def extract_rubika_56() -> Dict[str, Dict[str, Any]]:
 
 def extract_ai_businesses() -> Dict[str, Dict[str, Any]]:
     """Extract AI businesses from Listaibusinesses.md."""
-    md_file = BASE_DIR / "Listaibusinesses.md"
+    md_file = find_md_file("Listaibusinesses.md")
     if not md_file.exists():
         return {}
     with open(md_file, "r", encoding="utf-8") as f:
