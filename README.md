@@ -1,65 +1,67 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Special+Elite&family=JetBrains+Mono:wght@400;700&display=swap');
+  .konkred-root { background:#0a0908; color:#f4f1eb; font-family:'Special Elite','American Typewriter','Courier New',monospace; line-height:1.55; }
+  .konkred-root :is(h1,h2,h3,h4) { font-family:'Archivo Black','Arial Black','Helvetica Neue',sans-serif; color:#f4f1eb; letter-spacing:-0.5px; margin-top:2rem; border-left:4px solid #d60019; padding-left:16px; text-transform:none; }
+  .konkred-root h1 { font-size:3.2rem; line-height:0.95; letter-spacing:-2px; margin-bottom:0.2rem; }
+  .konkred-root h2 { font-size:1.6rem; color:#ff1a2e; border-bottom:1.5px solid #262221; padding-bottom:0.4rem; margin-top:2.5rem; }
+  .konkred-root h3 { font-size:1.1rem; font-family:'JetBrains Mono',monospace; color:#b7b2a9; border-left-color:#ff1a2e; text-transform:uppercase; letter-spacing:1.5px; }
+  .konkred-root p { color:#eae7e1; font-family:'Special Elite',monospace; font-size:15px; }
+  .konkred-root a { color:#ff1a2e; text-decoration:none; border-bottom:1px solid #3a201f; }
+  .konkred-root a:hover { color:#f4f1eb; border-bottom-color:#d60019; }
+  .konkred-root code, .konkred-root pre { font-family:'JetBrains Mono',monospace; background:#100e0d; color:#f4f1eb; border:1px solid #262221; padding:2px 6px; font-size:0.9em; border-radius:0; }
+  .konkred-root pre { padding:14px; overflow-x:auto; border-left:3px solid #d60019; }
+  .konkred-root table { width:100%; border-collapse:collapse; font-family:'JetBrains Mono',monospace; font-size:13px; margin:1.2rem 0; }
+  .konkred-root th { background:#171514; color:#f4f1eb; text-align:left; padding:8px 14px; border-bottom:1.5px solid #d60019; font-family:'Archivo Black',sans-serif; text-transform:uppercase; font-size:11px; letter-spacing:1px; }
+  .konkred-root td { padding:8px 14px; border-bottom:1px solid #262221; color:#eae7e1; vertical-align:top; }
+  .konkred-root tr:hover td { background:#0d0c0b; }
+  .konkred-root hr { border:0; height:1px; background:#2a2624; margin:2rem 0; }
+  .konkred-root blockquote { border-left:3px solid #d60019; background:#100e0d; margin:1rem 0; padding:14px 18px; color:#b7b2a9; font-style:italic; }
+  .konkred-root .diamond { display:inline-block; color:#d60019; font-weight:bold; margin-right:6px; }
+  .konkred-root .label-mono { font-family:'JetBrains Mono',monospace; font-size:10px; color:#7a756d; text-transform:uppercase; letter-spacing:1.2px; }
+  .konkred-root img { border:1px solid #262221; background:#0c0b0a; }
+</style>
+
+<div class="konkred-root">
+
 <!--
   FABLE OMEGA
   Multi-Tenant Telegram Scenario Runtime
 
-  theme · Black #0A0908 · Red #D60019 · Ink #F4F1EB
-  Type: Archivo Black (display) · Special Elite (prose) · JetBrains Mono (machine)
-
-  A brutalist industrial dark theme: chalk-grained black canvas, deep-red
-  signal, typewriter-white prose. Red means signal and live state, never
-  danger. The background never glows — only verified claims ignite.
-
-  KONKRED documentation standard (applies to this README):
+  KONKRED documentation standard:
   - Claims must be reproducible.
   - Benchmarks must reference committed reports.
   - Scenario compatibility is not presented as live deployment.
   - Proposed BotFather identities are examples, not active bots.
   - Generated reports must include environment and timestamp metadata.
-  - Badges stay on-palette: label #0A0908 · message #0A0908 · logo #D60019.
-  - No emoji. Red is signal. Numbers without an artifact are decoration.
 -->
 
 <div align="center">
 
-# FABLE OMEGA
+# <span style="color:#f4f1eb;">FABLE OMEGA</span>
 
-### MULTI-TENANT TELEGRAM SCENARIO RUNTIME
-### 445 CATALOGUED SCENARIOS · 15 STRATEGIC HUBS · ONE ASYNC CONTROL PLANE
-
-[![PYTHON](https://img.shields.io/badge/PYTHON-3.11%2B-0A0908?style=for-the-badge&logo=python&logoColor=D60019&labelColor=0A0908)](https://www.python.org)
-[![RUNTIME](https://img.shields.io/badge/RUNTIME-ASYNCIO-0A0908?style=for-the-badge&logo=python&logoColor=D60019&labelColor=0A0908)](#05--runtime-architecture)
-[![CONTROL_PLANE](https://img.shields.io/badge/CONTROL_PLANE-FASTAPI-0A0908?style=for-the-badge&logo=fastapi&logoColor=D60019&labelColor=0A0908)](https://fastapi.tiangolo.com)
-[![STATE](https://img.shields.io/badge/STATE-SQLITE_WAL-0A0908?style=for-the-badge&logo=sqlite&logoColor=D60019&labelColor=0A0908)](#06--state-and-persistence)
-[![DEPLOYMENT](https://img.shields.io/badge/DEPLOYMENT-DOCKER-0A0908?style=for-the-badge&logo=docker&logoColor=D60019&labelColor=0A0908)](#14--deployment)
-[![VERIFICATION](https://img.shields.io/badge/VERIFICATION-REPORT_LINKED-D60019?style=for-the-badge&logo=pytest&logoColor=0A0908&labelColor=0A0908)](./tests/FULL_FLEET_TEST_REPORT.json)
-[![CLAIMS](https://img.shields.io/badge/CLAIMS-REPRODUCIBLE_OR_ABSENT-0A0908?style=for-the-badge&logo=readme&logoColor=D60019&labelColor=0A0908)](#17--verified-boundaries)
+### <span style="color:#ff1a2e;">MULTI-TENANT TELEGRAM SCENARIO RUNTIME</span>
+### <span style="color:#b7b2a9;">445 CATALOGUED SCENARIOS · 15 STRATEGIC HUBS · ONE ASYNC CONTROL PLANE</span>
 
 <br>
 
-> A shared execution kernel for organizing, loading, simulating, and verifying
-> a large catalogue of Telegram bot scenarios without assigning a dedicated
-> process to every scenario.
+[![Python](https://img.shields.io/badge/PYTHON-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=090A0D)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/CONTROL_PLANE-FASTAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white&labelColor=090A0D)](https://fastapi.tiangolo.com)
+[![Runtime](https://img.shields.io/badge/RUNTIME-ASYNCIO-19D3C5?style=for-the-badge&labelColor=090A0D)](#runtime-architecture)
+[![Storage](https://img.shields.io/badge/STATE-SQLITE_WAL-8B6BFF?style=for-the-badge&logo=sqlite&logoColor=white&labelColor=090A0D)](#state-and-persistence)
+[![Container](https://img.shields.io/badge/DEPLOYMENT-DOCKER-2496ED?style=for-the-badge&logo=docker&logoColor=white&labelColor=090A0D)](#deployment)
+[![Verification](https://img.shields.io/badge/VERIFICATION-REPORT_LINKED-A9E838?style=for-the-badge&labelColor=090A0D)](./tests/FULL_FLEET_TEST_REPORT.json)
 
-`in:` `A CATALOGUE OF 445 BOT SCENARIOS` → `out:` `ONE SHARED ASYNC RUNTIME`
+<br>
 
-**STATUS:** `EXPERIMENTAL RUNTIME` · `CATALOGUE: COMPATIBILITY-PASSED` · `TELEGRAM PILOT: NOT DEPLOYED`
-
-[Definition](#00--operating-definition) ·
-[Problem](#01--the-problem) ·
-[Architecture](#03--system-architecture) ·
-[Hubs](#04--strategic-hub-model) ·
-[Verification](#09--verification) ·
-[Quick Start](#12--quick-start) ·
-[Boundaries](#17--verified-boundaries) ·
-[License](#21--license)
+> <span style="font-family:'Special Elite',monospace;">A shared execution kernel for organizing, loading, simulating, and verifying a large catalogue of Telegram bot scenarios without assigning a dedicated process to every scenario.</span>
 
 </div>
 
 ---
 
-## 00 / OPERATING DEFINITION
+## <span class="diamond">◆</span> 00 / OPERATING DEFINITION
 
-FABLE OMEGA is an experimental Telegram automation control plane.
+<span style="font-family:'JetBrains Mono',monospace; color:#ff1a2e;">FABLE OMEGA</span> is an <strong>experimental</strong> Telegram automation control plane.
 
 It converts a large collection of bot ideas and scenario definitions into a smaller set of strategic hubs backed by shared infrastructure:
 
@@ -73,16 +75,13 @@ It converts a large collection of bot ideas and scenario definitions into a smal
 
 The project is designed to test whether hundreds of bot scenarios can share infrastructure without requiring hundreds of permanently running Python processes.
 
-It does **not** claim that 445 independently registered Telegram bots are currently deployed, publicly reachable, or simultaneously connected to BotFather tokens.
+It does <strong>not</strong> claim that 445 independently registered Telegram bots are currently deployed, publicly reachable, or simultaneously connected to BotFather tokens.
 
-The number `445` refers to catalogue entries and scenario definitions indexed by the repository and exercised through a common compatibility lifecycle.
-
-> A SCENARIO IS NOT A PROCESS. A HUB IS NOT A PRODUCT.
-> A PASSING TEST IS NOT A DEPLOYMENT.
+The number <code>445</code> refers to catalogue entries and scenario definitions indexed by the repository and exercised through a common compatibility lifecycle.
 
 ---
 
-## 01 / THE PROBLEM
+## <span class="diamond">◆</span> 01 / THE PROBLEM
 
 A conventional bot-per-process model scales poorly when a product catalogue grows.
 
@@ -125,7 +124,7 @@ ONE SHARED ASYNCHRONOUS RUNTIME
 
 ---
 
-## 02 / DESIGN POSITION
+## <span class="diamond">◆</span> 02 / DESIGN POSITION
 
 The project separates four concepts that are often incorrectly treated as the same thing.
 
@@ -136,13 +135,15 @@ The project separates four concepts that are often incorrectly treated as the sa
 | **Hub** | A strategic Telegram product surface grouping related scenarios |
 | **Runtime** | The shared process responsible for dispatch, state, credits, and execution |
 
-- A scenario does not require its own process.
-- A hub does not imply that every contained scenario is production-complete.
-- A successful compatibility test proves that a scenario can pass the shared lifecycle contract. It does not prove availability of every external API, payment provider, Telegram identity, or third-party integration.
+A scenario does not require its own process.
+
+A hub does not imply that every contained scenario is production-complete.
+
+A successful compatibility test proves that a scenario can pass the shared lifecycle contract. It does not prove availability of every external API, payment provider, Telegram identity, or third-party integration.
 
 ---
 
-## 03 / SYSTEM ARCHITECTURE
+## <span class="diamond">◆</span> 03 / SYSTEM ARCHITECTURE
 
 ```text
 ┌──────────────────────────────────────────────────────────────────────────┐
@@ -186,56 +187,62 @@ The project separates four concepts that are often incorrectly treated as the sa
 ### Request lifecycle
 
 ```text
-01  RECEIVE    Telegram update or simulator request enters the control plane.
-02  RESOLVE    Dispatcher identifies tenant, hub, scenario, user, session.
-03  ADMIT      Rate limiter and access rules decide whether execution continues.
-04  LOAD       Runtime resolves the scenario implementation or archetype.
-05  EXECUTE    Scenario reads state, processes input, produces a normalized result.
-06  ACCOUNT    Credit or payment state is evaluated where the scenario requires it.
-07  PERSIST    FSM, order, credit, and audit state are written to SQLite.
-08  RESPOND    A normalized response is returned to Telegram or the web simulator.
+01  RECEIVE
+    Telegram update or simulator request enters the control plane.
+
+02  RESOLVE
+    Dispatcher identifies tenant, hub, scenario, user, and active session.
+
+03  ADMIT
+    Rate limiter and access rules decide whether execution may continue.
+
+04  LOAD
+    Runtime resolves the scenario implementation or reusable archetype.
+
+05  EXECUTE
+    Scenario reads state, processes input, and produces a normalized result.
+
+06  ACCOUNT
+    Credit or payment state is evaluated where the scenario requires it.
+
+07  PERSIST
+    Updated FSM, order, credit, and audit state are written to SQLite.
+
+08  RESPOND
+    A normalized response is returned to Telegram or the web simulator.
 ```
 
 ---
 
-## 04 / STRATEGIC HUB MODEL
+## <span class="diamond">◆</span> 04 / STRATEGIC HUB MODEL
 
 The catalogue is organized into 15 product hubs.
 
 The identifiers below are proposed deployment identities. They should not be interpreted as active or reserved BotFather usernames.
 
-<!--
-  NOTE: hub rows below sum to 446, not 445.
-  Reconcile with the catalogue index in src/core/omni_catalog.py
-  before the next verification run. Fix the source of truth first.
--->
-
-| ID | STRATEGIC HUB | PROPOSED IDENTITY | SCENARIOS | PRIMARY SCOPE |
+| ID | Strategic hub | Proposed identity | Catalogue count | Primary scope |
 |:---:|---|---|---:|---|
-| `01` | COMMERCE & ORDER INTAKE | `@Omni_Commerce_SuperBot` | **48** | Digital and physical storefronts, auto-invoicing, shipment tracking |
-| `02` | VIP SUBSCRIPTION & ACCESS | `@Omni_Paywall_SuperBot` | **36** | Paid channels, one-shot invite links, auto-expiry, affiliate access |
-| `03` | AI PRODUCTION STUDIO | `@Omni_AI_Studio_SuperBot` | **95** | Writing, translation, rewriting, coding, media assistance |
-| `04` | CODE SANDBOX & KATA | `@Omni_Kata_Runner_SuperBot` | **24** | Isolated execution drills, algorithm practice, automated grading |
-| `05` | COMPLIANCE & EXPIRY WATCH | `@Omni_Compliance_SuperBot` | **22** | Domains, SSL, servers, contracts, licences, insurance due dates |
-| `06` | FINTECH & CRYPTO | `@Omni_Fintech_SuperBot` | **28** | USDT alerts, wallet monitoring, gold and FX signals |
-| `07` | EDUCATION & SPACED REPETITION | `@Omni_Edu_Master_SuperBot` | **26** | Leitner box, competitive quizzes, online examinations |
-| `08` | GROWTH & LEAD-GEN | `@Omni_Growth_SuperBot` | **21** | B2B lead scraping, referral campaigns, promotional tools |
-| `09` | HEALTH & HABIT TRACKING | `@Omni_Health_Habit_SuperBot` | **18** | Calorie and macro, water tracker, habit checklist, training plans |
-| `10` | PROPERTY & RENTAL OPS | `@Omni_RealEstate_SuperBot` | **15** | Rent reminders, maintenance intake, lease document archive |
-| `11` | DOCUMENT INTELLIGENCE | `@Omni_Doc_Search_SuperBot` | **19** | PDF extraction, corporate summarization, document lookup |
-| `12` | MEDIA UTILITIES | `@Omni_Media_Studio_SuperBot` | **17** | Compression, background removal, watermarking, conversion |
-| `13` | IRANIAN LOCAL SERVICES | `@Omni_Local_Iran_SuperBot` | **35** | Card-to-card with receipt review, SMS web services, sales forms |
-| `14` | GAMES & PREDICTION LEAGUES | `@Omni_Game_League_SuperBot` | **16** | Friend leagues, standings, group prediction rewards |
-| `15` | AGENCY & BOT FACTORY | `@Omni_Agency_Factory_SuperBot` | **26** | One-click client delivery, auto-licensing, agency operations |
+| `01` | Commerce and order processing | `@Omni_Commerce_SuperBot` | 48 | Digital products, physical orders, invoices, shipment status |
+| `02` | VIP subscription and access | `@Omni_Paywall_SuperBot` | 36 | Paid channels, temporary links, affiliate access |
+| `03` | AI production studio | `@Omni_AI_Studio_SuperBot` | 95 | Writing, translation, rewriting, coding, media assistance |
+| `04` | Coding sandbox and exercises | `@Omni_Kata_Runner_SuperBot` | 24 | Programming challenges, evaluation, isolated execution concepts |
+| `05` | Compliance and expiry tracking | `@Omni_Compliance_SuperBot` | 22 | Domains, SSL, contracts, licences, insurance, due dates |
+| `06` | Finance and cryptocurrency | `@Omni_Fintech_SuperBot` | 28 | Price alerts, portfolio scenarios, currency monitoring |
+| `07` | Education and spaced repetition | `@Omni_Edu_Master_SuperBot` | 26 | Language learning, flashcards, quizzes, examination workflows |
+| `08` | Growth and lead generation | `@Omni_Growth_SuperBot` | 21 | Campaigns, referrals, lead organization, promotional tools |
+| `09` | Health and habit tracking | `@Omni_Health_Habit_SuperBot` | 18 | Habit lists, water tracking, calorie and routine scenarios |
+| `10` | Property and rental operations | `@Omni_RealEstate_SuperBot` | 15 | Rent reminders, maintenance records, document organization |
+| `11` | Document intelligence | `@Omni_Doc_Search_SuperBot` | 19 | Extraction, summarization, document lookup, knowledge workflows |
+| `12` | Media utilities | `@Omni_Media_Studio_SuperBot` | 17 | Compression, watermarking, conversion, media processing concepts |
+| `13` | Iranian local services | `@Omni_Local_Iran_SuperBot` | 35 | Local messaging, payment-review, SMS and form workflows |
+| `14` | Games and prediction leagues | `@Omni_Game_League_SuperBot` | 16 | Group competitions, rankings, predictions, reward structures |
+| `15` | Agency and bot delivery | `@Omni_Agency_Factory_SuperBot` | 26 | Client provisioning, licences, templates, agency operations |
 
-The hub model reduces Telegram identity sprawl while allowing related scenarios to reuse menus, accounts, credits, payment policies, and infrastructure.
-
-> Full technical detail and the mapping matrix live in
-> [MEGA_HUB_ARCHITECTURE_BLUEPRINT.md](./MEGA_HUB_ARCHITECTURE_BLUEPRINT.md).
+> <span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#5c5852;">Full technical detail and the mapping matrix live in [MEGA_HUB_ARCHITECTURE_BLUEPRINT.md](./MEGA_HUB_ARCHITECTURE_BLUEPRINT.md).</span>
 
 ---
 
-## 05 / RUNTIME ARCHITECTURE
+## <span class="diamond">◆</span> 05 / RUNTIME ARCHITECTURE
 
 ### Shared AsyncIO kernel
 
@@ -299,7 +306,7 @@ Financial state, credit deductions, and order transitions must retain transactio
 
 ---
 
-## 06 / STATE AND PERSISTENCE
+## <span class="diamond">◆</span> 06 / STATE AND PERSISTENCE
 
 SQLite is configured for WAL-oriented operation to support the local and low-resource deployment model.
 
@@ -333,7 +340,7 @@ A multi-instance deployment requires additional coordination, a shared database,
 
 Each scenario interacts with normalized state rather than owning an independent database format.
 
-```json
+```python
 {
     "tenant_id": "hub-03",
     "scenario_id": "ai-writing-001",
@@ -347,7 +354,7 @@ Each scenario interacts with normalized state rather than owning an independent 
 
 ---
 
-## 07 / CREDIT AND PAYMENT ABSTRACTION
+## <span class="diamond">◆</span> 07 / CREDIT AND PAYMENT ABSTRACTION
 
 The repository includes a shared monetization layer intended to prevent every scenario from reimplementing billing.
 
@@ -378,7 +385,7 @@ The shared layer provides an architectural foundation. Production use still requ
 
 ---
 
-## 08 / CONTROL PLANE AND SIMULATOR
+## <span class="diamond">◆</span> 08 / CONTROL PLANE AND SIMULATOR
 
 The FastAPI control plane exposes an operator-facing surface for inspecting the catalogue and exercising scenario behavior.
 
@@ -414,17 +421,14 @@ A simulator is not proof of live Telegram deployment.
 
 ---
 
-## 09 / VERIFICATION
-
-> Pipeline grammar used throughout this README:
-> `[..]` queued · `[>>]` running · `[ok]` verified
+## <span class="diamond">◆</span> 09 / VERIFICATION
 
 The repository includes a catalogue-wide compatibility suite.
 
 The main report is stored at:
 
 ```text
-[ok] REPORT   tests/FULL_FLEET_TEST_REPORT.json
+tests/FULL_FLEET_TEST_REPORT.json
 ```
 
 The suite exercises scenario definitions through a shared lifecycle.
@@ -497,12 +501,12 @@ Benchmark claims must be accompanied by:
 
 ---
 
-## 10 / PERFORMANCE REPORTING
+## <span class="diamond">◆</span> 10 / PERFORMANCE REPORTING
 
 The repository contains a low-resource benchmark report:
 
 ```text
-[ok] REPORT   tests/LOW_RESOURCE_BENCHMARK_REPORT.json
+tests/LOW_RESOURCE_BENCHMARK_REPORT.json
 ```
 
 Performance values in that report describe a particular test environment. They are not universal guarantees.
@@ -519,17 +523,14 @@ The following distinction matters:
 
 External Telegram latency, AI-provider latency, network behavior, database contention, and payment callbacks are not represented by a purely local compatibility benchmark.
 
-> Numbers without an artifact are decoration, not data.
-
 ---
 
-## 11 / REPOSITORY STRUCTURE
+## <span class="diamond">◆</span> 11 / REPOSITORY STRUCTURE
 
 ```text
 .
 ├── README.md
 ├── MEGA_HUB_ARCHITECTURE_BLUEPRINT.md
-├── LICENSE                          # phase 1: one explicit licensing model
 ├── pyproject.toml
 ├── requirements.txt
 ├── run.py
@@ -542,32 +543,32 @@ External Telegram latency, AI-provider latency, network behavior, database conte
 │   │   ├── bot_03_ai_gateway.py
 │   │   ├── bot_04_kata_runner.py
 │   │   ├── bot_05_license_reminder.py
-│   │   └── dynamic_bot.py           # archetype runtime for 440+ catalogue entries
+│   │   └── dynamic_bot.py
 │   │
 │   ├── core/
 │   │   ├── config.py
-│   │   ├── database.py              # async SQLite, WAL
-│   │   ├── dispatcher.py            # multi-tenant event routing
+│   │   ├── database.py
+│   │   ├── dispatcher.py
 │   │   ├── fsm.py
-│   │   ├── hub_router.py            # 15-hub classification
-│   │   ├── monetization.py          # Stars / card-to-card / TON abstraction
-│   │   ├── omni_catalog.py          # indexes 445 scenarios from source documents
-│   │   ├── rate_limiter.py          # token bucket, layer 7
-│   │   └── resource_optimizer.py    # LRU pool, batched writes, RAM telemetry
+│   │   ├── hub_router.py
+│   │   ├── monetization.py
+│   │   ├── omni_catalog.py
+│   │   ├── rate_limiter.py
+│   │   └── resource_optimizer.py
 │   │
 │   └── web/
-│       ├── app.py                   # FastAPI control plane
+│       ├── app.py
 │       └── templates/
-│           └── dashboard.html       # simulator + telemetry HUD
+│           └── dashboard.html
 │
 ├── docs/
-│   └── original_blueprints/         # source documents (Opus, GPT, Gemini, Rubika, AI)
+│   └── original_blueprints/
 │
 ├── deploy/
 │   ├── Dockerfile.slim
 │   ├── docker-compose.yml
 │   ├── run_optimized.sh
-│   ├── provision_botfather.py       # guarded provisioning tool
+│   ├── provision_botfather.py
 │   ├── batch_set_webhook.py
 │   ├── nginx/
 │   │   └── all-them-bots.conf
@@ -575,15 +576,20 @@ External Telegram latency, AI-provider latency, network behavior, database conte
 │       └── all-them-bots.service
 │
 └── tests/
-    ├── test_all_445_bots.py          # 5-stage compatibility lifecycle
-    ├── test_low_resource_runtime.py  # load + memory benchmark
+    ├── test_all_445_bots.py
+    ├── test_low_resource_runtime.py
+    ├── test_artifacts.py
+    ├── test_bots_live.py
+    ├── test_executor.py
+    ├── test_llm.py
+    ├── test_store.py
     ├── FULL_FLEET_TEST_REPORT.json
     └── LOW_RESOURCE_BENCHMARK_REPORT.json
 ```
 
 ---
 
-## 12 / QUICK START
+## <span class="diamond">◆</span> 12 / QUICK START
 
 ### Requirements
 
@@ -608,6 +614,8 @@ python -m pip install --upgrade pip
 ```
 
 ### Install dependencies
+
+Use the dependency path supported by the repository:
 
 ```bash
 python -m pip install -r requirements.txt
@@ -656,7 +664,7 @@ http://localhost:8000
 
 ---
 
-## 13 / TESTING
+## <span class="diamond">◆</span> 13 / TESTING
 
 Run the complete test suite:
 
@@ -697,7 +705,7 @@ A production CI pipeline should run:
 
 ---
 
-## 14 / DEPLOYMENT
+## <span class="diamond">◆</span> 14 / DEPLOYMENT
 
 ### Docker Compose
 
@@ -756,7 +764,7 @@ Production deployment requires:
 
 ---
 
-## 15 / TELEGRAM PROVISIONING
+## <span class="diamond">◆</span> 15 / TELEGRAM PROVISIONING
 
 Provisioning scripts are operational tools, not an invitation to create hundreds of Telegram accounts or bypass platform limits.
 
@@ -774,17 +782,17 @@ Before using them:
 Recommended rollout:
 
 ```text
-PHASE 01  [..]  DASHBOARD-ONLY SIMULATION
-PHASE 02  [..]  ONE PRIVATE TELEGRAM PILOT
-PHASE 03  [..]  ONE STRATEGIC HUB
-PHASE 04  [..]  PAYMENT SANDBOX
-PHASE 05  [..]  LIMITED EXTERNAL USERS
-PHASE 06  [..]  MEASURED EXPANSION
+PHASE 01  Dashboard-only simulation
+PHASE 02  One private Telegram pilot
+PHASE 03  One strategic hub
+PHASE 04  Payment sandbox
+PHASE 05  Limited external users
+PHASE 06  Measured expansion
 ```
 
 ---
 
-## 16 / SECURITY MODEL
+## <span class="diamond">◆</span> 16 / SECURITY MODEL
 
 ### Secrets
 
@@ -846,7 +854,7 @@ Production deployment should define:
 
 ---
 
-## 17 / VERIFIED BOUNDARIES
+## <span class="diamond">◆</span> 17 / VERIFIED BOUNDARIES
 
 The following boundaries are intentional.
 
@@ -885,47 +893,56 @@ The following boundaries are intentional.
 
 ---
 
-## 18 / ROADMAP
+## <span class="diamond">◆</span> 18 / ROADMAP
 
-- `[..]` **PHASE 01 — REPOSITORY CONSISTENCY**
-  - Remove unrelated third-party documentation
-  - Align `pyproject.toml` metadata with FABLE OMEGA
-  - Add a single canonical application name
-  - Add a license file
-  - Add report-schema validation
-  - Add CI under `.github/workflows`
-- `[..]` **PHASE 02 — RUNTIME HARDENING**
-  - Add bounded worker pools
-  - Add structured cancellation
-  - Add timeout budgets
-  - Add tenant-level quotas
-  - Add transactional credit operations
-  - Add event audit records
-  - Add graceful shutdown tests
-- `[..]` **PHASE 03 — TELEGRAM PILOT**
-  - Deploy one private hub
-  - Connect one bot token
-  - Verify webhook behavior
-  - Measure real idle memory
-  - Test recovery after restart
-  - Compare simulator and Telegram results
-- `[..]` **PHASE 04 — PAYMENT SANDBOX**
-  - Implement one provider completely
-  - Add signed callbacks
-  - Add replay protection
-  - Add reconciliation reports
-  - Add refund and dispute states
-- `[..]` **PHASE 05 — OBSERVABILITY**
-  - Structured JSON logging
-  - Request correlation IDs
-  - Prometheus-compatible metrics
-  - Runtime pool telemetry
-  - Database health checks
-  - Scenario failure dashboards
+### Phase 1 — Repository consistency
+
+- Remove unrelated Autofreelance documentation
+- Align `pyproject.toml` metadata with FABLE OMEGA
+- Add a single canonical application name
+- Add a license file
+- Add report-schema validation
+- Add CI under `.github/workflows`
+
+### Phase 2 — Runtime hardening
+
+- Add bounded worker pools
+- Add structured cancellation
+- Add timeout budgets
+- Add tenant-level quotas
+- Add transactional credit operations
+- Add event audit records
+- Add graceful shutdown tests
+
+### Phase 3 — Telegram pilot
+
+- Deploy one private hub
+- Connect one bot token
+- Verify webhook behavior
+- Measure real idle memory
+- Test recovery after restart
+- Compare simulator and Telegram results
+
+### Phase 4 — Payment sandbox
+
+- Implement one provider completely
+- Add signed callbacks
+- Add replay protection
+- Add reconciliation reports
+- Add refund and dispute states
+
+### Phase 5 — Observability
+
+- Structured JSON logging
+- Request correlation IDs
+- Prometheus-compatible metrics
+- Runtime pool telemetry
+- Database health checks
+- Scenario failure dashboards
 
 ---
 
-## 19 / PROJECT POSITIONING
+## <span class="diamond">◆</span> 19 / PROJECT POSITIONING
 
 FABLE OMEGA should be evaluated as:
 
@@ -941,7 +958,7 @@ That distinction protects the technical credibility of the project.
 
 ---
 
-## 20 / CONTRIBUTING
+## <span class="diamond">◆</span> 20 / CONTRIBUTING
 
 Contributions should preserve the shared scenario contract.
 
@@ -972,7 +989,7 @@ Do not include secrets, production user data, private Telegram exports, or unlic
 
 ---
 
-## 21 / LICENSE
+## <span class="diamond">◆</span> 21 / LICENSE
 
 A repository-level `LICENSE` file should define the actual terms.
 
@@ -990,11 +1007,15 @@ Choose one explicit licensing model and keep these locations consistent:
 
 ---
 
-<div align="center">
+<div align="center" style="font-family:'Archivo Black',sans-serif; color:#f4f1eb; letter-spacing:-1px; font-size:2rem; border-top:1.5px solid #d60019; padding-top:2rem; margin-top:3rem;">
 
-## FABLE OMEGA
+## <span style="color:#ff1a2e;">FABLE OMEGA</span>
 
-**CATALOGUE THE WORK · SHARE THE RUNTIME · MEASURE THE CLAIMS**
+**<span style="color:#b7b2a9;">CATALOGUE THE WORK · SHARE THE RUNTIME · MEASURE THE CLAIMS</span>**
+
+</div>
+
+<div align="center" style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#5c5852; margin-top:10px;">
 
 [Open Architecture Blueprint](./MEGA_HUB_ARCHITECTURE_BLUEPRINT.md) ·
 [Inspect Fleet Report](./tests/FULL_FLEET_TEST_REPORT.json) ·
@@ -1002,8 +1023,9 @@ Choose one explicit licensing model and keep these locations consistent:
 
 <sub>
 Experimental infrastructure for controlled Telegram scenario execution.<br>
-No anti-spam claims. No deployment theatre. No metric without an artifact.<br><br>
-`BLACK #0A0908 · RED #D60019 · INK #F4F1EB`
+No anti-spam claims. No deployment theatre. No metric without an artifact.
 </sub>
+
+</div>
 
 </div>
