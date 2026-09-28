@@ -1,7 +1,8 @@
+
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Special+Elite&family=JetBrains+Mono:wght@400;700&display=swap');
   .konkred-root { background:#0a0908; color:#f4f1eb; font-family:'Special Elite','American Typewriter','Courier New',monospace; line-height:1.55; }
-  .konkred-root :is(h1,h2,h3,h4) { font-family:'Archivo Black','Arial Black','Helvetica Neue',sans-serif; color:#f4f1eb; letter-spacing:-0.5px; margin-top:2rem; border-left:4px solid #d60019; padding-left:16px; text-transform:none; }
+  .konkred-root h1,h2,h3,h4 { font-family:'Archivo Black','Arial Black','Helvetica Neue',sans-serif; color:#f4f1eb; letter-spacing:-0.5px; margin-top:2rem; border-left:4px solid #d60019; padding-left:16px; text-transform:none; }
   .konkred-root h1 { font-size:3.2rem; line-height:0.95; letter-spacing:-2px; margin-bottom:0.2rem; }
   .konkred-root h2 { font-size:1.6rem; color:#ff1a2e; border-bottom:1.5px solid #262221; padding-bottom:0.4rem; margin-top:2.5rem; }
   .konkred-root h3 { font-size:1.1rem; font-family:'JetBrains Mono',monospace; color:#b7b2a9; border-left-color:#ff1a2e; text-transform:uppercase; letter-spacing:1.5px; }
@@ -39,7 +40,7 @@
 
 # <span style="color:#f4f1eb;">FABLE OMEGA</span>
 
-### <span style="color:#ff1a2e;">MULTI-TENANT TELEGRAM SCENARIO RUNTIME</span>
+### <span style="color:#ff1a2e;">MULTI-TENANT TELEGRAM SCENARIO RUNTIME</span>  
 ### <span style="color:#b7b2a9;">445 CATALOGUED SCENARIOS · 15 STRATEGIC HUBS · ONE ASYNC CONTROL PLANE</span>
 
 <br>
@@ -120,7 +121,7 @@ A SMALL NUMBER OF PRODUCT HUBS
           │
           ▼
 ONE SHARED ASYNCHRONOUS RUNTIME
-```
+
 
 ---
 
@@ -178,7 +179,7 @@ A successful compatibility test proves that a scenario can pass the shared lifec
                                       │
                                       ▼
 ┌──────────────────────────────────────────────────────────────────────────┐
-│                              SQLITE WAL                                  │
+│                              SQLITE WAL                                 │
 │                                                                          │
 │ Users · sessions · orders · credits · audit events · runtime metadata    │
 └──────────────────────────────────────────────────────────────────────────┘
@@ -238,7 +239,7 @@ The identifiers below are proposed deployment identities. They should not be int
 | `14` | Games and prediction leagues | `@Omni_Game_League_SuperBot` | 16 | Group competitions, rankings, predictions, reward structures |
 | `15` | Agency and bot delivery | `@Omni_Agency_Factory_SuperBot` | 26 | Client provisioning, licences, templates, agency operations |
 
-> <span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#5c5852;">Full technical detail and the mapping matrix live in [MEGA_HUB_ARCHITECTURE_BLUEPRINT.md](./MEGA_HUB_ARCHITECTURE_BLUEPRINT.md).</span>
+> <span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#5c5852;">📖 **جزئیات کامل فنی و ماتریس نگاشت را در [MEGA_HUB_ARCHITECTURE_BLUEPRINT.md](./MEGA_HUB_ARCHITECTURE_BLUEPRINT.md) مطالعه فرمایید.**</span>
 
 ---
 
@@ -518,8 +519,8 @@ The following distinction matters:
 | Catalogue lifecycle latency | Time required for a local simulated scenario lifecycle |
 | Event-loop delay | Scheduling behavior in the tested Python process |
 | Request throughput | Performance of the tested local workload |
-| Process memory | Memory measured under the report's runtime conditions |
-| Disk-I/O reduction | Relative behavior under the benchmark's write pattern |
+| Process memory | Memory measured under the report’s runtime conditions |
+| Disk-I/O reduction | Relative behavior under the benchmark’s write pattern |
 
 External Telegram latency, AI-provider latency, network behavior, database contention, and payment callbacks are not represented by a purely local compatibility benchmark.
 
@@ -770,7 +771,7 @@ Provisioning scripts are operational tools, not an invitation to create hundreds
 
 Before using them:
 
-1. Review Telegram's current terms.
+1. Review Telegram’s current terms.
 2. Confirm BotFather and account limits.
 3. Start with one controlled pilot hub.
 4. Use manual approval for new identities.
@@ -879,7 +880,7 @@ The following boundaries are intentional.
 - Multi-instance database behavior
 - Long-running memory stability
 - Platform terms and legal compliance
-- Every scenario's third-party dependency
+- Every scenario’s third-party dependency
 
 ### Not claimed
 
@@ -889,7 +890,7 @@ The following boundaries are intentional.
 - Guaranteed memory consumption on every host
 - Guaranteed throughput under external API traffic
 - Guaranteed revenue or conversion
-- Complete production readiness for every catalogue entry
+- Complete production readiness for every catalogue entry.
 
 ---
 
@@ -1002,7 +1003,7 @@ Choose one explicit licensing model and keep these locations consistent:
 - `LICENSE`
 - `README.md`
 - `pyproject.toml`
-- package metadata
+- package metadata;
 - deployment documentation
 
 ---
@@ -1029,3 +1030,4 @@ No anti-spam claims. No deployment theatre. No metric without an artifact.
 </div>
 
 </div>
+```
