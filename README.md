@@ -1,437 +1,1036 @@
+
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Special+Elite&family=JetBrains+Mono:wght@400;700&display=swap');
+  .konkred-root { background:#0a0908; color:#f4f1eb; font-family:'Special Elite','American Typewriter','Courier New',monospace; line-height:1.55; }
+  .konkred-root h1,h2,h3,h4 { font-family:'Archivo Black','Arial Black','Helvetica Neue',sans-serif; color:#f4f1eb; letter-spacing:-0.5px; margin-top:2rem; border-left:4px solid #d60019; padding-left:16px; text-transform:none; }
+  .konkred-root h1 { font-size:3.2rem; line-height:0.95; letter-spacing:-2px; margin-bottom:0.2rem; }
+  .konkred-root h2 { font-size:1.6rem; color:#ff1a2e; border-bottom:1.5px solid #262221; padding-bottom:0.4rem; margin-top:2.5rem; }
+  .konkred-root h3 { font-size:1.1rem; font-family:'JetBrains Mono',monospace; color:#b7b2a9; border-left-color:#ff1a2e; text-transform:uppercase; letter-spacing:1.5px; }
+  .konkred-root p { color:#eae7e1; font-family:'Special Elite',monospace; font-size:15px; }
+  .konkred-root a { color:#ff1a2e; text-decoration:none; border-bottom:1px solid #3a201f; }
+  .konkred-root a:hover { color:#f4f1eb; border-bottom-color:#d60019; }
+  .konkred-root code, .konkred-root pre { font-family:'JetBrains Mono',monospace; background:#100e0d; color:#f4f1eb; border:1px solid #262221; padding:2px 6px; font-size:0.9em; border-radius:0; }
+  .konkred-root pre { padding:14px; overflow-x:auto; border-left:3px solid #d60019; }
+  .konkred-root table { width:100%; border-collapse:collapse; font-family:'JetBrains Mono',monospace; font-size:13px; margin:1.2rem 0; }
+  .konkred-root th { background:#171514; color:#f4f1eb; text-align:left; padding:8px 14px; border-bottom:1.5px solid #d60019; font-family:'Archivo Black',sans-serif; text-transform:uppercase; font-size:11px; letter-spacing:1px; }
+  .konkred-root td { padding:8px 14px; border-bottom:1px solid #262221; color:#eae7e1; vertical-align:top; }
+  .konkred-root tr:hover td { background:#0d0c0b; }
+  .konkred-root hr { border:0; height:1px; background:#2a2624; margin:2rem 0; }
+  .konkred-root blockquote { border-left:3px solid #d60019; background:#100e0d; margin:1rem 0; padding:14px 18px; color:#b7b2a9; font-style:italic; }
+  .konkred-root .diamond { display:inline-block; color:#d60019; font-weight:bold; margin-right:6px; }
+  .konkred-root .label-mono { font-family:'JetBrains Mono',monospace; font-size:10px; color:#7a756d; text-transform:uppercase; letter-spacing:1.2px; }
+  .konkred-root img { border:1px solid #262221; background:#0c0b0a; }
+</style>
+
+<div class="konkred-root">
+
+<!--
+  FABLE OMEGA
+  Multi-Tenant Telegram Scenario Runtime
+
+  KONKRED documentation standard:
+  - Claims must be reproducible.
+  - Benchmarks must reference committed reports.
+  - Scenario compatibility is not presented as live deployment.
+  - Proposed BotFather identities are examples, not active bots.
+  - Generated reports must include environment and timestamp metadata.
+-->
+
 <div align="center">
 
-# ⚡ FABLE-OMEGA :: SUPER BOT FLEET & MEGA-HUB KERNEL
-### **ناوگان جامع و ابرران‌تایم فوق‌بهینه تمامی ۴۴۵+ ربات و مایکروسس تلگرام**
+# <span style="color:#f4f1eb;">FABLE OMEGA</span>
 
-[![Fleet Status](https://img.shields.io/badge/Fleet_Status-445%2F445_Online-emerald?style=for-the-badge&logo=telegram)](https://telegram.org)
-[![Tested](https://img.shields.io/badge/Test_Suite-100%25_Passed_(5_Stages)-indigo?style=for-the-badge&logo=pytest)](./tests)
-[![Memory Footprint](https://img.shields.io/badge/RAM_Footprint-%3C_45_MB_(99.8%25_Saved)-cyan?style=for-the-badge&logo=speedtest)](./deploy)
-[![Python](https://img.shields.io/badge/Python-3.11_%7C_AsyncIO-blue?style=for-the-badge&logo=python)](https://python.org)
-[![FastAPI](https://img.shields.io/badge/Control_Plane-FastAPI_%2B_Alpine.js-009688?style=for-the-badge&logo=fastapi)](http://localhost:8000)
-[![License](https://img.shields.io/badge/License-Commercial_Enterprise-purple?style=for-the-badge)](#)
+### <span style="color:#ff1a2e;">MULTI-TENANT TELEGRAM SCENARIO RUNTIME</span>  
+### <span style="color:#b7b2a9;">445 CATALOGUED SCENARIOS · 15 STRATEGIC HUBS · ONE ASYNC CONTROL PLANE</span>
 
-<p align="center">
-  <b>یک پلتفرم یکپارچه، چندمستأجره (Multi-Tenant) و فوق‌سبک برای اجرای تمامی ایده‌ها و کدهای ربات‌های تلگرام در قالب ۱۵ سوپرهاب استراتژیک با صفر مگابایت اتلاف حافظه در حالت Idle.</b>
-</p>
+<br>
 
-[🏛️ سند معماری سوپرهاب‌ها](./MEGA_HUB_ARCHITECTURE_BLUEPRINT.md) • [🌐 کنترل‌پنل تحت وب](#-کنترل‌پنل-و-شبیه‌ساز-زنده-وب) • [📊 گزارش تست ۴۴۵ بات](./tests/FULL_FLEET_TEST_REPORT.json) • [⚡ راهنمای دیپلوی](#-راه‌اندازی-سریع-و-دیپلوی-پروداکشن)
+[![Python](https://img.shields.io/badge/PYTHON-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=090A0D)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/CONTROL_PLANE-FASTAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white&labelColor=090A0D)](https://fastapi.tiangolo.com)
+[![Runtime](https://img.shields.io/badge/RUNTIME-ASYNCIO-19D3C5?style=for-the-badge&labelColor=090A0D)](#runtime-architecture)
+[![Storage](https://img.shields.io/badge/STATE-SQLITE_WAL-8B6BFF?style=for-the-badge&logo=sqlite&logoColor=white&labelColor=090A0D)](#state-and-persistence)
+[![Container](https://img.shields.io/badge/DEPLOYMENT-DOCKER-2496ED?style=for-the-badge&logo=docker&logoColor=white&labelColor=090A0D)](#deployment)
+[![Verification](https://img.shields.io/badge/VERIFICATION-REPORT_LINKED-A9E838?style=for-the-badge&labelColor=090A0D)](./tests/FULL_FLEET_TEST_REPORT.json)
 
----
+<br>
+
+> <span style="font-family:'Special Elite',monospace;">A shared execution kernel for organizing, loading, simulating, and verifying a large catalogue of Telegram bot scenarios without assigning a dedicated process to every scenario.</span>
 
 </div>
 
-## 🌟 خلاصه ویژگی‌های کلیدی (Executive Summary)
+---
 
-* **۴۴۵ ربات مستقل و تست‌شده**: تجمیع کامل ۵ مجموعه بزرگ مخزن شامل کدهای کامل Opus (۹۳ بات)، پلی‌بوک‌های ChatGPT (۱۵۰ بات)، تحلیل‌های Gemini 730 (۵۰ بات)، سناریوهای بومی روبیکا/بله (۵۷ بات) و بیزینس‌های هوش مصنوعی (۹۵ بات).
-* **معماری ۱۵ سوپرهاب (15 Strategic Mega-Hubs)**: تبدیل ۴۴۵ بات پراکنده به ۱۵ ربات جامع تلگرام جهت اجرای کامل روی **فقط ۱ اکانت تلگرام** با **صفر ریسک مسدودیت (Anti-Ban)**.
-* **میکرو-ران‌تایم فوق‌بهینه (Zero-Idle Kernel)**: کل ۴۴۵ بات در **۱ پروسس واحد** با مصرف تنها **۳۸ تا ۵۰ مگابایت رم** (صرفه‌جویی ۹۹.۸٪ در مقایسه با روش سنتی ۲۲ گیگابایتی) اجرا می‌شوند.
-* **سیستم پرداخت جامع (Multi-Channel Billing)**: پشتیبانی پیش‌فرض از تلگرام استارز (Telegram Stars XTR)، درگاه کارت‌به‌کارت بانکی با تایید هوشمند فیش، کریپتو TON و صدور لینک‌های VIP یک‌بار مصرف.
-* **آزمون تراکنشی ۱۰۰٪ واقعی (100% Passed)**: اجرای چرخه ۵ مرحله‌ای تست (شروع، تغییر FSM، پردازش ورودی و کسر اعتبار، استعلام قیمت و تایید پرداخت در دیتابیس) روی تمام ۴۴۵ بات.
+## <span class="diamond">◆</span> 00 / OPERATING DEFINITION
+
+<span style="font-family:'JetBrains Mono',monospace; color:#ff1a2e;">FABLE OMEGA</span> is an <strong>experimental</strong> Telegram automation control plane.
+
+It converts a large collection of bot ideas and scenario definitions into a smaller set of strategic hubs backed by shared infrastructure:
+
+- one asynchronous runtime;
+- one multi-tenant dispatcher;
+- one state and persistence layer;
+- one credit and payment abstraction;
+- one administrative control plane;
+- one catalogue and scenario registry;
+- one verification interface.
+
+The project is designed to test whether hundreds of bot scenarios can share infrastructure without requiring hundreds of permanently running Python processes.
+
+It does <strong>not</strong> claim that 445 independently registered Telegram bots are currently deployed, publicly reachable, or simultaneously connected to BotFather tokens.
+
+The number <code>445</code> refers to catalogue entries and scenario definitions indexed by the repository and exercised through a common compatibility lifecycle.
 
 ---
 
-## 🏛️ ساختار ۱۵ سوپرهاب استراتژیک (The 15 Mega-Hubs)
+## <span class="diamond">◆</span> 01 / THE PROBLEM
 
-به جای ساخت ۴۴۵ آیدی مجزا در BotFather، تمامی ربات‌ها در ۱۵ هاب تخصصی با کیف‌پول و دیتابیس متمرکز تجمیع شده‌اند:
+A conventional bot-per-process model scales poorly when a product catalogue grows.
 
-```
-                                  ┌───────────────────────────────┐
-                                  │   Telegram Webhook Ingress    │
-                                  │   (https://api.yourdomain)    │
-                                  └──────────────┬────────────────┘
-                                                 │
-            ┌────────────────────────────────────┼────────────────────────────────────┐
-            ▼                                    ▼                                    ▼
-┌────────────────────────┐           ┌────────────────────────┐           ┌────────────────────────┐
-│ Hub 01: E-Commerce     │           │ Hub 03: AI Studio      │           │ Hub 06: FinTech/Crypto │
-│ (48 Store & CRM Bots)  │           │ (95 AI Business Bots)  │           │ (28 Currency Sentinels)│
-└───────────┬────────────┘           └───────────┬────────────┘           └───────────┬────────────┘
-            │                                    │                                    │
-            └────────────────────────────────────┼────────────────────────────────────┘
-                                                 ▼
-                                  ┌───────────────────────────────┐
-                                  │   MultiTenantDispatcher       │
-                                  │   + LRUBotPool (Active: 64)   │
-                                  └──────────────┬────────────────┘
-                                                 ▼
-                                  ┌───────────────────────────────┐
-                                  │ SQLite WAL + Micro-Batch I/O  │
-                                  │ (Users, Orders, FSM Sessions) │
-                                  └───────────────────────────────┘
-```
+For every separately deployed bot, the operator may need another:
 
-| شماره | نام سوپرهاب | شناسه پیشنهادی BotFather | تعداد بات | زمینه فعالیت و ارزش پیشنهادی |
-| :---: | :--- | :--- | :---: | :--- |
-| **01** | 🛍️ **فروشگاه‌ساز و سفارش‌گیری** | `@Omni_Commerce_SuperBot` | **۴۸** | فروشگاه فایل و محصول فیزیکی، فاکتورزن خودکار، پیگیری مرسوله |
-| **02** | 🔒 **اشتراک VIP و درگاه کانال‌ها** | `@Omni_Paywall_SuperBot` | **۳۶** | مدیریت کانال‌های پولی، لینک یک‌بار مصرف، اخراج خودکار و افیلیت |
-| **03** | 🧠 **استودیو جامع هوش مصنوعی** | `@Omni_AI_Studio_SuperBot` | **۹۵** | تولید محتوا، کدنویسی هوشمند، ترجمه، بازنویسی و ابزارهای صوتی |
-| **04** | 💻 **سندباکس و آزمون کدنویسی** | `@Omni_Kata_Runner_SuperBot` | **۲۴** | اجرای ایزوله پایتون، سوالات الگوریتمی FAANG، تست خودکار کد |
-| **05** | 🛡️ **یادآور سررسید و لایسنس B2B** | `@Omni_Compliance_SuperBot` | **۲۲** | مانیتورینگ انقضای دامنه، سرور، SSL، بیمه، چک و قراردادهای کاری |
-| **06** | 📈 **فین‌تک، کریپتو و آربیتراژ** | `@Omni_Fintech_SuperBot` | **۲۸** | هشدار لحظه‌ای تتر، مانیتورینگ تراکنش ولت و سیگنال طلا/ارز |
-| **07** | 🎓 **آموزش زبان و جعبه لایتنر** | `@Omni_Edu_Master_SuperBot` | **۲۶** | سیستم Spaced Repetition، کوئیزهای رقابتی و آزمون‌های آنلاین |
-| **08** | 🚀 **لیدجنریشن و وایرال مارکتینگ**| `@Omni_Growth_SuperBot` | **۲۱** | اسکرپر لید B2B، کمپین‌های زیرمجموعه‌گیری و گردونه شانس |
-| **09** | 🏃 **تناسب اندام و ردیاب عادت‌ها** | `@Omni_Health_Habit_SuperBot` | **۱۸** | محاسبه کالری و ماکرو، ردیاب آب، چک‌لیست عادت و برنامه تمرینی |
-| **10** | 🏢 **املاک و مدیریت اجاره‌نشینی** | `@Omni_RealEstate_SuperBot` | **۱۵** | یادآور اجاره، سامانه ثبت خرابی ملک، آرشیو قراردادهای مستاجران |
-| **11** | 📑 **اسناد و خلاصه‌ساز سازمانی** | `@Omni_Doc_Search_SuperBot` | **۱۹** | تبدیل PDF به متن، خلاصه‌سازی اسناد شرکتی و سرچ اسناد |
-| **12** | 🎨 **رسانه و ادیت مدیا** | `@Omni_Media_Studio_SuperBot` | **۱۷** | فشرده‌سازی عکس بدون افت، حذف پس‌زمینه و ساخت واترمارک |
-| **13** | 🇮🇷 **سرویس‌های بومی (روبیکا/بله)** | `@Omni_Local_Iran_SuperBot` | **۳۵** | درگاه کارت‌به‌کارت با تایید فیش، وب‌سرویس پیامک و فرم‌های فروش |
-| **14** | 🏆 **پیش‌بینی و لیگ‌های ورزشی** | `@Omni_Game_League_SuperBot` | **۱۶** | لیگ پیش‌بینی مسابقات بین دوستان، جدول رده‌بندی و جوایز گروهی |
-| **15** | ⚙️ **کارخانه بات و پنل آژانس‌ها** | `@Omni_Agency_Factory_SuperBot` | **۲۶** | تحویل بات با ۱ کلیک به مشتریان شرکتی و لایسنس‌گذاری خودکار |
+- Python process;
+- Telegram token;
+- database connection;
+- payment implementation;
+- state machine;
+- logging pipeline;
+- deployment unit;
+- monitoring surface;
+- retry policy;
+- administrator interface.
 
-> 📖 **جزئیات کامل فنی و ماتریس نگاشت را در [MEGA_HUB_ARCHITECTURE_BLUEPRINT.md](./MEGA_HUB_ARCHITECTURE_BLUEPRINT.md) مطالعه فرمایید.**
+Even when most bots are idle, each service may continue consuming memory and operational attention.
 
----
+The problem is not only infrastructure cost. Fragmentation creates inconsistent behavior:
 
-## ⚡ معماری میکرو-ران‌تایم و بهینه‌سازی منابع (Zero-Idle Kernel)
+- payment rules drift between bots;
+- user balances become difficult to reconcile;
+- bug fixes must be repeated;
+- logs are distributed across deployments;
+- rate limits are implemented differently;
+- state recovery is unpredictable;
+- catalogue-wide changes become expensive.
 
-| شاخص عملکردی | روش سنتی (۴۴۵ پروسس) | ران‌تایم بهینه‌شده Fable-Omega | میزان بهینه‌سازی |
-| :--- | :---: | :---: | :---: |
-| **مصرف حافظه رم (RAM)** | ۲۲,۲۵۰ مگابایت (۲۲.۲۵ گیگ) | **~۳۸ تا ۵۰ مگابایت** | **۹۹.۷۷٪ کاهش رم** 🔥 |
-| **تعداد پروسس‌های OS** | ۴۴۵ پروسس | **۱ پروسس واحد Async** | صفر هدررفت CPU |
-| **نرخ پردازش زیر بار سنگین** | نوسان شدید | **۵۴۶.۳۸ درخواست در ثانیه** | فوق‌العاده پایدار |
-| **تاخیر Event Loop پایتون** | > ۱۰۰ میلی‌ثانیه | **۰.۴۳ میلی‌ثانیه (< 0.5 ms)** | پاسخگویی آنی |
-| **تراکنش‌های دیسک (Disk I/O)** | ۴۴۵ فایل و لاک همزمان | **بافر دسته‌ای + SQLite WAL** | **۹۴.۲٪ کاهش I/O** |
-
----
-
-## 🧪 نتایج راستی‌آزمایی و آزمون ناوگان (Fleet Verification)
-
-تمامی ۴۴۵ ربات در سوئیت تست `tests/test_all_445_bots.py` به صورت ۱۰۰٪ تست و تایید شدند:
+FABLE OMEGA explores a different model:
 
 ```text
-📊 FORMAL FLEET VERIFICATION SUMMARY:
-Total Bots Tested:       445
-Passed (100% 5-Stage):   445 ✅
-Failed:                  0 ❌
-Success Rate:            100.0%
-Total Execution Time:    3.45s (Avg: 7.75ms/bot)
-Artifact Saved:          /home/user/all-them-bots/tests/FULL_FLEET_TEST_REPORT.json
+MANY SCENARIO DEFINITIONS
+          │
+          ▼
+A SMALL NUMBER OF PRODUCT HUBS
+          │
+          ▼
+ONE SHARED ASYNCHRONOUS RUNTIME
 ```
 
 ---
 
-## 🌐 کنترل‌پنل و شبیه‌ساز زنده وب (Live Dashboard & Simulator)
+## <span class="diamond">◆</span> 02 / DESIGN POSITION
 
-سرور شامل یک داشبورد مدرن تحت وب با امکانات زیر است:
-1. **شبیه‌ساز زنده تعاملی چت (Telegram Live Simulator)**: انتخاب هر یک از ۴۴۵ بات و ارسال دستورات، متن، عکس فیش و کلیک روی دکمه‌های شیشه‌ای.
-2. **داشبورد تله‌متری زنده منابع (Live Resource Telemetry HUD)**: مانیتورینگ ثانیه‌ای رم، وضعیت کش LRU و دکمه اختصاصی پاکسازی حافظه (`🧹 Purge LRU & GC`).
-3. **کاتالوگ تعاملی با فیلتر منابع**: فیلتر بر اساس Opus ،ChatGPT ،Gemini ،Rubika و AI Businesses.
-4. **مدیریت سفارشات و تایید فیش‌ها**: تایید ۱ کلیکی سفارشات پرداخت‌شده با کارت یا Stars.
+The project separates four concepts that are often incorrectly treated as the same thing.
 
----
+| Concept | Meaning |
+|---|---|
+| **Scenario** | A catalogue entry describing a bot workflow or product behavior |
+| **Archetype** | A reusable implementation pattern shared by similar scenarios |
+| **Hub** | A strategic Telegram product surface grouping related scenarios |
+| **Runtime** | The shared process responsible for dispatch, state, credits, and execution |
 
-## 📁 ساختار منظم فایل‌ها و پوشه‌های مخزن (Directory Structure)
+A scenario does not require its own process.
 
-```
-.
-├── docs/                                 # اسناد و منابع مرجع اصلی
-│   └── original_blueprints/              # ۲۶ سند و داکیومنت اولیه مخزن (Opus, GPT, Gemini, Rubika, AI)
-├── src/                                  # هسته مهندسی و کدهای اجرایی
-│   ├── bots/                             # پیاده‌سازی ربات‌های اختصاصی و موتور آرکتایپ‌های پویا
-│   │   ├── bot_01_commerce.py            # ربات فروشگاهی و سفارش‌گیر
-│   │   ├── bot_02_vip_paywall.py         # ربات حق اشتراک و کانال VIP
-│   │   ├── bot_03_ai_gateway.py          # استودیو و درگاه ابزارهای هوش مصنوعی
-│   │   ├── bot_04_kata_runner.py         # سندباکس اجرای کد و چالش الگوریتمی
-│   │   ├── bot_05_license_reminder.py    # سامانه سررسید انقضا و مدیریت لایسنس
-│   │   └── dynamic_bot.py                # موتور اجرای پویای ۴۴۰+ ربات دیگر
-│   ├── core/                             # هسته مرکزی و زیرساخت فریم‌ورک
-│   │   ├── config.py                     # پیکربندی، نرخ ارزها و متغیرهای محیطی
-│   │   ├── database.py                   # دیتابیس ناهمگام SQLite با موتور بهینه WAL
-│   │   ├── dispatcher.py                 # دیسپچر مرکزی ناوگان و مسیریاب رویدادها
-│   │   ├── fsm.py                        # ماشین وضعیت نامحدود و امن (Async FSM)
-│   │   ├── hub_router.py                 # مسیریاب و دسته‌بند ۱۵ سوپرهاب استراتژیک
-│   │   ├── monetization.py               # موتور پرداخت (Stars, Card-to-Card, TON)
-│   │   ├── omni_catalog.py               # موتور تجمیع و ایندکس ۴۴۵ بات از فایل‌های md
-│   │   ├── rate_limiter.py               # محدودکننده نرخ لایه ۷ (Token Bucket)
-│   │   └── resource_optimizer.py         # استخر حافظه LRU، بافر نگارش و مانیتورینگ RAM
-│   └── web/                              # کنترل‌پنل تحت وب و APIهای شبیه‌ساز
-│       ├── app.py                        # سرور FastAPI
-│       └── templates/dashboard.html      # داشبورد فرانت‌اند با Alpine.js و Tailwind CSS
-├── deploy/                               # فایل‌های دیپلوی پروداکشن
-│   ├── Dockerfile.slim                   # ایمیج کانتینر فوق‌سبک با رم زیر ۴۵ مگابایت
-│   ├── docker-compose.yml                # ارکستراسیون با محدودیت منابع
-│   ├── run_optimized.sh                  # اسکریپت اجرای بهینه روی لینوکس
-│   ├── provision_botfather.py            # ابزار اتوماسیون امن ساخت بات با گاردریل ضداسپم
-│   ├── batch_set_webhook.py              # اسکریپت ثبت دسته‌ای وب‌هوک‌ها در چند ثانیه
-│   ├── nginx/all-them-bots.conf          # کانفیگ پروکسی معکوس و ترمینیشن SSL
-│   └── systemd/all-them-bots.service     # سرویس سیستمی لینوکس با MemoryMax=150M
-├── tests/                                # سوئیت تست‌ها و گزارشات بنچمارک
-│   ├── test_all_445_bots.py              # آزمون تراکنشی ۵ مرحله‌ای تمامی ۴۴۵ بات
-│   ├── test_low_resource_runtime.py      # بنچمارک همزمانی و لود تست ۱۰۰۰ درخواست
-│   ├── FULL_FLEET_TEST_REPORT.json       # خروجی مستند تست تک‌تک بات‌ها
-│   └── LOW_RESOURCE_BENCHMARK_REPORT.json# خروجی بنچمارک مصرف منابع و تاخیر
-├── MEGA_HUB_ARCHITECTURE_BLUEPRINT.md    # مستند جامع معماری سوپرهاب‌ها
-├── requirements.txt                      # پیش‌نیازهای پایتون
-└── run.py                                # نقطه ورود اصلی راه‌اندازی سرور
-```
+A hub does not imply that every contained scenario is production-complete.
+
+A successful compatibility test proves that a scenario can pass the shared lifecycle contract. It does not prove availability of every external API, payment provider, Telegram identity, or third-party integration.
 
 ---
 
-## 🚀 راه‌اندازی سریع و دیپلوی پروداکشن (Quickstart & Deployment)
+## <span class="diamond">◆</span> 03 / SYSTEM ARCHITECTURE
 
-### ۱. اجرای محلی در ۱ دقیقه:
+```text
+┌──────────────────────────────────────────────────────────────────────────┐
+│                         TELEGRAM / WEB INGRESS                           │
+│                                                                          │
+│  Telegram updates · Dashboard simulator · Administrative API requests    │
+└─────────────────────────────────────┬────────────────────────────────────┘
+                                      │
+                                      ▼
+┌──────────────────────────────────────────────────────────────────────────┐
+│                         MULTI-TENANT DISPATCHER                          │
+│                                                                          │
+│  Tenant resolution · Hub selection · Scenario lookup · Rate admission    │
+└──────────────┬──────────────────────┬───────────────────────┬────────────┘
+               │                      │                       │
+               ▼                      ▼                       ▼
+┌─────────────────────┐  ┌─────────────────────┐  ┌──────────────────────┐
+│ SCENARIO REGISTRY   │  │ SESSION / FSM       │  │ CREDIT / PAYMENT     │
+│                     │  │                     │  │                      │
+│ 445 catalogue items │  │ User state          │  │ Balance operations   │
+│ Archetype mapping   │  │ Workflow position   │  │ Order state          │
+│ Hub assignment      │  │ Expiration policy   │  │ Payment abstraction  │
+└──────────┬──────────┘  └──────────┬──────────┘  └──────────┬───────────┘
+           │                        │                        │
+           └────────────────────────┼────────────────────────┘
+                                    ▼
+┌──────────────────────────────────────────────────────────────────────────┐
+│                        ASYNCHRONOUS EXECUTION KERNEL                     │
+│                                                                          │
+│ Lazy scenario activation · LRU pool · bounded concurrency · lifecycle    │
+└─────────────────────────────────────┬────────────────────────────────────┘
+                                      │
+                                      ▼
+┌──────────────────────────────────────────────────────────────────────────┐
+│                              SQLITE WAL                                 │
+│                                                                          │
+│ Users · sessions · orders · credits · audit events · runtime metadata    │
+└──────────────────────────────────────────────────────────────────────────┘
+```
+
+### Request lifecycle
+
+```text
+01  RECEIVE
+    Telegram update or simulator request enters the control plane.
+
+02  RESOLVE
+    Dispatcher identifies tenant, hub, scenario, user, and active session.
+
+03  ADMIT
+    Rate limiter and access rules decide whether execution may continue.
+
+04  LOAD
+    Runtime resolves the scenario implementation or reusable archetype.
+
+05  EXECUTE
+    Scenario reads state, processes input, and produces a normalized result.
+
+06  ACCOUNT
+    Credit or payment state is evaluated where the scenario requires it.
+
+07  PERSIST
+    Updated FSM, order, credit, and audit state are written to SQLite.
+
+08  RESPOND
+    A normalized response is returned to Telegram or the web simulator.
+```
+
+---
+
+## <span class="diamond">◆</span> 04 / STRATEGIC HUB MODEL
+
+The catalogue is organized into 15 product hubs.
+
+The identifiers below are proposed deployment identities. They should not be interpreted as active or reserved BotFather usernames.
+
+| ID | Strategic hub | Proposed identity | Catalogue count | Primary scope |
+|:---:|---|---|---:|---|
+| `01` | Commerce and order processing | `@Omni_Commerce_SuperBot` | 48 | Digital products, physical orders, invoices, shipment status |
+| `02` | VIP subscription and access | `@Omni_Paywall_SuperBot` | 36 | Paid channels, temporary links, affiliate access |
+| `03` | AI production studio | `@Omni_AI_Studio_SuperBot` | 95 | Writing, translation, rewriting, coding, media assistance |
+| `04` | Coding sandbox and exercises | `@Omni_Kata_Runner_SuperBot` | 24 | Programming challenges, evaluation, isolated execution concepts |
+| `05` | Compliance and expiry tracking | `@Omni_Compliance_SuperBot` | 22 | Domains, SSL, contracts, licences, insurance, due dates |
+| `06` | Finance and cryptocurrency | `@Omni_Fintech_SuperBot` | 28 | Price alerts, portfolio scenarios, currency monitoring |
+| `07` | Education and spaced repetition | `@Omni_Edu_Master_SuperBot` | 26 | Language learning, flashcards, quizzes, examination workflows |
+| `08` | Growth and lead generation | `@Omni_Growth_SuperBot` | 21 | Campaigns, referrals, lead organization, promotional tools |
+| `09` | Health and habit tracking | `@Omni_Health_Habit_SuperBot` | 18 | Habit lists, water tracking, calorie and routine scenarios |
+| `10` | Property and rental operations | `@Omni_RealEstate_SuperBot` | 15 | Rent reminders, maintenance records, document organization |
+| `11` | Document intelligence | `@Omni_Doc_Search_SuperBot` | 19 | Extraction, summarization, document lookup, knowledge workflows |
+| `12` | Media utilities | `@Omni_Media_Studio_SuperBot` | 17 | Compression, watermarking, conversion, media processing concepts |
+| `13` | Iranian local services | `@Omni_Local_Iran_SuperBot` | 35 | Local messaging, payment-review, SMS and form workflows |
+| `14` | Games and prediction leagues | `@Omni_Game_League_SuperBot` | 16 | Group competitions, rankings, predictions, reward structures |
+| `15` | Agency and bot delivery | `@Omni_Agency_Factory_SuperBot` | 26 | Client provisioning, licences, templates, agency operations |
+
+> <span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#5c5852;">📖 **جزئیات کامل فنی و ماتریس نگاشت را در [MEGA_HUB_ARCHITECTURE_BLUEPRINT.md](./MEGA_HUB_ARCHITECTURE_BLUEPRINT.md) مطالعه فرمایید.**</span>
+
+---
+
+## <span class="diamond">◆</span> 05 / RUNTIME ARCHITECTURE
+
+### Shared AsyncIO kernel
+
+The execution layer uses one asynchronous process rather than assigning a permanent process to every catalogue entry.
+
+The intended benefits are:
+
+- lower idle memory;
+- centralized observability;
+- shared database connections;
+- reusable payment logic;
+- consistent rate limiting;
+- simpler deployment;
+- faster catalogue-wide fixes.
+
+### Lazy scenario activation
+
+Scenario implementations are activated when requested rather than permanently initialized.
+
+```text
+REQUEST
+   │
+   ▼
+REGISTRY LOOKUP
+   │
+   ├── Active instance exists ──► reuse
+   │
+   └── Not active ──────────────► load archetype
+                                      │
+                                      ▼
+                                  initialize
+                                      │
+                                      ▼
+                                  LRU pool
+```
+
+### LRU runtime pool
+
+The runtime can retain frequently used scenario objects while allowing inactive entries to leave the active pool.
+
+This controls memory growth without removing catalogue metadata.
+
+### Bounded concurrency
+
+Concurrent execution must remain bounded. A shared runtime should not create an unlimited task for every incoming event.
+
+The architecture provides a place for:
+
+- concurrency semaphores;
+- per-tenant limits;
+- per-user rate limits;
+- hub-specific admission rules;
+- timeout enforcement;
+- backpressure.
+
+### Micro-batched persistence
+
+Where safe, low-priority persistence operations may be grouped to reduce disk churn.
+
+Financial state, credit deductions, and order transitions must retain transactional guarantees and should not rely on unsafe delayed writes.
+
+---
+
+## <span class="diamond">◆</span> 06 / STATE AND PERSISTENCE
+
+SQLite is configured for WAL-oriented operation to support the local and low-resource deployment model.
+
+The persistence layer is responsible for:
+
+- user records;
+- tenant association;
+- FSM sessions;
+- active scenario state;
+- balances and credits;
+- orders;
+- payment-review state;
+- runtime events;
+- audit records.
+
+### Why SQLite
+
+SQLite is appropriate for:
+
+- local development;
+- demonstration;
+- single-host pilots;
+- low-cost deployments;
+- deterministic test environments.
+
+It is not presented as a universal replacement for PostgreSQL or another network database.
+
+A multi-instance deployment requires additional coordination, a shared database, or an explicit single-writer architecture.
+
+### State contract
+
+Each scenario interacts with normalized state rather than owning an independent database format.
+
+```python
+{
+    "tenant_id": "hub-03",
+    "scenario_id": "ai-writing-001",
+    "user_id": "telegram-user-id",
+    "fsm_state": "awaiting_input",
+    "credits": 120,
+    "metadata": {},
+    "updated_at": "ISO-8601 timestamp"
+}
+```
+
+---
+
+## <span class="diamond">◆</span> 07 / CREDIT AND PAYMENT ABSTRACTION
+
+The repository includes a shared monetization layer intended to prevent every scenario from reimplementing billing.
+
+Supported or modelled channels may include:
+
+- Telegram Stars;
+- manually reviewed card-to-card payments;
+- TON-oriented payment flows;
+- VIP or temporary access links;
+- internal credits.
+
+These channels do not all provide the same level of automation or verification.
+
+### Financial safety requirements
+
+Before a real deployment:
+
+- provider callbacks must be authenticated;
+- payment identifiers must be unique;
+- replayed confirmations must not grant credit twice;
+- balance updates must be transactional;
+- manual receipt approval must be recorded;
+- administrator actions must be auditable;
+- secrets must remain outside the repository;
+- currency conversion rules must be explicit.
+
+The shared layer provides an architectural foundation. Production use still requires provider-specific compliance, implementation, and review.
+
+---
+
+## <span class="diamond">◆</span> 08 / CONTROL PLANE AND SIMULATOR
+
+The FastAPI control plane exposes an operator-facing surface for inspecting the catalogue and exercising scenario behavior.
+
+### Dashboard capabilities
+
+- Browse the scenario catalogue
+- Filter entries by source or category
+- Select a scenario
+- Create a simulated user session
+- Send text input
+- Exercise callback-style actions
+- Inspect normalized responses
+- Review state changes
+- Inspect runtime and memory telemetry
+- View active scenario objects
+- Trigger controlled cache cleanup
+- Review orders and manual payment states
+
+### Why a simulator exists
+
+The simulator allows the shared runtime to be tested without registering hundreds of Telegram identities.
+
+It is useful for:
+
+- compatibility testing;
+- product review;
+- handler development;
+- state inspection;
+- demonstrations;
+- regression checks.
+
+A simulator is not proof of live Telegram deployment.
+
+---
+
+## <span class="diamond">◆</span> 09 / VERIFICATION
+
+The repository includes a catalogue-wide compatibility suite.
+
+The main report is stored at:
+
+```text
+tests/FULL_FLEET_TEST_REPORT.json
+```
+
+The suite exercises scenario definitions through a shared lifecycle.
+
+### Compatibility lifecycle
+
+```text
+STAGE 01 — INITIALIZE
+Resolve the scenario and create a compatible execution context.
+
+STAGE 02 — STATE
+Create, read, or update the scenario FSM state.
+
+STAGE 03 — INPUT
+Pass normalized user input through the scenario interface.
+
+STAGE 04 — CREDIT
+Exercise the credit-related branch where applicable.
+
+STAGE 05 — ORDER / PAYMENT STATE
+Validate the scenario's normalized commercial state transition.
+```
+
+### What a passing result means
+
+A passing result indicates that the scenario definition:
+
+- can be indexed;
+- can be resolved;
+- conforms to the runtime interface;
+- can participate in the shared lifecycle;
+- does not fail the tested state transitions.
+
+### What it does not mean
+
+A passing compatibility result does not prove that:
+
+- a public Telegram bot is online;
+- a BotFather token exists;
+- every external provider is available;
+- every payment channel is connected;
+- every scenario is production-complete;
+- live concurrent user behavior has been validated;
+- third-party terms permit every proposed workflow.
+
+### Running the verification suite
+
 ```bash
-# ۱. کلون و ورود به پوشه
-git clone https://github.com/reARbitRA/all-them-bots.git
-cd all-them-bots
-
-# ۲. نصب وابستگی‌ها
-pip install -r requirements.txt
-
-# ۳. اجرای سرور بهینه‌شده
-./deploy/run_optimized.sh
-```
-داشبورد روی آدرس `http://localhost:8000` در دسترس خواهد بود.
-
-### ۲. اجرای تست‌های کامل ناوگان:
-```bash
-# تست جامع ۵ مرحله‌ای روی تمامی ۴۴۵ بات
 python3 tests/test_all_445_bots.py
+```
 
-# بنچمارک لود و مصرف منابع (۱۰۰۰ ریکوئست همزمان)
+### Running the resource benchmark
+
+```bash
 python3 tests/test_low_resource_runtime.py
 ```
 
-### ۳. دیپلوی با داکر (Docker Compose):
-```bash
-docker-compose -f deploy/docker-compose.yml up -d
-```
+Generated reports should be treated as environment-specific artifacts.
+
+Benchmark claims must be accompanied by:
+
+- timestamp;
+- Python version;
+- operating system;
+- processor information;
+- available memory;
+- test parameters;
+- concurrency level;
+- commit hash.
 
 ---
 
-<div align="center">
-  <sub>طراحی و بهینه‌سازی‌شده برای بالاترین بازدهی، کمترین مصرف منابع و حداکثر نرخ تبدیل مالی در بستر تلگرام.</sub>
-</div>
-# Zero-Touch Autonomous Freelance Pipeline — compliant implementation
+## <span class="diamond">◆</span> 10 / PERFORMANCE REPORTING
 
-> **Important boundary:** this project deliberately does **not** bypass Cloudflare, CAPTCHAs, rate limits, platform rules, or access controls. It uses Playwright only to attach to a Chrome session that the account holder has already opened and authenticated. If a challenge is detected, the worker stops that platform and records an error; the operator must resolve it manually or use the platform's sanctioned API.
-
-An asynchronous Python 3.11+ microservice that can, for explicitly authorized freelance accounts and platforms:
-
-1. attach to an existing Chrome browser through CDP at `http://localhost:9222`;
-2. discover job detail pages through modular platform DOM strategies;
-3. use a fast OpenAI-compatible LLM endpoint to conservatively qualify bounded software jobs and draft a short Persian proposal;
-4. submit the proposal through the visible, authenticated platform UI only when the operator enables automation;
-5. detect awarded jobs, submit their scope to a **user-operated** coding-execution gateway, validate returned source files and a Persian `README.md`;
-6. create or update a GitHub repository using **PyGithub** and atomically commit all generated source files; and
-7. send this exact client message through the platform chat UI:
-
-   ```text
-   پروژه انجام شد. سورس کد و راهنمای اجرا در این لینک گیت‌هاب قرار دارد: [GITHUB_URL]
-   ```
-
-The project starts in discovery-only mode. Side effects require an intentional configuration change: `AUTOMATION_ENABLED=true`; bidding further requires `AUTO_SUBMIT_BIDS=true`.
-
----
-
-## Brief research: the late-2026 design choices
-
-### DOM abstraction for divergent marketplace UIs
-
-The durable pattern is a **ports-and-adapters / Strategy** boundary, not a universal CSS selector. `FreelancePlatform` is the port; each marketplace owns a small adapter containing an ordered, declarative `PlatformSelectors` manifest plus URL ownership and semantic methods (`discover_jobs`, `submit_bid`, `is_awarded`, `send_delivery`). The orchestration layer never references a site selector.
-
-This approach works with normal UI evolution because it:
-
-- prefers stable accessibility roles, `data-testid`, names, and labels before visual classes;
-- keeps multiple fallbacks per semantic field, rather than scattering selectors through workflow code;
-- isolates a changed DOM to one adapter and makes it testable from saved, permissioned fixtures;
-- models *capabilities* (find jobs, bid, award state, message client), not a shared page shape;
-- persists a normalized `FreelanceJob` and idempotent state transitions, so a selector failure cannot create duplicate bids or deliveries; and
-- uses visible, authorized UI interaction only. Official platform APIs/webhooks are preferable where a platform offers them.
-
-Playwright documents `chromium.connect_over_cdp()` for attaching to an existing Chromium instance and explicitly notes that CDP attachment has lower fidelity than its native protocol; this is why the browser module is thin and adapters avoid clever low-level browser manipulation. [Playwright CDP API](https://playwright.dev/python/docs/api/class-browsertype)
-
-### Execution and GitHub
-
-As of **2026-09-27**, Arena.ai's official Agent Mode help describes interactive workspace operation, downloadable artifacts, and repository-connected GitHub delivery; it does not document a public API that accepts a job and returns generated files. The code therefore refuses to invent an `arena.ai` endpoint. It implements a real, versioned HTTP client for a user-operated execution gateway contract in [`docs/executor-contract.md`](docs/executor-contract.md); that gateway can be backed by an approved Arena workflow, another authorized coding agent, or internal infrastructure. [Arena Agent Mode help](https://help.arena.ai/articles/5432423882-how-to-use-agent-mode)
-
-Publishing uses PyGithub's Git database API to make a single commit rather than a commit for each file. A GitHub token needs repository **Contents: write** access; writing workflow files would additionally need **Workflows: write**. [GitHub repository contents permissions](https://docs.github.com/en/rest/repos/contents)
-
----
-
-## Architecture
+The repository contains a low-resource benchmark report:
 
 ```text
-Chrome (account-holder-owned, logged in)          LLM provider              Execution gateway
-         │ CDP :9222                                  │                            │
-         ▼                                            ▼                            ▼
-┌────────────────┐      ┌────────────────┐      ┌─────────────┐          ┌─────────────────┐
-│ CdpBrowser     │─────▶│ Platform        │─────▶│ FastLLM     │          │ ArenaExecution  │
-│ challenge stop │      │ Strategies      │      │ classifier  │          │ Gateway client  │
-└────────────────┘      │ Ponisha        │      └─────────────┘          └────────┬────────┘
-                        │ Karlancer      │                                         │ validated files
-                        │ ParsCoders     │                                         ▼
-                        └──────┬─────────┘     ┌────────────────┐          ┌─────────────────┐
-                               │               │ SQLite JobStore│◀────────▶│ Artifact guard  │
-                               └──────────────▶│ CAS state flow │          │ Persian README  │
-                                                └───────┬────────┘          └────────┬────────┘
-                                                        │                            │
-                                                        ▼                            ▼
-                                                 ┌──────────────┐           ┌──────────────────┐
-                                                 │ GitHub        │──────────▶│ Platform chat    │
-                                                 │ PyGithub      │ repo URL  │ exact delivery   │
-                                                 └──────────────┘           └──────────────────┘
+tests/LOW_RESOURCE_BENCHMARK_REPORT.json
 ```
 
-### State machine and crash safety
+Performance values in that report describe a particular test environment. They are not universal guarantees.
 
-`SQLite` stores every job under `(platform, external_id)`. The worker moves it using compare-and-swap transitions:
+The following distinction matters:
 
-```text
-DISCOVERED → INELIGIBLE
-           → CLASSIFICATION_FAILED (operator retry)
-           → READY_FOR_REVIEW → BIDDING → BID_SUBMITTED → AWARDED
-AWARDED → EXECUTING → ARTIFACTS_READY → PUBLISHING → CODE_PUBLISHED → DELIVERING → DELIVERED
-          │             │                  │                  │
-          └ failed      └ failed            └ failed           └ failed
-```
+| Measurement | Interpretation |
+|---|---|
+| Catalogue lifecycle latency | Time required for a local simulated scenario lifecycle |
+| Event-loop delay | Scheduling behavior in the tested Python process |
+| Request throughput | Performance of the tested local workload |
+| Process memory | Memory measured under the report’s runtime conditions |
+| Disk-I/O reduction | Relative behavior under the benchmark’s write pattern |
 
-A second cycle or API trigger cannot claim the same action after the first worker has changed its status. Failed work is never silently retried; the authenticated retry endpoint moves it back to its immediately safe predecessor.
+External Telegram latency, AI-provider latency, network behavior, database contention, and payment callbacks are not represented by a purely local compatibility benchmark.
 
 ---
 
-## Repository layout
+## <span class="diamond">◆</span> 11 / REPOSITORY STRUCTURE
 
 ```text
 .
-├── .env.example                         # no secrets; all runtime settings documented
-├── pyproject.toml                       # Python 3.11+ package and locked dependency ranges
+├── README.md
+├── MEGA_HUB_ARCHITECTURE_BLUEPRINT.md
+├── pyproject.toml
+├── requirements.txt
+├── run.py
+├── .env.example
+│
+├── src/
+│   ├── bots/
+│   │   ├── bot_01_commerce.py
+│   │   ├── bot_02_vip_paywall.py
+│   │   ├── bot_03_ai_gateway.py
+│   │   ├── bot_04_kata_runner.py
+│   │   ├── bot_05_license_reminder.py
+│   │   └── dynamic_bot.py
+│   │
+│   ├── core/
+│   │   ├── config.py
+│   │   ├── database.py
+│   │   ├── dispatcher.py
+│   │   ├── fsm.py
+│   │   ├── hub_router.py
+│   │   ├── monetization.py
+│   │   ├── omni_catalog.py
+│   │   ├── rate_limiter.py
+│   │   └── resource_optimizer.py
+│   │
+│   └── web/
+│       ├── app.py
+│       └── templates/
+│           └── dashboard.html
+│
 ├── docs/
-│   └── executor-contract.md             # actual HTTP contract for coding-task execution
-├── src/autofreelance/
-│   ├── api.py                           # optional protected FastAPI operations API
-│   ├── artifacts.py                     # path, size, ZIP and Persian README validation
-│   ├── browser.py                       # CDP attach and hard-stop challenge detection
-│   ├── config.py                        # Pydantic environment settings
-│   ├── pipeline.py                      # idempotent async orchestration/state machine
-│   ├── runtime.py                       # composition root
-│   ├── store.py                         # SQLite state and audit log
-│   ├── clients/
-│   │   ├── llm.py                       # strict JSON LLM qualification/proposal client
-│   │   ├── executor.py                  # execution gateway submit/poll/artifact client
-│   │   └── github.py                    # PyGithub atomic Git-tree publisher
-│   └── platforms/
-│       ├── base.py                      # FreelancePlatform Strategy interface
-│       ├── ponisha.py                   # Ponisha selector adapter
-│       ├── karlancer.py                 # Karlancer selector adapter
-│       ├── parscoders.py                # ParsCoders selector adapter
-│       └── registry.py                  # adapter registration for any new marketplace
-└── tests/                               # unit/contract tests
+│   └── original_blueprints/
+│
+├── deploy/
+│   ├── Dockerfile.slim
+│   ├── docker-compose.yml
+│   ├── run_optimized.sh
+│   ├── provision_botfather.py
+│   ├── batch_set_webhook.py
+│   ├── nginx/
+│   │   └── all-them-bots.conf
+│   └── systemd/
+│       └── all-them-bots.service
+│
+└── tests/
+    ├── test_all_445_bots.py
+    ├── test_low_resource_runtime.py
+    ├── test_artifacts.py
+    ├── test_bots_live.py
+    ├── test_executor.py
+    ├── test_llm.py
+    ├── test_store.py
+    ├── FULL_FLEET_TEST_REPORT.json
+    └── LOW_RESOURCE_BENCHMARK_REPORT.json
 ```
 
 ---
 
-## Setup
+## <span class="diamond">◆</span> 12 / QUICK START
 
-### 1. Install
+### Requirements
+
+- Python 3.11 or newer
+- Linux, macOS, or a compatible container environment
+- Git
+- Optional: Docker and Docker Compose
+
+### Clone
+
+```bash
+git clone https://github.com/reARbitRA/all-them-bots.git
+cd all-them-bots
+```
+
+### Create an isolated environment
 
 ```bash
 python3 -m venv .venv
 . .venv/bin/activate
 python -m pip install --upgrade pip
+```
+
+### Install dependencies
+
+Use the dependency path supported by the repository:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+For development dependencies defined in `pyproject.toml`:
+
+```bash
 python -m pip install -e '.[dev]'
+```
+
+### Configure the environment
+
+```bash
 cp .env.example .env
 ```
 
-### 2. Prepare the approved Chrome session
+Do not commit `.env`.
 
-Use a dedicated Chrome profile under the account holder's control. The debugging port is powerful local access; never bind or expose it to a network.
+Review every default before enabling:
+
+- Telegram integrations
+- payment behavior
+- administrator access
+- public network binding
+- webhook registration
+- external AI providers
+
+### Start the application
 
 ```bash
-google-chrome \
-  --remote-debugging-address=127.0.0.1 \
-  --remote-debugging-port=9222 \
-  --user-data-dir="$HOME/.config/autofreelance-chrome"
+python run.py
 ```
 
-Sign in to every permitted marketplace yourself. Confirm that the platform allows the intended automation. Complete any legitimate login or challenge manually. Do **not** expose `9222` through a tunnel, reverse proxy, container port, or public interface.
-
-### 3. Configure `.env`
-
-Set the following only from your own secret manager/environment:
-
-| Setting | Required for | Notes |
-|---|---|---|
-| `LLM_API_URL`, `LLM_API_KEY`, `LLM_MODEL` | classification and proposal drafting | OpenAI-compatible chat-completions API with JSON output |
-| `ARENA_EXECUTOR_URL`, `ARENA_EXECUTOR_TOKEN` | code generation | Gateway described below, not an invented vendor API |
-| `GITHUB_TOKEN`, `GITHUB_OWNER` | publishing | Fine-grained PAT with required repository permissions |
-| `GITHUB_PRIVATE=false` | a link the client can read | Keep private only if you add the client as collaborator by an authorized process |
-| `AUTOMATION_ENABLED=true` | execution, publish, client delivery | Explicit side-effect switch |
-| `AUTO_SUBMIT_BIDS=true` | submitting bids | Explicit, separate bid switch |
-| `SERVICE_API_KEY` | FastAPI control plane | Optional bearer token; strongly recommended in a deployed service |
-
-**Dry run:** leave both automation flags as `false`. The service attaches to Chrome, reads work, stores it, and (if LLM credentials are configured) classifies it. It will not submit, generate code, publish, or message anyone.
-
-### 4. Run
+Or use the optimized launcher:
 
 ```bash
-# One bounded cycle, useful for checking selectors and configuration.
-autofreelance --once
-
-# Persistent polling worker (default five-minute interval).
-autofreelance
-
-# Optional operator API; it binds all interfaces by default, so use a firewall/reverse proxy in deployment.
-autofreelance --serve --host 127.0.0.1 --port 8000
-curl -H "Authorization: Bearer $SERVICE_API_KEY" http://127.0.0.1:8000/v1/jobs
+./deploy/run_optimized.sh
 ```
 
-Run checks:
+The local control plane is expected to become available at:
+
+```text
+http://localhost:8000
+```
+
+---
+
+## <span class="diamond">◆</span> 13 / TESTING
+
+Run the complete test suite:
 
 ```bash
-ruff check src tests
 pytest -q
 ```
 
----
+Run the catalogue compatibility suite directly:
 
-## Add a new marketplace adapter
-
-Implement a class with the Strategy contract, register it, and add its name to `ENABLED_PLATFORMS`. This keeps browser mechanics and workflow logic unchanged.
-
-```python
-# src/autofreelance/platforms/example.py
-from urllib.parse import urlparse
-from .base import FreelancePlatform, PlatformSelectors
-
-class ExamplePlatform(FreelancePlatform):
-    name = "example"
-    base_url = "https://example.invalid"
-    selectors = PlatformSelectors(
-        listing_url="https://example.invalid/jobs",
-        job_card=("[data-testid='job-card']",),
-        job_link=("a[data-testid='job-link']",),
-        title=("h1[data-testid='job-title']",),
-        description=("[data-testid='job-description']",),
-        budget=("[data-testid='job-budget']",),
-        status=("[data-testid='job-status']",),
-        bid_message=("textarea[name='proposal']",),
-        bid_submit=("button[type='submit']",),
-        bid_success=("[role='alert'][data-kind='success']",),
-        chat_button=("a[data-testid='project-chat']",),
-        chat_message=("textarea[name='message']",),
-        chat_send=("button[type='submit']",),
-        awarded_markers=("awarded",),
-    )
-
-    def accepts_url(self, url: str) -> bool:
-        parsed = urlparse(url)
-        return parsed.hostname == "example.invalid" and "/jobs/" in parsed.path
+```bash
+python3 tests/test_all_445_bots.py
 ```
 
-Then call `register_platform("example", ExamplePlatform)` before `build_runtime`, or add it to the registry mapping. Verify selectors against a platform account you own, use saved sanitized HTML fixtures in tests, and retain only selectors corresponding to permitted UI automation.
+Run the low-resource benchmark:
+
+```bash
+python3 tests/test_low_resource_runtime.py
+```
+
+Run static lint checks when development dependencies are installed:
+
+```bash
+ruff check src tests
+```
+
+A production CI pipeline should run:
+
+```text
+01  dependency installation
+02  static analysis
+03  unit tests
+04  catalogue compatibility
+05  report-schema validation
+06  container build
+07  local health check
+08  artifact retention
+```
 
 ---
 
-## Operational and security controls
+## <span class="diamond">◆</span> 14 / DEPLOYMENT
 
-- **No anti-bot bypass:** browser challenge detection fails closed. There is no stealth launch, CAPTCHA solver, proxy rotation, fingerprint spoofing, or Cloudflare workaround.
-- **Conservative LLM gate:** unparseable output, ambiguous work, below-threshold confidence, academic cheating, credential abuse, surveillance, or access-control-evasion work is not bid.
-- **Human consent by default:** all side effects are disabled until two explicit environment flags are set.
-- **Idempotency:** SQLite compare-and-swap transitions prevent duplicate bids/deliveries across restarts; gateway calls include `Idempotency-Key`.
-- **Artifact boundary:** rejects traversal, symlinks, duplicate paths, `.git`/`.github`, oversized files/archives, ZIP bombs, and missing Persian execution README files.
-- **Secrets:** secrets are environment-only and excluded by `.gitignore`; they are not logged. Rotate tokens and scope them to a dedicated account/repository owner.
-- **Privacy:** project scopes and generated source are client data. Configure retention, encryption, access control, and a public/private repository policy before enabling delivery.
-- **Selector drift:** test and version adapters. A selector failure becomes a retryable failed state; it must not trigger arbitrary fallback clicks.
+### Docker Compose
 
-See [`docs/executor-contract.md`](docs/executor-contract.md) for the complete execution API request/response contract.
+```bash
+docker compose -f deploy/docker-compose.yml up -d
+```
+
+Inspect logs:
+
+```bash
+docker compose -f deploy/docker-compose.yml logs -f
+```
+
+Stop the stack:
+
+```bash
+docker compose -f deploy/docker-compose.yml down
+```
+
+### Systemd
+
+The repository contains an example service unit:
+
+```text
+deploy/systemd/all-them-bots.service
+```
+
+Treat it as a deployment template. Before installing it, review:
+
+- service user;
+- working directory;
+- environment file;
+- writable paths;
+- memory limits;
+- restart behavior;
+- network permissions.
+
+### Nginx
+
+An example reverse-proxy configuration is available at:
+
+```text
+deploy/nginx/all-them-bots.conf
+```
+
+Production deployment requires:
+
+- a real hostname;
+- TLS certificates;
+- restricted administrative routes;
+- trusted proxy configuration;
+- request-size limits;
+- rate limits;
+- secure headers;
+- log-retention policy.
+
+---
+
+## <span class="diamond">◆</span> 15 / TELEGRAM PROVISIONING
+
+Provisioning scripts are operational tools, not an invitation to create hundreds of Telegram accounts or bypass platform limits.
+
+Before using them:
+
+1. Review Telegram’s current terms.
+2. Confirm BotFather and account limits.
+3. Start with one controlled pilot hub.
+4. Use manual approval for new identities.
+5. Store tokens in a secret manager.
+6. Never commit exported tokens.
+7. Avoid unsolicited messaging.
+8. Apply per-user and per-chat rate limits.
+
+Recommended rollout:
+
+```text
+PHASE 01  Dashboard-only simulation
+PHASE 02  One private Telegram pilot
+PHASE 03  One strategic hub
+PHASE 04  Payment sandbox
+PHASE 05  Limited external users
+PHASE 06  Measured expansion
+```
+
+---
+
+## <span class="diamond">◆</span> 16 / SECURITY MODEL
+
+### Secrets
+
+Secrets must be loaded through environment variables or an external secret manager.
+
+Do not commit:
+
+- Telegram bot tokens;
+- payment credentials;
+- administrator keys;
+- AI-provider keys;
+- webhook secrets;
+- session exports;
+- user data.
+
+### Administrative control plane
+
+Before exposing the dashboard:
+
+- require authentication;
+- separate read and write permissions;
+- restrict payment approval;
+- log administrator actions;
+- disable development routes;
+- configure trusted origins;
+- place the service behind TLS;
+- prevent public access to debug endpoints.
+
+### Rate limiting
+
+Rate limits should exist at multiple levels:
+
+- source IP;
+- Telegram user;
+- Telegram chat;
+- tenant;
+- strategic hub;
+- scenario;
+- external provider.
+
+### Payment integrity
+
+Credit grants must be idempotent.
+
+A repeated payment callback, repeated administrator click, or replayed request must not grant balance more than once.
+
+### Data protection
+
+Production deployment should define:
+
+- retention periods;
+- account deletion;
+- log redaction;
+- backup policy;
+- encryption policy;
+- operator access;
+- incident response;
+- user-consent boundaries.
+
+---
+
+## <span class="diamond">◆</span> 17 / VERIFIED BOUNDARIES
+
+The following boundaries are intentional.
+
+### Verified in the repository
+
+- Catalogue indexing
+- Hub classification
+- Shared lifecycle compatibility
+- Async runtime structure
+- SQLite-oriented persistence
+- FastAPI control-plane implementation
+- Test and benchmark report generation
+- Docker and deployment templates
+
+### Requires deployment-specific verification
+
+- Real Telegram webhook behavior
+- External AI providers
+- Payment-provider callbacks
+- BotFather provisioning
+- High-concurrency public traffic
+- Multi-instance database behavior
+- Long-running memory stability
+- Platform terms and legal compliance
+- Every scenario’s third-party dependency
+
+### Not claimed
+
+- 445 public bots currently online
+- 445 independently deployed production services
+- Zero risk of Telegram restrictions
+- Guaranteed memory consumption on every host
+- Guaranteed throughput under external API traffic
+- Guaranteed revenue or conversion
+- Complete production readiness for every catalogue entry.
+
+---
+
+## <span class="diamond">◆</span> 18 / ROADMAP
+
+### Phase 1 — Repository consistency
+
+- Remove unrelated Autofreelance documentation
+- Align `pyproject.toml` metadata with FABLE OMEGA
+- Add a single canonical application name
+- Add a license file
+- Add report-schema validation
+- Add CI under `.github/workflows`
+
+### Phase 2 — Runtime hardening
+
+- Add bounded worker pools
+- Add structured cancellation
+- Add timeout budgets
+- Add tenant-level quotas
+- Add transactional credit operations
+- Add event audit records
+- Add graceful shutdown tests
+
+### Phase 3 — Telegram pilot
+
+- Deploy one private hub
+- Connect one bot token
+- Verify webhook behavior
+- Measure real idle memory
+- Test recovery after restart
+- Compare simulator and Telegram results
+
+### Phase 4 — Payment sandbox
+
+- Implement one provider completely
+- Add signed callbacks
+- Add replay protection
+- Add reconciliation reports
+- Add refund and dispute states
+
+### Phase 5 — Observability
+
+- Structured JSON logging
+- Request correlation IDs
+- Prometheus-compatible metrics
+- Runtime pool telemetry
+- Database health checks
+- Scenario failure dashboards
+
+---
+
+## <span class="diamond">◆</span> 19 / PROJECT POSITIONING
+
+FABLE OMEGA should be evaluated as:
+
+- a runtime architecture experiment;
+- a large scenario catalogue;
+- a multi-tenant Telegram control plane;
+- a compatibility-testing framework;
+- a low-resource deployment study.
+
+It should not be evaluated as evidence that hundreds of independent public bots are already operating in production.
+
+That distinction protects the technical credibility of the project.
+
+---
+
+## <span class="diamond">◆</span> 20 / CONTRIBUTING
+
+Contributions should preserve the shared scenario contract.
+
+A new scenario should include:
+
+- stable identifier;
+- title and category;
+- strategic hub assignment;
+- source attribution;
+- normalized input contract;
+- normalized output contract;
+- initial FSM state;
+- credit behavior where applicable;
+- lifecycle compatibility coverage;
+- explicit external dependencies.
+
+Suggested workflow:
+
+```bash
+git checkout -b feature/scenario-name
+ruff check src tests
+pytest -q
+python3 tests/test_all_445_bots.py
+git commit -m "Add scenario: scenario-name"
+```
+
+Do not include secrets, production user data, private Telegram exports, or unlicensed source material.
+
+---
+
+## <span class="diamond">◆</span> 21 / LICENSE
+
+A repository-level `LICENSE` file should define the actual terms.
+
+Until a license file is committed, users should not assume that badges or README text grant permission to copy, redistribute, or commercially deploy the source code.
+
+Avoid presenting the project as both MIT and commercially restricted at the same time.
+
+Choose one explicit licensing model and keep these locations consistent:
+
+- `LICENSE`
+- `README.md`
+- `pyproject.toml`
+- package metadata;
+- deployment documentation
+
+---
+
+<div align="center" style="font-family:'Archivo Black',sans-serif; color:#f4f1eb; letter-spacing:-1px; font-size:2rem; border-top:1.5px solid #d60019; padding-top:2rem; margin-top:3rem;">
+
+## <span style="color:#ff1a2e;">FABLE OMEGA</span>
+
+**<span style="color:#b7b2a9;">CATALOGUE THE WORK · SHARE THE RUNTIME · MEASURE THE CLAIMS</span>**
+
+</div>
+
+<div align="center" style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#5c5852; margin-top:10px;">
+
+[Open Architecture Blueprint](./MEGA_HUB_ARCHITECTURE_BLUEPRINT.md) ·
+[Inspect Fleet Report](./tests/FULL_FLEET_TEST_REPORT.json) ·
+[Inspect Benchmark](./tests/LOW_RESOURCE_BENCHMARK_REPORT.json)
+
+<sub>
+Experimental infrastructure for controlled Telegram scenario execution.<br>
+No anti-spam claims. No deployment theatre. No metric without an artifact.
+</sub>
+
+</div>
+
+</div>
+
+
