@@ -4,10 +4,12 @@ Provides transactional state transitions, context isolation, and zero state-expl
 """
 
 from __future__ import annotations
+
+import asyncio
 import json
 import time
-import asyncio
-from typing import Dict, Any, Tuple, Optional
+from typing import Any
+
 from src.core.database import DB
 
 
@@ -16,15 +18,15 @@ class AsyncFSM:
 
     def __init__(self, bot_id: str) -> None:
         self.bot_id = bot_id
-        self._memory_cache: Dict[int, Tuple[str, Dict[str, Any], int]] = {}
-        self._user_locks: Dict[int, asyncio.Lock] = {}
+        self._memory_cache: dict[int, tuple[str, dict[str, Any], int]] = {}
+        self._user_locks: dict[int, asyncio.Lock] = {}
 
     def _get_user_lock(self, user_id: int) -> asyncio.Lock:
         if user_id not in self._user_locks:
             self._user_locks[user_id] = asyncio.Lock()
         return self._user_locks[user_id]
 
-    async def get_state(self, user_id: int) -> Tuple[str, Dict[str, Any], int]:
+    async def get_state(self, user_id: int) -> tuple[str, dict[str, Any], int]:
         """Fetch current state, context data, and version for a user."""
         if user_id in self._memory_cache:
             return self._memory_cache[user_id]
@@ -54,7 +56,7 @@ class AsyncFSM:
         self,
         user_id: int,
         state: str,
-        context_patch: Optional[Dict[str, Any]] = None,
+        context_patch: dict[str, Any] | None = None,
         clear_context: bool = False
     ) -> bool:
         """
@@ -62,7 +64,7 @@ class AsyncFSM:
         Merges context updates or resets context if clear_context is True.
         """
         async with self._get_user_lock(user_id):
-            curr_state, curr_context, curr_ver = await self.get_state(user_id)
+            _curr_state, curr_context, curr_ver = await self.get_state(user_id)
             
             if clear_context:
                 new_context = context_patch or {}

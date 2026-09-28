@@ -1,29 +1,35 @@
 """
 Fable-Omega Web Control Plane & Simulator
-FastAPI web server providing live telemetry, bot management, and real-time interactive chat simulator for 445+ bots.
+FastAPI web server providing live telemetry, bot management, and real-time interactive chat simulator for 445 catalogue scenarios.
 """
 
 from __future__ import annotations
+
+import asyncio
 import time
-import json
-from typing import Dict, Any, List
-from fastapi import FastAPI, Request, Response, HTTPException, status
-from fastapi.responses import HTMLResponse, JSONResponse
-from fastapi.staticfiles import StaticFiles
+
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import HTMLResponse, JSONResponse
+
 from src.core.config import CONFIG
 from src.core.database import DB
 from src.core.dispatcher import DISPATCHER
+from src.core.hub_router import HUB_ROUTER, MEGA_HUBS
 from src.core.monetization import PaymentManager
 from src.core.omni_catalog import (
-    OMNI_CATALOG, extract_opus_150, extract_chatgpt_150,
-    extract_gemini_730, extract_rubika_56, extract_ai_businesses
+    OMNI_CATALOG,
+    extract_ai_businesses,
+    extract_chatgpt_150,
+    extract_gemini_730,
+    extract_opus_150,
+    extract_rubika_56,
 )
 from src.core.resource_optimizer import (
-    GLOBAL_BOT_POOL, GLOBAL_WRITE_BUFFER, GLOBAL_RESOURCE_MONITOR
+    GLOBAL_BOT_POOL,
+    GLOBAL_RESOURCE_MONITOR,
+    GLOBAL_WRITE_BUFFER,
 )
-from src.core.hub_router import HUB_ROUTER, MEGA_HUBS
-
 
 app = FastAPI(title="Fable-Omega Bot Fleet Control Plane", version="5.1.0")
 
@@ -101,7 +107,7 @@ async def trigger_runtime_gc():
 
 @app.get("/api/catalog")
 async def get_full_catalog():
-    """Return all 445+ indexed bot blueprints with breakdown by source."""
+    """Return all 445 indexed scenario blueprints with breakdown by source."""
     opus = extract_opus_150()
     gpt = extract_chatgpt_150()
     gemini = extract_gemini_730()
@@ -192,7 +198,7 @@ async def reject_order_endpoint(order_id: str):
 async def simulate_bot_message(request: Request):
     """
     Real-time interactive chat simulator endpoint.
-    Allows testing ANY of the 445+ bots from the browser without needing a live Telegram webhook token.
+    Allows testing ANY of the 445 catalogue scenarios from the browser without needing a live Telegram webhook token.
     """
     body = await request.json()
     bot_id = body.get("bot_id", "opus_001")
@@ -245,5 +251,5 @@ async def telegram_webhook_handler(bot_id: str, request: Request):
 @app.get("/", response_class=HTMLResponse)
 async def render_dashboard():
     """Render the master web control center and chat simulator."""
-    with open(CONFIG.db_path.parent.parent / "src" / "web" / "templates" / "dashboard.html", "r", encoding="utf-8") as f:
-        return f.read()
+    template_path = CONFIG.db_path.parent.parent / "src" / "web" / "templates" / "dashboard.html"
+    return await asyncio.to_thread(template_path.read_text, encoding="utf-8")

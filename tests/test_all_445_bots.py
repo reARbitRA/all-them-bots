@@ -3,19 +3,31 @@ Fable-Omega Comprehensive Fleet Verification & Stress Test Suite
 Executes real end-to-end transactional lifecycle tests across all 445+ bot blueprints.
 """
 
+import asyncio
+import json
 import sys
+import time
 from pathlib import Path
 
-# Add project root to sys.path
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+# Add project root to sys.path for direct script execution.
+ROOT_DIR = Path(__file__).resolve().parent.parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
 
-import time
-import json
-import asyncio
-from src.core.omni_catalog import OMNI_CATALOG
-from src.core.dispatcher import DISPATCHER
-from src.core.database import DB
-from src.core.monetization import PaymentManager
+from src.core.database import DB  # noqa: E402
+from src.core.dispatcher import DISPATCHER  # noqa: E402
+from src.core.omni_catalog import (  # noqa: E402
+    OMNI_CATALOG,
+    extract_ai_businesses,
+    extract_chatgpt_150,
+    extract_gemini_730,
+    extract_opus_150,
+    extract_rubika_56,
+)
+from src.core.reporting import (  # noqa: E402
+    collect_environment_metadata,
+    validate_full_fleet_report,
+)
 
 
 async def run_exhaustive_test_on_bot(bot_id: str, spec: dict, test_user_id: int) -> dict:
@@ -107,7 +119,7 @@ async def run_exhaustive_test_on_bot(bot_id: str, spec: dict, test_user_id: int)
             result["status"] = "PASSED"
 
     except Exception as e:
-        result["errors"].append(f"Unhandled exception during execution: {str(e)}")
+        result["errors"].append(f"Unhandled exception during execution: {e!s}")
 
     return result
 
@@ -143,8 +155,22 @@ async def main():
     total_time = time.perf_counter() - start_all
     avg_latency = round((total_time / total_bots) * 1000, 2)
 
+    source_counts = {
+        "opus": len(extract_opus_150()),
+        "chatgpt": len(extract_chatgpt_150()),
+        "gemini": len(extract_gemini_730()),
+        "rubika": len(extract_rubika_56()),
+        "ai_biz": len(extract_ai_businesses()),
+    }
     summary = {
+        "report_schema_version": "1.0",
         "timestamp": time.time(),
+        "environment": collect_environment_metadata(ROOT_DIR),
+        "catalogue": {
+            "total_entries": total_bots,
+            "source_counts": source_counts,
+            "lifecycle_stages": ["start", "state", "input", "credit", "order_or_payment"],
+        },
         "total_bots_tested": total_bots,
         "passed_count": passed_count,
         "failed_count": failed_count,
@@ -153,11 +179,15 @@ async def main():
         "avg_bot_lifecycle_latency_ms": avg_latency,
         "test_results": reports
     }
+    validate_full_fleet_report(summary, expected_total=total_bots)
 
     out_file = Path("tests/FULL_FLEET_TEST_REPORT.json")
     out_file.parent.mkdir(exist_ok=True, parents=True)
-    with open(out_file, "w", encoding="utf-8") as f:
-        json.dump(summary, f, ensure_ascii=False, indent=2)
+
+    def _write_report() -> None:
+        out_file.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    await asyncio.to_thread(_write_report)
 
     print("=" * 70)
     print("📊 FORMAL FLEET VERIFICATION SUMMARY:")
@@ -167,7 +197,7 @@ async def main():
     print(f"Failed:                  {failed_count} ❌")
     print(f"Success Rate:            {summary['success_rate_percent']}%")
     print(f"Total Execution Time:    {summary['total_duration_seconds']}s (Avg: {avg_latency}ms/bot)")
-    print(f"Artifact Saved:          {out_file.resolve()}")
+    print(f"Artifact Saved:          {out_file}")
     print("=" * 70)
 
     if failed_count > 0:

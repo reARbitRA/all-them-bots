@@ -1,20 +1,17 @@
 """
 Fable-Omega 15-Mega-Hub Routing & Aggregation Kernel
-Maps 445+ micro-SaaS bots into 15 high-converting Telegram Super-Hubs.
-Allows running the entire fleet from just 15 BotFather handles on a single account with zero ban risk.
+Maps 445 catalogue scenarios into 15 strategic Telegram mega-hubs.
+The hub strategy reduces process and identity sprawl; platform risk still requires deployment review.
 """
 
 from __future__ import annotations
-import time
-from typing import Dict, Any, List, Optional
-from src.core.omni_catalog import OMNI_CATALOG
-from src.core.fsm import AsyncFSM
-from src.core.database import DB
-from src.core.monetization import PaymentManager
 
+from typing import Any
+
+from src.core.omni_catalog import OMNI_CATALOG
 
 # Master Definition of the 15 Vertical Mega-Hubs
-MEGA_HUBS: Dict[str, Dict[str, Any]] = {
+MEGA_HUBS: dict[str, dict[str, Any]] = {
     "hub_01_commerce": {
         "title": "🛍️ هاب فروشگاه‌ساز و سفارش‌گیری هوشمند (Commerce Mega-Store)",
         "icon": "🛍️",
@@ -158,7 +155,7 @@ class MegaHubRouter:
 
     def __init__(self) -> None:
         self.hubs = MEGA_HUBS
-        self._hub_to_bots_map: Dict[str, List[Dict[str, Any]]] = {}
+        self._hub_to_bots_map: dict[str, list[dict[str, Any]]] = {}
         self._index_bots_into_hubs()
 
     def _index_bots_into_hubs(self) -> None:
@@ -166,8 +163,7 @@ class MegaHubRouter:
         for hub_key in self.hubs:
             self._hub_to_bots_map[hub_key] = []
 
-        for bot_id, spec in OMNI_CATALOG.items():
-            assigned = False
+        for _bot_id, spec in OMNI_CATALOG.items():
             cat = spec.get("category", "")
             title = spec.get("title", "").lower()
             source = spec.get("source_key", "")
@@ -175,54 +171,40 @@ class MegaHubRouter:
             # Match criteria
             if "commerce" in cat.lower() or "store" in title or "shop" in title or "سفارش" in title:
                 self._hub_to_bots_map["hub_01_commerce"].append(spec)
-                assigned = True
             elif "vip" in cat.lower() or "paywall" in title or "عضویت" in title or "کانال" in title:
                 self._hub_to_bots_map["hub_02_vip_paywalls"].append(spec)
-                assigned = True
             elif source == "ai_biz" or "ai" in cat.lower() or "هوش مصنوعی" in title:
                 self._hub_to_bots_map["hub_03_ai_studio"].append(spec)
-                assigned = True
             elif "code" in cat.lower() or "kata" in title or "برنامه‌نویسی" in title or "dev" in cat.lower():
                 self._hub_to_bots_map["hub_04_coding_katas"].append(spec)
-                assigned = True
             elif "license" in cat.lower() or "reminder" in title or "انقضا" in title or "مجوز" in title:
                 self._hub_to_bots_map["hub_05_b2b_compliance"].append(spec)
-                assigned = True
             elif "crypto" in cat.lower() or "currency" in title or "ارز" in title or "fintech" in cat.lower():
                 self._hub_to_bots_map["hub_06_fintech_crypto"].append(spec)
-                assigned = True
             elif "edu" in cat.lower() or "learn" in title or "quiz" in title or "زبان" in title:
                 self._hub_to_bots_map["hub_07_education_learning"].append(spec)
-                assigned = True
             elif "lead" in cat.lower() or "referral" in title or "وایرال" in title or "growth" in cat.lower():
                 self._hub_to_bots_map["hub_08_growth_leadgen"].append(spec)
-                assigned = True
             elif "health" in cat.lower() or "habit" in title or "عادت" in title or "ورزش" in title:
                 self._hub_to_bots_map["hub_09_health_fitness"].append(spec)
-                assigned = True
             elif "estate" in cat.lower() or "rental" in title or "اجاره" in title or "املاک" in title:
                 self._hub_to_bots_map["hub_10_real_estate_rental"].append(spec)
-                assigned = True
             elif "document" in cat.lower() or "search" in title or "داکیومنت" in title or "pdf" in title:
                 self._hub_to_bots_map["hub_11_productivity_search"].append(spec)
-                assigned = True
             elif "media" in cat.lower() or "image" in title or "compress" in title or "تصویر" in title:
                 self._hub_to_bots_map["hub_12_media_optimization"].append(spec)
-                assigned = True
             elif source == "rubika" or "rubika" in cat.lower() or "روبیکا" in title:
                 self._hub_to_bots_map["hub_13_rubika_baleh_local"].append(spec)
-                assigned = True
             elif "game" in cat.lower() or "league" in title or "پیش‌بینی" in title:
                 self._hub_to_bots_map["hub_14_gamification_leagues"].append(spec)
-                assigned = True
             else:
                 self._hub_to_bots_map["hub_15_agency_factory"].append(spec)
 
-    def get_hub_bots(self, hub_key: str) -> List[Dict[str, Any]]:
+    def get_hub_bots(self, hub_key: str) -> list[dict[str, Any]]:
         """Return all bots aggregated under a given mega hub."""
         return self._hub_to_bots_map.get(hub_key, [])
 
-    def get_hub_summary(self) -> Dict[str, Any]:
+    def get_hub_summary(self) -> dict[str, Any]:
         """Summary of all 15 hubs with aggregated bot counts."""
         summary = {}
         for hub_key, hub_info in self.hubs.items():

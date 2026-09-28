@@ -4,13 +4,13 @@ Monetization Blueprint: Subscriptions for Private Channels/Groups with Single-Us
 """
 
 from __future__ import annotations
+
 import time
-import json
-from typing import Dict, Any, List
-from src.core.fsm import AsyncFSM
+from typing import Any, ClassVar
+
 from src.core.database import DB
+from src.core.fsm import AsyncFSM
 from src.core.monetization import PaymentManager
-from src.core.config import CONFIG
 
 
 class VipPaywallBot:
@@ -18,17 +18,17 @@ class VipPaywallBot:
 
     BOT_ID = "vip_paywall"
 
-    PLANS = {
+    PLANS: ClassVar[dict[str, dict[str, int | str]]] = {
         "plan_1m": {"title": "اشتراک ۱ ماهه VIP", "days": 30, "price_irt": 190000, "price_xtr": 100},
         "plan_3m": {"title": "اشتراک ۳ ماهه VIP (تخفیف ویژه)", "days": 90, "price_irt": 490000, "price_xtr": 250},
         "plan_1y": {"title": "اشتراک سالانه VIP Pro", "days": 365, "price_irt": 1490000, "price_xtr": 750},
     }
 
-    def __init__(self, bot_id: Optional[str] = None) -> None:
+    def __init__(self, bot_id: str | None = None) -> None:
         self.bot_id = bot_id or self.BOT_ID
         self.fsm = AsyncFSM(self.bot_id)
 
-    async def handle_update(self, update: Dict[str, Any]) -> Dict[str, Any]:
+    async def handle_update(self, update: dict[str, Any]) -> dict[str, Any]:
         if "message" in update:
             msg = update["message"]
             user = msg.get("from", {})
@@ -44,7 +44,7 @@ class VipPaywallBot:
             if photo:
                 return await self._handle_receipt(user_id)
 
-            state, context, ver = await self.fsm.get_state(user_id)
+            state, _context, _ver = await self.fsm.get_state(user_id)
 
             if state == "AWAITING_INPUT":
                 await self.fsm.reset(user_id)
@@ -87,7 +87,7 @@ class VipPaywallBot:
 
         return {"type": "noop"}
 
-    async def _ensure_user(self, user_dict: Dict[str, Any]) -> None:
+    async def _ensure_user(self, user_dict: dict[str, Any]) -> None:
         user_id = user_dict["id"]
         now = time.time()
         await DB.execute("""
@@ -99,7 +99,7 @@ class VipPaywallBot:
             last_seen_at = excluded.last_seen_at;
         """, (self.bot_id, user_id, user_dict.get("username"), user_dict.get("first_name"), now, now))
 
-    def _main_keyboard(self) -> Dict[str, Any]:
+    def _main_keyboard(self) -> dict[str, Any]:
         return {
             "keyboard": [
                 [{"text": "💎 پلن‌های عضویت VIP"}, {"text": "👤 وضعیت اشتراک من"}],
@@ -108,7 +108,7 @@ class VipPaywallBot:
             "resize_keyboard": True
         }
 
-    async def _render_home(self, user_id: int, name: str) -> Dict[str, Any]:
+    async def _render_home(self, user_id: int, name: str) -> dict[str, Any]:
         user = await DB.fetch_one("SELECT is_premium, premium_until FROM users WHERE bot_id = ? AND user_id = ?", (self.bot_id, user_id))
         is_active = user and user["is_premium"] and user["premium_until"] > time.time()
 
@@ -121,7 +121,7 @@ class VipPaywallBot:
             "reply_markup": self._main_keyboard()
         }
 
-    def _render_plans(self, user_id: int) -> Dict[str, Any]:
+    def _render_plans(self, user_id: int) -> dict[str, Any]:
         buttons = []
         text = "💎 **پلن‌های فعال عضویت در کانال خصوصی VIP:**\n\n"
         for key, p in self.PLANS.items():
@@ -135,7 +135,7 @@ class VipPaywallBot:
             "reply_markup": {"inline_keyboard": buttons}
         }
 
-    async def _select_plan(self, user_id: int, plan_key: str) -> Dict[str, Any]:
+    async def _select_plan(self, user_id: int, plan_key: str) -> dict[str, Any]:
         plan = self.PLANS.get(plan_key)
         if not plan:
             return self._render_plans(user_id)
@@ -155,7 +155,7 @@ class VipPaywallBot:
             }
         }
 
-    async def _fulfill_stars_subscription(self, user_id: int, plan_key: str) -> Dict[str, Any]:
+    async def _fulfill_stars_subscription(self, user_id: int, plan_key: str) -> dict[str, Any]:
         plan = self.PLANS.get(plan_key, self.PLANS["plan_1m"])
         order_id = await PaymentManager.create_order(
             bot_id=self.bot_id,
@@ -177,7 +177,7 @@ class VipPaywallBot:
             "reply_markup": self._main_keyboard()
         }
 
-    async def _start_card_flow(self, user_id: int, plan_key: str) -> Dict[str, Any]:
+    async def _start_card_flow(self, user_id: int, plan_key: str) -> dict[str, Any]:
         plan = self.PLANS.get(plan_key, self.PLANS["plan_1m"])
         order_id = await PaymentManager.create_order(
             bot_id=self.bot_id,
@@ -196,8 +196,8 @@ class VipPaywallBot:
             "reply_markup": {"inline_keyboard": [[{"text": "❌ انصراف", "callback_data": "home"}]]}
         }
 
-    async def _handle_receipt(self, user_id: int) -> Dict[str, Any]:
-        state, context, ver = await self.fsm.get_state(user_id)
+    async def _handle_receipt(self, user_id: int) -> dict[str, Any]:
+        state, context, _ver = await self.fsm.get_state(user_id)
         order_id = context.get("order_id")
         plan = context.get("plan", self.PLANS["plan_1m"])
 
@@ -216,7 +216,7 @@ class VipPaywallBot:
             "reply_markup": self._main_keyboard()
         }
 
-    async def _render_status(self, user_id: int) -> Dict[str, Any]:
+    async def _render_status(self, user_id: int) -> dict[str, Any]:
         user = await DB.fetch_one("SELECT is_premium, premium_until FROM users WHERE bot_id = ? AND user_id = ?", (self.bot_id, user_id))
         now = time.time()
         

@@ -4,11 +4,11 @@ Central configuration, environment binding, and currency settings.
 """
 
 from __future__ import annotations
+
 import os
 from pathlib import Path
-from typing import Dict, Any, List
-from pydantic import BaseModel, Field
 
+from pydantic import BaseModel, Field
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 DATA_DIR = BASE_DIR / "data"
@@ -30,7 +30,7 @@ class BotDefinition(BaseModel):
     default_monthly_price_xtr: int
     enabled: bool = True
     token: str = Field(default="")
-    admin_ids: List[int] = Field(default_factory=list)
+    admin_ids: list[int] = Field(default_factory=list)
 
 
 class AppConfig(BaseModel):
@@ -44,7 +44,7 @@ class AppConfig(BaseModel):
     db_path: Path = DATA_DIR / "omnibot_production.db"
     
     # Master Admin Telegram IDs
-    master_admin_ids: List[int] = Field(default_factory=lambda: [
+    master_admin_ids: list[int] = Field(default_factory=lambda: [
         int(x.strip()) for x in os.getenv("ADMIN_IDS", "123456789").split(",") if x.strip().isdigit()
     ])
     
@@ -52,7 +52,7 @@ class AppConfig(BaseModel):
     currency: CurrencyConfig = CurrencyConfig()
     
     # Bot Fleet Registry
-    bots: Dict[str, BotDefinition] = Field(default_factory=lambda: {
+    bots: dict[str, BotDefinition] = Field(default_factory=lambda: {
         "commerce": BotDefinition(
             id="commerce",
             name="Direct Commerce & Order CRM Bot",

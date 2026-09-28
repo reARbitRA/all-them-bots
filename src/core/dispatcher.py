@@ -4,18 +4,17 @@ Unified routing for all 445+ bot blueprints across Opus, ChatGPT, Gemini, Rubika
 """
 
 from __future__ import annotations
-import time
-from typing import Dict, Any, Optional
-from src.core.rate_limiter import RATE_LIMITER
-from src.core.config import CONFIG
-from src.core.omni_catalog import OMNI_CATALOG
-from src.core.resource_optimizer import GLOBAL_BOT_POOL, GLOBAL_RESOURCE_MONITOR
+
+from typing import Any
+
 from src.bots.bot_01_commerce import CommerceBot
 from src.bots.bot_02_vip_paywall import VipPaywallBot
 from src.bots.bot_03_ai_gateway import AiGatewayBot
 from src.bots.bot_04_kata_runner import KataRunnerBot
 from src.bots.bot_05_license_reminder import LicenseReminderBot
 from src.bots.dynamic_bot import DynamicArchetypeBot
+from src.core.rate_limiter import RATE_LIMITER
+from src.core.resource_optimizer import GLOBAL_BOT_POOL, GLOBAL_RESOURCE_MONITOR
 
 
 class MultiTenantDispatcher:
@@ -49,8 +48,8 @@ class MultiTenantDispatcher:
         return bot
 
     async def dispatch_update(
-        self, bot_id: str, update: Dict[str, Any], bypass_rate_limit: bool = False
-    ) -> Dict[str, Any]:
+        self, bot_id: str, update: dict[str, Any], bypass_rate_limit: bool = False
+    ) -> dict[str, Any]:
         """Route incoming update through rate limiter to target bot handler with telemetry tracking."""
         GLOBAL_RESOURCE_MONITOR.record_request()
         bot = self.get_bot(bot_id)

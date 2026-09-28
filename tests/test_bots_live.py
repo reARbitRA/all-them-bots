@@ -3,17 +3,25 @@ Fable-Omega End-to-End Bot Fleet Integration Tests
 Verifies that all 5 bots, FSM state machines, database transactions, and monetization work without errors.
 """
 
+
+import itertools
+import time
+
 import pytest
-import asyncio
+
 from src.core.dispatcher import DISPATCHER
-from src.core.database import DB
-from src.core.monetization import PaymentManager
+
+_USER_IDS = itertools.count(10_000_000 + (time.time_ns() % 1_000_000))
+
+
+def _fresh_user_id() -> int:
+    return next(_USER_IDS)
 
 
 @pytest.mark.asyncio
 async def test_bot_01_commerce_flow():
     """Test full e-commerce flow: /start -> catalog -> add to cart -> checkout -> receipt -> approved."""
-    user_id = 1001
+    user_id = _fresh_user_id()
 
     # 1. /start
     res1 = await DISPATCHER.dispatch_update("commerce", {
@@ -49,7 +57,7 @@ async def test_bot_01_commerce_flow():
 @pytest.mark.asyncio
 async def test_bot_02_vip_paywall_flow():
     """Test VIP Paywall subscription flow with Telegram Stars."""
-    user_id = 1002
+    user_id = _fresh_user_id()
 
     # 1. /start
     res1 = await DISPATCHER.dispatch_update("vip_paywall", {
@@ -74,7 +82,7 @@ async def test_bot_02_vip_paywall_flow():
 @pytest.mark.asyncio
 async def test_bot_03_ai_gateway_flow():
     """Test AI Gateway credit deduction and task execution."""
-    user_id = 1003
+    user_id = _fresh_user_id()
 
     # 1. /start
     res1 = await DISPATCHER.dispatch_update("ai_gateway", {
@@ -98,7 +106,7 @@ async def test_bot_03_ai_gateway_flow():
 @pytest.mark.asyncio
 async def test_bot_04_kata_runner_flow():
     """Test Code Kata Python sandbox execution."""
-    user_id = 1004
+    user_id = _fresh_user_id()
 
     # 1. /start
     res1 = await DISPATCHER.dispatch_update("kata_runner", {
@@ -133,7 +141,7 @@ def two_sum(nums, target):
 @pytest.mark.asyncio
 async def test_bot_05_license_reminder_flow():
     """Test B2B Expiry reminder creation."""
-    user_id = 1005
+    user_id = _fresh_user_id()
 
     # 1. /start
     res1 = await DISPATCHER.dispatch_update("license_reminder", {

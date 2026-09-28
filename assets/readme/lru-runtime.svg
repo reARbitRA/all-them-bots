@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fable-omega-lru-runtime-title fable-omega-lru-runtime-desc" width="100%" height="auto" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid meet">
+  <title id="fable-omega-lru-runtime-title">FABLE OMEGA LRU runtime</title>
+  <desc id="fable-omega-lru-runtime-desc">Active and evicted scenario objects in the LRU runtime pool.</desc>
+  <defs>
+    <linearGradient id="g-cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#2AABEE" stop-opacity="0.65"/>
+    </linearGradient>
+    <linearGradient id="g-violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.13 0 0 0 0 0.83 0 0 0 0 0.93 0 0 0 0.7 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .bg { fill:#07090C; }
+      .panel { fill:#0B1118; stroke:#162130; stroke-width:1.4; rx:22; }
+      .panel2 { fill:#091019; stroke:#203044; stroke-width:1.2; rx:18; }
+      .line { stroke:#22D3EE; stroke-width:2; stroke-opacity:.58; fill:none; }
+      .rail { stroke:#2AABEE; stroke-width:4; stroke-linecap:round; stroke-opacity:.78; fill:none; }
+      .violet { stroke:#8B5CF6; fill:none; }
+      .green { stroke:#34D399; fill:none; }
+      .label { font: 700 16px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#E6F7FB; }
+      .small { font: 500 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#93A4B7; }
+      .tiny { font: 600 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#93A4B7; letter-spacing:.08em; }
+      .mega { font: 900 52px ui-sans-serif, Inter, Arial, sans-serif; fill:#E6F7FB; letter-spacing:-.05em; }
+      .num { font: 900 36px ui-sans-serif, Inter, Arial, sans-serif; fill:#22D3EE; }
+      .metric { font: 900 28px ui-sans-serif, Inter, Arial, sans-serif; fill:#34D399; }
+      .cyan-fill { fill:#22D3EE; } .blue-fill { fill:#2AABEE; } .violet-fill { fill:#8B5CF6; } .green-fill { fill:#34D399; }
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="630"/>
+  <path d="M0 72 H1200 M0 558 H1200" stroke="#162130" stroke-width="1"/>
+  <text x="70.0" y="112.0" class="mega" text-anchor="start">LRU RUNTIME RACK</text>
+  <text x="74.0" y="148.0" class="small" text-anchor="start">Lazy scenario activation with bounded hot-object pool</text>
+  <rect x="82.0" y="190.0" width="500.0" height="330.0" class="panel2" />
+  <rect x="626.0" y="190.0" width="490.0" height="330.0" class="panel2" />
+  <text x="112.0" y="230.0" class="label" text-anchor="start">HOT POOL</text>
+  <text x="656.0" y="230.0" class="label" text-anchor="start">EVICTION / GC</text>
+  <rect x="112" y="270" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="139" y="270" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="166" y="270" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="193" y="270" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="220" y="270" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="247" y="270" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="274" y="270" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="301" y="270" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="328" y="270" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="355" y="270" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="382" y="270" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="409" y="270" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="436" y="270" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="463" y="270" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="490" y="270" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="517" y="270" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="112" y="316" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="139" y="316" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="166" y="316" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="193" y="316" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="220" y="316" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="247" y="316" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="274" y="316" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="301" y="316" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="328" y="316" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="355" y="316" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="382" y="316" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="409" y="316" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="436" y="316" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="463" y="316" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="490" y="316" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="517" y="316" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="112" y="362" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="139" y="362" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="166" y="362" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="193" y="362" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="220" y="362" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="247" y="362" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="274" y="362" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="301" y="362" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="328" y="362" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="355" y="362" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="382" y="362" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="409" y="362" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="436" y="362" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="463" y="362" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="490" y="362" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="517" y="362" width="18" height="28" rx="5" fill="#34D399" opacity="0.72"/>
+  <rect x="112" y="408" width="18" height="28" rx="5" fill="#22D3EE" opacity="0.72"/>
+  <rect x="139" y="408" width="18" height="28" rx="5" fill="#22D3EE" opacity="0.72"/>
+  <rect x="166" y="408" width="18" height="28" rx="5" fill="#22D3EE" opacity="0.72"/>
+  <rect x="193" y="408" width="18" height="28" rx="5" fill="#22D3EE" opacity="0.72"/>
+  <rect x="220" y="408" width="18" height="28" rx="5" fill="#22D3EE" opacity="0.72"/>
+  <rect x="247" y="408" width="18" height="28" rx="5" fill="#22D3EE" opacity="0.72"/>
+  <rect x="274" y="408" width="18" height="28" rx="5" fill="#22D3EE" opacity="0.72"/>
+  <rect x="301" y="408" width="18" height="28" rx="5" fill="#22D3EE" opacity="0.72"/>
+  <rect x="328" y="408" width="18" height="28" rx="5" fill="#22D3EE" opacity="0.72"/>
+  <rect x="355" y="408" width="18" height="28" rx="5" fill="#22D3EE" opacity="0.72"/>
+  <rect x="382" y="408" width="18" height="28" rx="5" fill="#22D3EE" opacity="0.72"/>
+  <rect x="409" y="408" width="18" height="28" rx="5" fill="#22D3EE" opacity="0.72"/>
+  <rect x="436" y="408" width="18" height="28" rx="5" fill="#22D3EE" opacity="0.72"/>
+  <rect x="463" y="408" width="18" height="28" rx="5" fill="#22D3EE" opacity="0.72"/>
+  <rect x="490" y="408" width="18" height="28" rx="5" fill="#22D3EE" opacity="0.72"/>
+  <rect x="517" y="408" width="18" height="28" rx="5" fill="#22D3EE" opacity="0.72"/>
+  <text x="112.0" y="478.0" class="small" text-anchor="start">capacity 64 · post-GC active 0</text>
+  <path d="M676,276 l26,0 l-8,20 l-26,0 z" fill="#8B5CF6" opacity="0.35"/>
+  <path d="M720,276 l26,0 l-8,20 l-26,0 z" fill="#8B5CF6" opacity="0.37"/>
+  <path d="M764,276 l26,0 l-8,20 l-26,0 z" fill="#8B5CF6" opacity="0.39"/>
+  <path d="M808,276 l26,0 l-8,20 l-26,0 z" fill="#8B5CF6" opacity="0.41"/>
+  <path d="M852,276 l26,0 l-8,20 l-26,0 z" fill="#8B5CF6" opacity="0.43"/>
+  <path d="M896,276 l26,0 l-8,20 l-26,0 z" fill="#8B5CF6" opacity="0.45"/>
+  <path d="M940,276 l26,0 l-8,20 l-26,0 z" fill="#8B5CF6" opacity="0.47"/>
+  <path d="M984,276 l26,0 l-8,20 l-26,0 z" fill="#8B5CF6" opacity="0.49"/>
+  <path d="M1028,276 l26,0 l-8,20 l-26,0 z" fill="#8B5CF6" opacity="0.51"/>
+  <path d="M676,346 l26,0 l-8,20 l-26,0 z" fill="#8B5CF6" opacity="0.53"/>
+  <path d="M720,346 l26,0 l-8,20 l-26,0 z" fill="#8B5CF6" opacity="0.55"/>
+  <path d="M764,346 l26,0 l-8,20 l-26,0 z" fill="#8B5CF6" opacity="0.57"/>
+  <path d="M808,346 l26,0 l-8,20 l-26,0 z" fill="#8B5CF6" opacity="0.59"/>
+  <path d="M852,346 l26,0 l-8,20 l-26,0 z" fill="#8B5CF6" opacity="0.61"/>
+  <path d="M896,346 l26,0 l-8,20 l-26,0 z" fill="#8B5CF6" opacity="0.63"/>
+  <path d="M940,346 l26,0 l-8,20 l-26,0 z" fill="#8B5CF6" opacity="0.65"/>
+  <path d="M984,346 l26,0 l-8,20 l-26,0 z" fill="#8B5CF6" opacity="0.67"/>
+  <path d="M1028,346 l26,0 l-8,20 l-26,0 z" fill="#8B5CF6" opacity="0.69"/>
+  <text x="656.0" y="424.0" class="label" text-anchor="start">853 total evictions in benchmark</text>
+  <text x="656.0" y="462.0" class="small" text-anchor="start">hit ratio 13.9% · active after GC 0</text>
+</svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fable-omega-dispatcher-kernel-title fable-omega-dispatcher-kernel-desc" width="100%" height="auto" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid meet">
+  <title id="fable-omega-dispatcher-kernel-title">FABLE OMEGA dispatcher kernel</title>
+  <desc id="fable-omega-dispatcher-kernel-desc">Dispatcher route from tenant to hub to scenario to user.</desc>
+  <defs>
+    <linearGradient id="g-cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#2AABEE" stop-opacity="0.65"/>
+    </linearGradient>
+    <linearGradient id="g-violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.13 0 0 0 0 0.83 0 0 0 0 0.93 0 0 0 0.7 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .bg { fill:#07090C; }
+      .panel { fill:#0B1118; stroke:#162130; stroke-width:1.4; rx:22; }
+      .panel2 { fill:#091019; stroke:#203044; stroke-width:1.2; rx:18; }
+      .line { stroke:#22D3EE; stroke-width:2; stroke-opacity:.58; fill:none; }
+      .rail { stroke:#2AABEE; stroke-width:4; stroke-linecap:round; stroke-opacity:.78; fill:none; }
+      .violet { stroke:#8B5CF6; fill:none; }
+      .green { stroke:#34D399; fill:none; }
+      .label { font: 700 16px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#E6F7FB; }
+      .small { font: 500 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#93A4B7; }
+      .tiny { font: 600 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#93A4B7; letter-spacing:.08em; }
+      .mega { font: 900 52px ui-sans-serif, Inter, Arial, sans-serif; fill:#E6F7FB; letter-spacing:-.05em; }
+      .num { font: 900 36px ui-sans-serif, Inter, Arial, sans-serif; fill:#22D3EE; }
+      .metric { font: 900 28px ui-sans-serif, Inter, Arial, sans-serif; fill:#34D399; }
+      .cyan-fill { fill:#22D3EE; } .blue-fill { fill:#2AABEE; } .violet-fill { fill:#8B5CF6; } .green-fill { fill:#34D399; }
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="630"/>
+  <path d="M0 72 H1200 M0 558 H1200" stroke="#162130" stroke-width="1"/>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#22D3EE"/></marker></defs>
+  <text x="70.0" y="110.0" class="mega" text-anchor="start">DISPATCHER KERNEL</text>
+  <text x="74.0" y="146.0" class="small" text-anchor="start">Tenant → hub → scenario → user routing in one async control plane</text>
+  <rect x="90.0" y="220.0" width="190.0" height="220.0" class="panel2" />
+  <text x="114.0" y="260.0" class="label" text-anchor="start">TENANT</text>
+  <circle cx="120.0" cy="302.0" r="5.0" fill="#22D3EE" />
+  <text x="138.0" y="307.0" class="small" text-anchor="start">Telegram webhook</text>
+  <circle cx="120.0" cy="344.0" r="5.0" fill="#22D3EE" />
+  <text x="138.0" y="349.0" class="small" text-anchor="start">Dashboard simulator</text>
+  <circle cx="120.0" cy="386.0" r="5.0" fill="#22D3EE" />
+  <text x="138.0" y="391.0" class="small" text-anchor="start">admin API</text>
+  <rect x="330.0" y="220.0" width="190.0" height="220.0" class="panel2" />
+  <text x="354.0" y="260.0" class="label" text-anchor="start">HUB</text>
+  <circle cx="360.0" cy="302.0" r="5.0" fill="#22D3EE" />
+  <text x="378.0" y="307.0" class="small" text-anchor="start">15 strategic hubs</text>
+  <circle cx="360.0" cy="344.0" r="5.0" fill="#22D3EE" />
+  <text x="378.0" y="349.0" class="small" text-anchor="start">BotFather identity</text>
+  <circle cx="360.0" cy="386.0" r="5.0" fill="#22D3EE" />
+  <text x="378.0" y="391.0" class="small" text-anchor="start">category routing</text>
+  <rect x="570.0" y="220.0" width="190.0" height="220.0" class="panel2" />
+  <text x="594.0" y="260.0" class="label" text-anchor="start">SCENARIO</text>
+  <circle cx="600.0" cy="302.0" r="5.0" fill="#22D3EE" />
+  <text x="618.0" y="307.0" class="small" text-anchor="start">catalogue lookup</text>
+  <circle cx="600.0" cy="344.0" r="5.0" fill="#22D3EE" />
+  <text x="618.0" y="349.0" class="small" text-anchor="start">archetype adapter</text>
+  <circle cx="600.0" cy="386.0" r="5.0" fill="#22D3EE" />
+  <text x="618.0" y="391.0" class="small" text-anchor="start">LRU activation</text>
+  <rect x="810.0" y="220.0" width="190.0" height="220.0" class="panel2" />
+  <text x="834.0" y="260.0" class="label" text-anchor="start">USER</text>
+  <circle cx="840.0" cy="302.0" r="5.0" fill="#22D3EE" />
+  <text x="858.0" y="307.0" class="small" text-anchor="start">peer rate bucket</text>
+  <circle cx="840.0" cy="344.0" r="5.0" fill="#22D3EE" />
+  <text x="858.0" y="349.0" class="small" text-anchor="start">FSM session</text>
+  <circle cx="840.0" cy="386.0" r="5.0" fill="#22D3EE" />
+  <text x="858.0" y="391.0" class="small" text-anchor="start">credit/order state</text>
+  <path d="M280,330 H330" class="rail" marker-end="url(#arrow)"/>
+  <path d="M520,330 H570" class="rail" marker-end="url(#arrow)"/>
+  <path d="M760,330 H810" class="rail" marker-end="url(#arrow)"/>
+  <rect x="410.0" y="490.0" width="380.0" height="68.0" class="panel" />
+  <text x="600.0" y="532.0" class="label" text-anchor="middle">MultiTenantDispatcher.dispatch_update()</text>
+</svg>

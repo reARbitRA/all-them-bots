@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fable-omega-control-plane-title fable-omega-control-plane-desc" width="100%" height="auto" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid meet">
+  <title id="fable-omega-control-plane-title">FABLE OMEGA control plane</title>
+  <desc id="fable-omega-control-plane-desc">Actual FastAPI dashboard and simulator routes.</desc>
+  <defs>
+    <linearGradient id="g-cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#2AABEE" stop-opacity="0.65"/>
+    </linearGradient>
+    <linearGradient id="g-violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.13 0 0 0 0 0.83 0 0 0 0 0.93 0 0 0 0.7 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .bg { fill:#07090C; }
+      .panel { fill:#0B1118; stroke:#162130; stroke-width:1.4; rx:22; }
+      .panel2 { fill:#091019; stroke:#203044; stroke-width:1.2; rx:18; }
+      .line { stroke:#22D3EE; stroke-width:2; stroke-opacity:.58; fill:none; }
+      .rail { stroke:#2AABEE; stroke-width:4; stroke-linecap:round; stroke-opacity:.78; fill:none; }
+      .violet { stroke:#8B5CF6; fill:none; }
+      .green { stroke:#34D399; fill:none; }
+      .label { font: 700 16px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#E6F7FB; }
+      .small { font: 500 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#93A4B7; }
+      .tiny { font: 600 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#93A4B7; letter-spacing:.08em; }
+      .mega { font: 900 52px ui-sans-serif, Inter, Arial, sans-serif; fill:#E6F7FB; letter-spacing:-.05em; }
+      .num { font: 900 36px ui-sans-serif, Inter, Arial, sans-serif; fill:#22D3EE; }
+      .metric { font: 900 28px ui-sans-serif, Inter, Arial, sans-serif; fill:#34D399; }
+      .cyan-fill { fill:#22D3EE; } .blue-fill { fill:#2AABEE; } .violet-fill { fill:#8B5CF6; } .green-fill { fill:#34D399; }
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="630"/>
+  <path d="M0 72 H1200 M0 558 H1200" stroke="#162130" stroke-width="1"/>
+  <text x="70.0" y="112.0" class="mega" text-anchor="start">CONTROL PLANE</text>
+  <text x="74.0" y="148.0" class="small" text-anchor="start">FastAPI dashboard capabilities represented from src/web/app.py</text>
+  <rect x="70.0" y="190.0" width="1060.0" height="340.0" class="panel2" />
+  <rect x="110.0" y="210.0" width="440.0" height="58.0" class="panel" />
+  <text x="134.0" y="240.0" class="label" text-anchor="start">/api/catalog</text>
+  <text x="134.0" y="264.0" class="small" text-anchor="start">browse and filter catalogue</text>
+  <rect x="630.0" y="210.0" width="440.0" height="58.0" class="panel" />
+  <text x="654.0" y="240.0" class="label" text-anchor="start">/api/hubs</text>
+  <text x="654.0" y="264.0" class="small" text-anchor="start">inspect hub routing counts</text>
+  <rect x="110.0" y="298.0" width="440.0" height="58.0" class="panel" />
+  <text x="134.0" y="328.0" class="label" text-anchor="start">/api/runtime/stats</text>
+  <text x="134.0" y="352.0" class="small" text-anchor="start">memory, RPS and LRU telemetry</text>
+  <rect x="630.0" y="298.0" width="440.0" height="58.0" class="panel" />
+  <text x="654.0" y="328.0" class="label" text-anchor="start">/api/runtime/gc</text>
+  <text x="654.0" y="352.0" class="small" text-anchor="start">controlled cache cleanup</text>
+  <rect x="110.0" y="386.0" width="440.0" height="58.0" class="panel" />
+  <text x="134.0" y="416.0" class="label" text-anchor="start">/api/simulate</text>
+  <text x="134.0" y="440.0" class="small" text-anchor="start">dashboard chat simulator</text>
+  <rect x="630.0" y="386.0" width="440.0" height="58.0" class="panel" />
+  <text x="654.0" y="416.0" class="label" text-anchor="start">/api/orders</text>
+  <text x="654.0" y="440.0" class="small" text-anchor="start">manual order review surface</text>
+  <text x="600.0" y="502.0" class="tiny" text-anchor="middle">Dashboard + simulator exercise the shared runtime without claiming live Telegram availability.</text>
+</svg>

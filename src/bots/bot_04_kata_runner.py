@@ -4,14 +4,15 @@ Monetization Blueprint: Interactive coding assessments with isolated Python subp
 """
 
 from __future__ import annotations
-import time
-import sys
+
 import asyncio
-from typing import Dict, Any, List, Tuple
-from src.core.fsm import AsyncFSM
+import sys
+import time
+from typing import Any
+
 from src.core.database import DB
+from src.core.fsm import AsyncFSM
 from src.core.monetization import PaymentManager
-from src.core.config import CONFIG
 
 
 class KataRunnerBot:
@@ -19,11 +20,11 @@ class KataRunnerBot:
 
     BOT_ID = "kata_runner"
 
-    def __init__(self, bot_id: Optional[str] = None) -> None:
+    def __init__(self, bot_id: str | None = None) -> None:
         self.bot_id = bot_id or self.BOT_ID
         self.fsm = AsyncFSM(self.bot_id)
 
-    async def handle_update(self, update: Dict[str, Any]) -> Dict[str, Any]:
+    async def handle_update(self, update: dict[str, Any]) -> dict[str, Any]:
         if "message" in update:
             msg = update["message"]
             user = msg.get("from", {})
@@ -39,7 +40,7 @@ class KataRunnerBot:
                 await self.fsm.reset(user_id)
                 return await self._render_home(user_id, user.get("first_name", "برنامه‌نویس گرامی"))
 
-            state, context, ver = await self.fsm.get_state(user_id)
+            state, context, _ver = await self.fsm.get_state(user_id)
 
             if state in ("AWAITING_CODE_SUBMISSION", "AWAITING_INPUT"):
                 kata_id = context.get("kata_id", "kata_01")
@@ -70,7 +71,7 @@ class KataRunnerBot:
 
         return {"type": "noop"}
 
-    async def _ensure_user(self, user_dict: Dict[str, Any]) -> None:
+    async def _ensure_user(self, user_dict: dict[str, Any]) -> None:
         user_id = user_dict["id"]
         now = time.time()
         await DB.execute("""
@@ -82,7 +83,7 @@ class KataRunnerBot:
             last_seen_at = excluded.last_seen_at;
         """, (self.bot_id, user_id, user_dict.get("username"), user_dict.get("first_name"), now, now))
 
-    def _main_keyboard(self) -> Dict[str, Any]:
+    def _main_keyboard(self) -> dict[str, Any]:
         return {
             "keyboard": [
                 [{"text": "🧩 لیست چالش‌های کدنویسی"}, {"text": "🏆 رتبه‌بندی و امتیازات"}],
@@ -91,7 +92,7 @@ class KataRunnerBot:
             "resize_keyboard": True
         }
 
-    async def _render_home(self, user_id: int, name: str) -> Dict[str, Any]:
+    async def _render_home(self, user_id: int, name: str) -> dict[str, Any]:
         user = await DB.fetch_one("SELECT balance_credits FROM users WHERE bot_id = ? AND user_id = ?", (self.bot_id, user_id))
         score = user["balance_credits"] if user else 0
 
@@ -102,7 +103,7 @@ class KataRunnerBot:
             "reply_markup": self._main_keyboard()
         }
 
-    async def _render_katas_list(self, user_id: int) -> Dict[str, Any]:
+    async def _render_katas_list(self, user_id: int) -> dict[str, Any]:
         katas = await DB.fetch_all("SELECT * FROM katas")
         buttons = []
         text = "🧩 **چالش‌های الگوریتمی آماده حل:**\n\n"
@@ -118,7 +119,7 @@ class KataRunnerBot:
             "reply_markup": {"inline_keyboard": buttons}
         }
 
-    async def _start_kata_solution(self, user_id: int, kata_id: str) -> Dict[str, Any]:
+    async def _start_kata_solution(self, user_id: int, kata_id: str) -> dict[str, Any]:
         kata = await DB.fetch_one("SELECT * FROM katas WHERE kata_id = ?", (kata_id,))
         if not kata:
             return await self._render_katas_list(user_id)
@@ -132,7 +133,7 @@ class KataRunnerBot:
             "reply_markup": {"inline_keyboard": [[{"text": "❌ انصراف", "callback_data": "home"}]]}
         }
 
-    async def _evaluate_code_submission(self, user_id: int, kata_id: str, user_code: str) -> Dict[str, Any]:
+    async def _evaluate_code_submission(self, user_id: int, kata_id: str, user_code: str) -> dict[str, Any]:
         kata = await DB.fetch_one("SELECT * FROM katas WHERE kata_id = ?", (kata_id,))
         if not kata:
             await self.fsm.reset(user_id)
@@ -190,7 +191,7 @@ print("ALL_TESTS_PASSED_SUCCESSFULLY")
                     "text": f"❌ **خطا در اجرای تست‌ها یا پاسخ اشتباه:**\n\n```text\n{err_msg or 'AssertionError: Output did not match expected test output'}\n```\n\nلطفاً کد را اصلاح کرده و مجدداً ارسال فرمایید:",
                     "reply_markup": {"inline_keyboard": [[{"text": "❌ انصراف", "callback_data": "home"}]]}
                 }
-        except asyncio.TimeoutError:
+        except TimeoutError:
             return {
                 "type": "text",
                 "chat_id": user_id,
@@ -198,7 +199,7 @@ print("ALL_TESTS_PASSED_SUCCESSFULLY")
                 "reply_markup": {"inline_keyboard": [[{"text": "❌ انصراف", "callback_data": "home"}]]}
             }
 
-    async def _render_leaderboard(self, user_id: int) -> Dict[str, Any]:
+    async def _render_leaderboard(self, user_id: int) -> dict[str, Any]:
         users = await DB.fetch_all("SELECT first_name, username, balance_credits FROM users WHERE bot_id = ? ORDER BY balance_credits DESC LIMIT 10", (self.bot_id,))
         
         text = "🏆 **جدول رتبه‌بندی برترین برنامه‌نویسان:**\n\n"
@@ -211,7 +212,7 @@ print("ALL_TESTS_PASSED_SUCCESSFULLY")
 
         return {"type": "text", "chat_id": user_id, "text": text, "reply_markup": self._main_keyboard()}
 
-    def _render_pro_plans(self, user_id: int) -> Dict[str, Any]:
+    def _render_pro_plans(self, user_id: int) -> dict[str, Any]:
         return {
             "type": "text",
             "chat_id": user_id,
@@ -224,7 +225,7 @@ print("ALL_TESTS_PASSED_SUCCESSFULLY")
             }
         }
 
-    async def _fulfill_kata_pro(self, user_id: int) -> Dict[str, Any]:
+    async def _fulfill_kata_pro(self, user_id: int) -> dict[str, Any]:
         order_id = await PaymentManager.create_order(
             bot_id=self.bot_id,
             user_id=user_id,

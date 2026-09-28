@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fable-omega-footer-title fable-omega-footer-desc" width="100%" height="auto" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid meet">
+  <title id="fable-omega-footer-title">FABLE OMEGA footer</title>
+  <desc id="fable-omega-footer-desc">Footer mark for the FABLE OMEGA README.</desc>
+  <defs>
+    <linearGradient id="g-cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#2AABEE" stop-opacity="0.65"/>
+    </linearGradient>
+    <linearGradient id="g-violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.13 0 0 0 0 0.83 0 0 0 0 0.93 0 0 0 0.7 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .bg { fill:#07090C; }
+      .panel { fill:#0B1118; stroke:#162130; stroke-width:1.4; rx:22; }
+      .panel2 { fill:#091019; stroke:#203044; stroke-width:1.2; rx:18; }
+      .line { stroke:#22D3EE; stroke-width:2; stroke-opacity:.58; fill:none; }
+      .rail { stroke:#2AABEE; stroke-width:4; stroke-linecap:round; stroke-opacity:.78; fill:none; }
+      .violet { stroke:#8B5CF6; fill:none; }
+      .green { stroke:#34D399; fill:none; }
+      .label { font: 700 16px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#E6F7FB; }
+      .small { font: 500 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#93A4B7; }
+      .tiny { font: 600 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#93A4B7; letter-spacing:.08em; }
+      .mega { font: 900 52px ui-sans-serif, Inter, Arial, sans-serif; fill:#E6F7FB; letter-spacing:-.05em; }
+      .num { font: 900 36px ui-sans-serif, Inter, Arial, sans-serif; fill:#22D3EE; }
+      .metric { font: 900 28px ui-sans-serif, Inter, Arial, sans-serif; fill:#34D399; }
+      .cyan-fill { fill:#22D3EE; } .blue-fill { fill:#2AABEE; } .violet-fill { fill:#8B5CF6; } .green-fill { fill:#34D399; }
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="630"/>
+  <path d="M0 72 H1200 M0 558 H1200" stroke="#162130" stroke-width="1"/>
+  <text x="600.0" y="185.0" class="mega" text-anchor="middle">CATALOGUE THE WORK</text>
+  <text x="600.0" y="260.0" class="mega" text-anchor="middle">SHARE THE RUNTIME</text>
+  <text x="600.0" y="335.0" class="mega" text-anchor="middle">MEASURE THE CLAIMS</text>
+  <circle cx="600.0" cy="430.0" r="54.0" fill="#0B1118" stroke="#22D3EE" stroke-width="4" filter="url(#soft-glow)"/>
+  <text x="600.0" y="448.0" class="mega" text-anchor="middle">Ω</text>
+  <text x="600.0" y="530.0" class="label" text-anchor="middle">445 catalogue scenarios · 15 hubs · reports committed under tests/</text>
+</svg>

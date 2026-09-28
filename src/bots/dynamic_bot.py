@@ -4,10 +4,12 @@ Instantiates and powers any of the 445+ bot blueprints from Opus, ChatGPT, Gemin
 """
 
 from __future__ import annotations
+
 import time
-from typing import Dict, Any, Optional
-from src.core.fsm import AsyncFSM
+from typing import Any
+
 from src.core.database import DB
+from src.core.fsm import AsyncFSM
 from src.core.monetization import PaymentManager
 from src.core.omni_catalog import OMNI_CATALOG
 
@@ -31,7 +33,7 @@ class DynamicArchetypeBot:
         })
         self.fsm = AsyncFSM(self.bot_id)
 
-    async def handle_update(self, update: Dict[str, Any]) -> Dict[str, Any]:
+    async def handle_update(self, update: dict[str, Any]) -> dict[str, Any]:
         """Process incoming Telegram update dynamically based on bot blueprint."""
         if "message" in update:
             msg = update["message"]
@@ -52,7 +54,7 @@ class DynamicArchetypeBot:
                 await self.fsm.reset(user_id)
                 return self._render_home(user_id, user.get("first_name", "کاربر گرامی"))
 
-            state, context, ver = await self.fsm.get_state(user_id)
+            state, context, _ver = await self.fsm.get_state(user_id)
 
             if state == "AWAITING_INPUT":
                 return await self._process_service_action(user_id, text, context)
@@ -84,7 +86,7 @@ class DynamicArchetypeBot:
 
         return {"type": "noop"}
 
-    async def _ensure_user(self, user_dict: Dict[str, Any]) -> None:
+    async def _ensure_user(self, user_dict: dict[str, Any]) -> None:
         user_id = user_dict["id"]
         now = time.time()
         await DB.execute("""
@@ -96,7 +98,7 @@ class DynamicArchetypeBot:
             last_seen_at = excluded.last_seen_at;
         """, (self.bot_id, user_id, user_dict.get("username"), user_dict.get("first_name"), now, now))
 
-    def _main_keyboard(self) -> Dict[str, Any]:
+    def _main_keyboard(self) -> dict[str, Any]:
         return {
             "keyboard": [
                 [{"text": "🚀 شروع استفاده از ربات"}, {"text": "💎 ارتقا به پلن ویژه (VIP)"}],
@@ -105,7 +107,7 @@ class DynamicArchetypeBot:
             "resize_keyboard": True
         }
 
-    def _render_home(self, user_id: int, name: str) -> Dict[str, Any]:
+    def _render_home(self, user_id: int, name: str) -> dict[str, Any]:
         title = self.spec["title"]
         source = self.spec["source"]
         pain = self.spec["pain_point"]
@@ -118,7 +120,7 @@ class DynamicArchetypeBot:
             "reply_markup": self._main_keyboard()
         }
 
-    async def _start_service(self, user_id: int) -> Dict[str, Any]:
+    async def _start_service(self, user_id: int) -> dict[str, Any]:
         await self.fsm.set_state(user_id, "AWAITING_INPUT")
         title = self.spec["title"]
         mvp = self.spec["mvp_scope"]
@@ -130,7 +132,7 @@ class DynamicArchetypeBot:
             "reply_markup": {"inline_keyboard": [[{"text": "❌ انصراف و بازگشت", "callback_data": "home"}]]}
         }
 
-    async def _process_service_action(self, user_id: int, user_input: str, context: Dict[str, Any]) -> Dict[str, Any]:
+    async def _process_service_action(self, user_id: int, user_input: str, context: dict[str, Any]) -> dict[str, Any]:
         await self.fsm.reset(user_id)
         title = self.spec["title"]
 
@@ -145,7 +147,7 @@ class DynamicArchetypeBot:
             "reply_markup": self._main_keyboard()
         }
 
-    def _render_pricing(self, user_id: int) -> Dict[str, Any]:
+    def _render_pricing(self, user_id: int) -> dict[str, Any]:
         price_irt = f"{self.spec['price_irt']:,}"
         price_xtr = self.spec["price_xtr"]
 
@@ -162,7 +164,7 @@ class DynamicArchetypeBot:
             }
         }
 
-    async def _fulfill_stars_payment(self, user_id: int) -> Dict[str, Any]:
+    async def _fulfill_stars_payment(self, user_id: int) -> dict[str, Any]:
         order_id = await PaymentManager.create_order(
             bot_id=self.bot_id,
             user_id=user_id,
@@ -179,7 +181,7 @@ class DynamicArchetypeBot:
             "reply_markup": self._main_keyboard()
         }
 
-    async def _start_card_payment(self, user_id: int) -> Dict[str, Any]:
+    async def _start_card_payment(self, user_id: int) -> dict[str, Any]:
         order_id = await PaymentManager.create_order(
             bot_id=self.bot_id,
             user_id=user_id,
@@ -197,8 +199,8 @@ class DynamicArchetypeBot:
             "reply_markup": {"inline_keyboard": [[{"text": "❌ انصراف", "callback_data": "home"}]]}
         }
 
-    async def _handle_receipt_photo(self, user_id: int) -> Dict[str, Any]:
-        state, context, ver = await self.fsm.get_state(user_id)
+    async def _handle_receipt_photo(self, user_id: int) -> dict[str, Any]:
+        state, context, _ver = await self.fsm.get_state(user_id)
         order_id = context.get("order_id")
 
         if state != "AWAITING_CARD_PHOTO" or not order_id:
@@ -214,7 +216,7 @@ class DynamicArchetypeBot:
             "reply_markup": self._main_keyboard()
         }
 
-    async def _render_account_status(self, user_id: int) -> Dict[str, Any]:
+    async def _render_account_status(self, user_id: int) -> dict[str, Any]:
         user = await DB.fetch_one("SELECT is_premium, premium_until, balance_credits FROM users WHERE bot_id = ? AND user_id = ?", (self.bot_id, user_id))
         is_active = user and user["is_premium"] and user["premium_until"] > time.time()
         credits = user["balance_credits"] if user else 0
@@ -228,7 +230,7 @@ class DynamicArchetypeBot:
             "reply_markup": self._main_keyboard()
         }
 
-    def _render_about(self, user_id: int) -> Dict[str, Any]:
+    def _render_about(self, user_id: int) -> dict[str, Any]:
         has_code = "بله (دارای بلاک‌های کد کامل پایتون در ریپازیتوری)" if self.spec.get("has_source_code") else "پلی‌بوک معماری و MVP"
         return {
             "type": "text",

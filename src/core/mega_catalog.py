@@ -4,10 +4,10 @@ Dynamically ingests and indexes all 150 Telegram Bot Blueprints from repository 
 """
 
 from __future__ import annotations
+
 import re
 from pathlib import Path
-from typing import Dict, Any, List
-
+from typing import Any
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
@@ -31,12 +31,12 @@ CATEGORIES = {
 }
 
 
-def load_all_150_bots() -> Dict[str, Dict[str, Any]]:
+def load_all_150_bots() -> dict[str, dict[str, Any]]:
     """Parse all 150 bot blueprints directly from 150 TELEGRAM BOT.md."""
     md_file = BASE_DIR / "docs" / "original_blueprints" / "150 TELEGRAM BOT.md"
     if not md_file.exists():
         md_file = BASE_DIR / "150 TELEGRAM BOT.md"
-    with open(md_file, "r", encoding="utf-8") as f:
+    with open(md_file, encoding="utf-8") as f:
         text = f.read()
 
     # Pattern: 1) **Title** — Pain — MVP — Monetization

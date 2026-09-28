@@ -5,9 +5,9 @@ import json
 import httpx
 import pytest
 
-from autofreelance.clients.llm import FastLLMClient
-from autofreelance.config import Settings
-from autofreelance.models import FreelanceJob
+from src.autofreelance.clients.llm import FastLLMClient
+from src.autofreelance.config import Settings
+from src.autofreelance.models import FreelanceJob
 
 
 @pytest.mark.asyncio
