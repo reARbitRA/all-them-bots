@@ -1,0 +1,40 @@
+# ==============================================================================
+# FABLE-OMEGA: Ultra-Low-Resource Production Dockerfile
+# Multi-tenant single-process runtime hosting all 445+ Telegram bots in < 45MB RAM
+# ==============================================================================
+
+FROM python:3.11-slim-bookworm as runtime
+
+# Set performance & memory optimization environment variables
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONOPTIMIZE=2 \
+    MALLOC_TRIM_THRESHOLD_=100000 \
+    APP_ENV=production \
+    APP_PORT=8000
+
+# Install minimal runtime dependencies & create non-root user
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    sqlite3 \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/* \
+    && useradd -u 1000 -m -s /bin/bash fable
+
+WORKDIR /app
+
+# Install Python requirements
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy application source & data
+COPY --chown=fable:fable . .
+
+# Ensure data directories exist and are owned by non-root user
+RUN mkdir -p /app/data && chown -R fable:fable /app/data
+
+USER fable
+
+EXPOSE 8000
+
+# Start with single high-performance non-blocking event loop worker
+CMD ["python3", "run.py"]

@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  all-them-bots-kernel:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.slim
+    container_name: fable_omega_fleet
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=production
+      - APP_PORT=8000
+      - LOG_LEVEL=WARNING
+      - PYTHONOPTIMIZE=2
+      - MALLOC_TRIM_THRESHOLD_=100000
+    volumes:
+      - ../data:/app/data
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 128M
+        reservations:
+          cpus: '0.1'
+          memory: 45M
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/healthz')"]
+      interval: 15s
+      timeout: 3s
+      retries: 3
+      start_period: 5s

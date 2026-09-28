@@ -1,3 +1,10 @@
+__pycache__/
+*.py[cod]
+*$py.class
+data/*.db
+data/*.db-wal
+data/*.db-shm
+.pytest_cache/
 # Python
 __pycache__/
 *.py[cod]
