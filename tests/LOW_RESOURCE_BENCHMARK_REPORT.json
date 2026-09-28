@@ -1,30 +1,75 @@
 {
-  "timestamp": 1790525566.6002657,
+  "report_schema_version": "1.0",
+  "timestamp": 1790636090.512136,
+  "environment": {
+    "generated_at_utc": "2026-09-28T22:54:50+00:00",
+    "python_version": "3.11.2",
+    "python_implementation": "CPython",
+    "python_executable": "/home/user/all-them-bots/.venv/bin/python",
+    "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+    "system": "Linux",
+    "release": "6.1.158+",
+    "machine": "x86_64",
+    "processor": "unknown",
+    "cpu_count": 2,
+    "total_memory_mb": 3939.89,
+    "available_memory_mb": 3629.16,
+    "commit": "78f01e79f453d6a449b001ffa7ee933f5972b4ca",
+    "branch": "arena/01a0ea30-all-them-bots",
+    "working_tree_dirty": true
+  },
+  "catalogue": {
+    "total_entries": 445,
+    "hub_counts": {
+      "hub_01_commerce": 8,
+      "hub_02_vip_paywalls": 5,
+      "hub_03_ai_studio": 93,
+      "hub_04_coding_katas": 0,
+      "hub_05_b2b_compliance": 6,
+      "hub_06_fintech_crypto": 2,
+      "hub_07_education_learning": 12,
+      "hub_08_growth_leadgen": 2,
+      "hub_09_health_fitness": 3,
+      "hub_10_real_estate_rental": 2,
+      "hub_11_productivity_search": 4,
+      "hub_12_media_optimization": 1,
+      "hub_13_rubika_baleh_local": 50,
+      "hub_14_gamification_leagues": 2,
+      "hub_15_agency_factory": 255
+    },
+    "active_pool_capacity": 64
+  },
+  "test_parameters": {
+    "total_requests": 1000,
+    "concurrency": 50,
+    "rate_limit_bypassed": true,
+    "random_seed": null
+  },
   "total_requests": 1000,
   "concurrency": 50,
-  "success_rate_percent": 99.3,
-  "total_time_seconds": 1.732,
-  "throughput_rps": 577.37,
+  "success_rate_percent": 99.6,
+  "total_time_seconds": 2.366,
+  "throughput_rps": 422.63,
   "latencies_ms": {
-    "avg": 85.06,
-    "p50": 79.43,
-    "p95": 124.16,
-    "p99": 147.09,
-    "event_loop_lag": 0.181
+    "avg": 117.02,
+    "p50": 105.58,
+    "p95": 210.49,
+    "p99": 307.3,
+    "event_loop_lag": 0.319
   },
   "bot_pool": {
     "active_cached": 0,
     "max_capacity": 64,
-    "hit_ratio_percent": 13.6,
-    "total_evictions": 850
+    "hit_ratio_percent": 13.9,
+    "total_evictions": 853
   },
   "resource_footprint": {
-    "initial_rss_mb": 37.75,
-    "under_load_rss_mb": 49.98,
-    "post_gc_rss_mb": 49.95,
-    "peak_rss_mb": 403.93,
+    "initial_rss_mb": 41.78,
+    "under_load_rss_mb": 54.98,
+    "post_gc_rss_mb": 54.89,
+    "peak_rss_mb": 418.09,
     "baseline_445_processes_mb": 22250.0,
-    "memory_saved_mb": 22200.0,
-    "memory_reduction_percent": 99.78
+    "memory_saved_mb": 22195.0,
+    "memory_reduction_percent": 99.75
   }
 }

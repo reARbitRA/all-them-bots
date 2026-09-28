@@ -4,11 +4,12 @@ Protects endpoints against forgery and timing attacks via constant-time HMAC-SHA
 """
 
 from __future__ import annotations
-import hmac
+
 import hashlib
+import hmac
 import json
 import urllib.parse
-from typing import Dict, Any, Optional, Tuple
+from typing import Any
 
 
 class TMACryptoGate:
@@ -22,14 +23,14 @@ class TMACryptoGate:
             digestmod=hashlib.sha256
         ).digest()
 
-    def validate_init_data(self, init_data_raw: str) -> Tuple[bool, Optional[Dict[str, Any]]]:
+    def validate_init_data(self, init_data_raw: str) -> tuple[bool, dict[str, Any] | None]:
         """Validate initData query string with constant-time HMAC comparison."""
         if not init_data_raw:
             return False, None
 
         try:
             parsed_params = urllib.parse.parse_qsl(init_data_raw, keep_blank_values=True)
-            params_dict: Dict[str, str] = dict(parsed_params)
+            params_dict: dict[str, str] = dict(parsed_params)
         except Exception:
             return False, None
 
@@ -51,7 +52,7 @@ class TMACryptoGate:
         if not is_authentic:
             return False, None
 
-        payload: Dict[str, Any] = {}
+        payload: dict[str, Any] = {}
         for k, v in params_dict.items():
             if k in ("user", "receiver", "chat"):
                 try:

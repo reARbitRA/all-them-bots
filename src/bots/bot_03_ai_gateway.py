@@ -4,13 +4,13 @@ Monetization Blueprint: Credit-based Micro-SaaS for Copywriting, Translation, Co
 """
 
 from __future__ import annotations
+
 import time
-import asyncio
-from typing import Dict, Any, List
-from src.core.fsm import AsyncFSM
+from typing import Any, ClassVar
+
 from src.core.database import DB
+from src.core.fsm import AsyncFSM
 from src.core.monetization import PaymentManager
-from src.core.config import CONFIG
 
 
 class AiGatewayBot:
@@ -18,7 +18,7 @@ class AiGatewayBot:
 
     BOT_ID = "ai_gateway"
 
-    TOOLS = {
+    TOOLS: ClassVar[dict[str, dict[str, int | str]]] = {
         "copywriting": {
             "title": "📝 تولید محتوا و کپشن اینستاگرام/تلگرام",
             "prompt_hint": "موضوع یا ایده محتوای خود را بنویسید (مثال: معرفی کفش ورزشی چرم با لحن جذاب)",
@@ -41,17 +41,17 @@ class AiGatewayBot:
         }
     }
 
-    PACKAGES = {
+    PACKAGES: ClassVar[dict[str, dict[str, int | str]]] = {
         "pack_50": {"title": "بسته ۵۰ کریدیت هوش مصنوعی", "credits": 50, "price_irt": 150000, "price_xtr": 100},
         "pack_200": {"title": "بسته ۲۰۰ کریدیت حرفه‌ای (۳۰٪ تخفیف)", "credits": 200, "price_irt": 450000, "price_xtr": 250},
         "pack_1000": {"title": "بسته ۱۰۰۰ کریدیت نامحدود سازمانی", "credits": 1000, "price_irt": 1500000, "price_xtr": 800},
     }
 
-    def __init__(self, bot_id: Optional[str] = None) -> None:
+    def __init__(self, bot_id: str | None = None) -> None:
         self.bot_id = bot_id or self.BOT_ID
         self.fsm = AsyncFSM(self.bot_id)
 
-    async def handle_update(self, update: Dict[str, Any]) -> Dict[str, Any]:
+    async def handle_update(self, update: dict[str, Any]) -> dict[str, Any]:
         if "message" in update:
             msg = update["message"]
             user = msg.get("from", {})
@@ -67,7 +67,7 @@ class AiGatewayBot:
                 await self.fsm.reset(user_id)
                 return await self._render_home(user_id, user.get("first_name", "کاربر گرامی"))
 
-            state, context, ver = await self.fsm.get_state(user_id)
+            state, context, _ver = await self.fsm.get_state(user_id)
 
             if state in ("AWAITING_AI_INPUT", "AWAITING_INPUT"):
                 tool_key = context.get("tool_key", "copywriting")
@@ -99,7 +99,7 @@ class AiGatewayBot:
 
         return {"type": "noop"}
 
-    async def _ensure_user(self, user_dict: Dict[str, Any]) -> None:
+    async def _ensure_user(self, user_dict: dict[str, Any]) -> None:
         user_id = user_dict["id"]
         now = time.time()
         await DB.execute("""
@@ -111,7 +111,7 @@ class AiGatewayBot:
             last_seen_at = excluded.last_seen_at;
         """, (self.bot_id, user_id, user_dict.get("username"), user_dict.get("first_name"), now, now))
 
-    def _main_keyboard(self) -> Dict[str, Any]:
+    def _main_keyboard(self) -> dict[str, Any]:
         return {
             "keyboard": [
                 [{"text": "🚀 ابزارهای هوش مصنوعی"}, {"text": "💰 شارژ حساب و خرید اعتبار"}],
@@ -120,7 +120,7 @@ class AiGatewayBot:
             "resize_keyboard": True
         }
 
-    async def _render_home(self, user_id: int, name: str) -> Dict[str, Any]:
+    async def _render_home(self, user_id: int, name: str) -> dict[str, Any]:
         user = await DB.fetch_one("SELECT balance_credits FROM users WHERE bot_id = ? AND user_id = ?", (self.bot_id, user_id))
         credits = user["balance_credits"] if user else 10
 
@@ -131,7 +131,7 @@ class AiGatewayBot:
             "reply_markup": self._main_keyboard()
         }
 
-    def _render_tools(self, user_id: int) -> Dict[str, Any]:
+    def _render_tools(self, user_id: int) -> dict[str, Any]:
         buttons = []
         for key, tool in self.TOOLS.items():
             buttons.append([{"text": f"{tool['title']} ({tool['cost']} کریدیت)", "callback_data": f"tool_{key}"}])
@@ -143,7 +143,7 @@ class AiGatewayBot:
             "reply_markup": {"inline_keyboard": buttons}
         }
 
-    async def _start_tool(self, user_id: int, tool_key: str) -> Dict[str, Any]:
+    async def _start_tool(self, user_id: int, tool_key: str) -> dict[str, Any]:
         tool = self.TOOLS.get(tool_key, self.TOOLS["copywriting"])
         user = await DB.fetch_one("SELECT balance_credits FROM users WHERE bot_id = ? AND user_id = ?", (self.bot_id, user_id))
         credits = user["balance_credits"] if user else 0
@@ -167,7 +167,7 @@ class AiGatewayBot:
             "reply_markup": {"inline_keyboard": [[{"text": "❌ انصراف", "callback_data": "home"}]]}
         }
 
-    async def _process_ai_task(self, user_id: int, tool_key: str, user_prompt: str) -> Dict[str, Any]:
+    async def _process_ai_task(self, user_id: int, tool_key: str, user_prompt: str) -> dict[str, Any]:
         tool = self.TOOLS.get(tool_key, self.TOOLS["copywriting"])
         cost = tool["cost"]
 
@@ -179,11 +179,11 @@ class AiGatewayBot:
         if tool_key == "copywriting":
             result = f"🎯 **متن تبلیغاتی بهینه‌شده:**\n\n«{user_prompt}»\n\n✨ **ویژگی‌های برجسته:**\n- سرعت، امنیت و سادگی در یک پلتفرم یکپارچه\n- پشتیبانی ۲۴/۷ و پاسخگویی آنی\n\n👉 همین حالا سفارش دهید تا از ۳۰٪ تخفیف افتتاحیه بهره‌مند شوید!\n\n#تبلیغات #فروش_آنلاین #پیشنهاد_ویژه"
         elif tool_key == "translation":
-            result = f"🌐 **ترجمه حرفه‌ای و اصطلاح‌شناسی:**\n\n**English:**\n\"Seamless high-concurrency architecture delivering zero latency and robust real-time throughput for next-generation platforms.\"\n\n**فارسی روان:**\n«معماری پرسرعت و همگام‌سازی شده که بالاترین سطح پایداری و بازدهی بلادرنگ را برای پلتفرم‌های نوین به ارمغان می‌آورد.»"
+            result = "🌐 **ترجمه حرفه‌ای و اصطلاح‌شناسی:**\n\n**English:**\n\"Seamless high-concurrency architecture delivering zero latency and robust real-time throughput for next-generation platforms.\"\n\n**فارسی روان:**\n«معماری پرسرعت و همگام‌سازی شده که بالاترین سطح پایداری و بازدهی بلادرنگ را برای پلتفرم‌های نوین به ارمغان می‌آورد.»"
         elif tool_key == "resume":
-            result = f"💼 **بهینه‌سازی رزومه طبق استانداردهای ATS:**\n\n• **Impact Summary:** Led multi-agent asynchronous bot fleet processing 50k+ daily queries with 99.9% uptime.\n• **Key Achievement:** Scaled revenue monetization funnel using automated Stars and card-to-card verified billing.\n• **Tech Stack:** Python 3.12, AsyncIO, SQLite WAL, Redis FSM, Telegram Bot API Layer 7."
+            result = "💼 **بهینه‌سازی رزومه طبق استانداردهای ATS:**\n\n• **Impact Summary:** Led multi-agent asynchronous bot fleet processing 50k+ daily queries with 99.9% uptime.\n• **Key Achievement:** Scaled revenue monetization funnel using automated Stars and card-to-card verified billing.\n• **Tech Stack:** Python 3.12, AsyncIO, SQLite WAL, Redis FSM, Telegram Bot API Layer 7."
         else:
-            result = f"💻 **کد بازنویسی‌شده با استانداردهای مدرن:**\n\n```python\nasync def optimized_handler(data: dict) -> bool:\n    # Optimized O(1) lookups & non-blocking execution\n    clean_payload = {k: v for k, v in data.items() if v is not None}\n    return bool(clean_payload)\n```\n\n✅ عملکرد کد تا ۴ برابر بهبود یافت و پیچیدگی زمانی کاهش یافت."
+            result = "💻 **کد بازنویسی‌شده با استانداردهای مدرن:**\n\n```python\nasync def optimized_handler(data: dict) -> bool:\n    # Optimized O(1) lookups & non-blocking execution\n    clean_payload = {k: v for k, v in data.items() if v is not None}\n    return bool(clean_payload)\n```\n\n✅ عملکرد کد تا ۴ برابر بهبود یافت و پیچیدگی زمانی کاهش یافت."
 
         user = await DB.fetch_one("SELECT balance_credits FROM users WHERE bot_id = ? AND user_id = ?", (self.bot_id, user_id))
         remaining = user["balance_credits"] if user else 0
@@ -195,7 +195,7 @@ class AiGatewayBot:
             "reply_markup": self._main_keyboard()
         }
 
-    def _render_packages(self, user_id: int) -> Dict[str, Any]:
+    def _render_packages(self, user_id: int) -> dict[str, Any]:
         buttons = []
         for key, pack in self.PACKAGES.items():
             buttons.append([{"text": f"⭐ خرید {pack['title']} ({pack['price_xtr']} Stars)", "callback_data": f"buy_credits_{key}"}])
@@ -207,7 +207,7 @@ class AiGatewayBot:
             "reply_markup": {"inline_keyboard": buttons}
         }
 
-    async def _buy_credits_stars(self, user_id: int, pack_key: str) -> Dict[str, Any]:
+    async def _buy_credits_stars(self, user_id: int, pack_key: str) -> dict[str, Any]:
         pack = self.PACKAGES.get(pack_key, self.PACKAGES["pack_50"])
         order_id = await PaymentManager.create_order(
             bot_id=self.bot_id,
@@ -229,7 +229,7 @@ class AiGatewayBot:
             "reply_markup": self._main_keyboard()
         }
 
-    async def _render_balance(self, user_id: int) -> Dict[str, Any]:
+    async def _render_balance(self, user_id: int) -> dict[str, Any]:
         user = await DB.fetch_one("SELECT balance_credits FROM users WHERE bot_id = ? AND user_id = ?", (self.bot_id, user_id))
         credits = user["balance_credits"] if user else 0
 

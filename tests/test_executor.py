@@ -3,9 +3,9 @@ from __future__ import annotations
 import httpx
 import pytest
 
-from autofreelance.clients.executor import ArenaExecutionGatewayClient
-from autofreelance.config import Settings
-from autofreelance.models import FreelanceJob
+from src.autofreelance.clients.executor import ArenaExecutionGatewayClient
+from src.autofreelance.config import Settings
+from src.autofreelance.models import FreelanceJob
 
 
 @pytest.mark.asyncio

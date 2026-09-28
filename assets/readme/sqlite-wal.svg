@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fable-omega-sqlite-wal-title fable-omega-sqlite-wal-desc" width="100%" height="auto" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid meet">
+  <title id="fable-omega-sqlite-wal-title">FABLE OMEGA SQLite WAL</title>
+  <desc id="fable-omega-sqlite-wal-desc">Buffered state flow through SQLite WAL persistence.</desc>
+  <defs>
+    <linearGradient id="g-cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#2AABEE" stop-opacity="0.65"/>
+    </linearGradient>
+    <linearGradient id="g-violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.13 0 0 0 0 0.83 0 0 0 0 0.93 0 0 0 0.7 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .bg { fill:#07090C; }
+      .panel { fill:#0B1118; stroke:#162130; stroke-width:1.4; rx:22; }
+      .panel2 { fill:#091019; stroke:#203044; stroke-width:1.2; rx:18; }
+      .line { stroke:#22D3EE; stroke-width:2; stroke-opacity:.58; fill:none; }
+      .rail { stroke:#2AABEE; stroke-width:4; stroke-linecap:round; stroke-opacity:.78; fill:none; }
+      .violet { stroke:#8B5CF6; fill:none; }
+      .green { stroke:#34D399; fill:none; }
+      .label { font: 700 16px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#E6F7FB; }
+      .small { font: 500 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#93A4B7; }
+      .tiny { font: 600 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#93A4B7; letter-spacing:.08em; }
+      .mega { font: 900 52px ui-sans-serif, Inter, Arial, sans-serif; fill:#E6F7FB; letter-spacing:-.05em; }
+      .num { font: 900 36px ui-sans-serif, Inter, Arial, sans-serif; fill:#22D3EE; }
+      .metric { font: 900 28px ui-sans-serif, Inter, Arial, sans-serif; fill:#34D399; }
+      .cyan-fill { fill:#22D3EE; } .blue-fill { fill:#2AABEE; } .violet-fill { fill:#8B5CF6; } .green-fill { fill:#34D399; }
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="630"/>
+  <path d="M0 72 H1200 M0 558 H1200" stroke="#162130" stroke-width="1"/>
+  <text x="70.0" y="112.0" class="mega" text-anchor="start">SQLITE WAL BUFFER</text>
+  <text x="74.0" y="148.0" class="small" text-anchor="start">Buffered state flow: users · FSM · orders · products · reminders · katas</text>
+  <rect x="90.0" y="192.0" width="180.0" height="38.0" class="panel2" />
+  <text x="118.0" y="217.0" class="small" text-anchor="start">updates</text>
+  <path d="M274,210 C380,210 400,318 510,318" class="line"/>
+  <rect x="90.0" y="250.0" width="180.0" height="38.0" class="panel2" />
+  <text x="118.0" y="275.0" class="small" text-anchor="start">FSM patch</text>
+  <path d="M274,268 C380,268 400,318 510,318" class="line"/>
+  <rect x="90.0" y="308.0" width="180.0" height="38.0" class="panel2" />
+  <text x="118.0" y="333.0" class="small" text-anchor="start">order event</text>
+  <path d="M274,326 C380,326 400,318 510,318" class="line"/>
+  <rect x="90.0" y="366.0" width="180.0" height="38.0" class="panel2" />
+  <text x="118.0" y="391.0" class="small" text-anchor="start">credit delta</text>
+  <path d="M274,384 C380,384 400,318 510,318" class="line"/>
+  <rect x="90.0" y="424.0" width="180.0" height="38.0" class="panel2" />
+  <text x="118.0" y="449.0" class="small" text-anchor="start">audit row</text>
+  <path d="M274,442 C380,442 400,318 510,318" class="line"/>
+  <rect x="510.0" y="246.0" width="190.0" height="144.0" class="panel" />
+  <text x="605.0" y="302.0" class="mega" text-anchor="middle">WAL</text>
+  <text x="605.0" y="336.0" class="tiny" text-anchor="middle">write-ahead log</text>
+  <path d="M700,318 C790,318 790,210 890,210" class="rail"/>
+  <rect x="890.0" y="185.0" width="210.0" height="42.0" class="panel2" />
+  <text x="920.0" y="212.0" class="label" text-anchor="start">users</text>
+  <path d="M700,318 C790,318 790,284 890,284" class="rail"/>
+  <rect x="890.0" y="259.0" width="210.0" height="42.0" class="panel2" />
+  <text x="920.0" y="286.0" class="label" text-anchor="start">fsm_sessions</text>
+  <path d="M700,318 C790,318 790,358 890,358" class="rail"/>
+  <rect x="890.0" y="333.0" width="210.0" height="42.0" class="panel2" />
+  <text x="920.0" y="360.0" class="label" text-anchor="start">orders</text>
+  <path d="M700,318 C790,318 790,432 890,432" class="rail"/>
+  <rect x="890.0" y="407.0" width="210.0" height="42.0" class="panel2" />
+  <text x="920.0" y="434.0" class="label" text-anchor="start">products</text>
+  <text x="92.0" y="540.0" class="tiny" text-anchor="start">PRAGMA journal_mode=WAL · synchronous=NORMAL · busy_timeout=5000</text>
+</svg>

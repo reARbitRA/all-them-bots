@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fable-omega-deployment-stack-title fable-omega-deployment-stack-desc" width="100%" height="auto" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid meet">
+  <title id="fable-omega-deployment-stack-title">FABLE OMEGA deployment stack</title>
+  <desc id="fable-omega-deployment-stack-desc">Deployment stack from local CLI to Docker Compose.</desc>
+  <defs>
+    <linearGradient id="g-cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#2AABEE" stop-opacity="0.65"/>
+    </linearGradient>
+    <linearGradient id="g-violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.13 0 0 0 0 0.83 0 0 0 0 0.93 0 0 0 0.7 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .bg { fill:#07090C; }
+      .panel { fill:#0B1118; stroke:#162130; stroke-width:1.4; rx:22; }
+      .panel2 { fill:#091019; stroke:#203044; stroke-width:1.2; rx:18; }
+      .line { stroke:#22D3EE; stroke-width:2; stroke-opacity:.58; fill:none; }
+      .rail { stroke:#2AABEE; stroke-width:4; stroke-linecap:round; stroke-opacity:.78; fill:none; }
+      .violet { stroke:#8B5CF6; fill:none; }
+      .green { stroke:#34D399; fill:none; }
+      .label { font: 700 16px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#E6F7FB; }
+      .small { font: 500 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#93A4B7; }
+      .tiny { font: 600 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#93A4B7; letter-spacing:.08em; }
+      .mega { font: 900 52px ui-sans-serif, Inter, Arial, sans-serif; fill:#E6F7FB; letter-spacing:-.05em; }
+      .num { font: 900 36px ui-sans-serif, Inter, Arial, sans-serif; fill:#22D3EE; }
+      .metric { font: 900 28px ui-sans-serif, Inter, Arial, sans-serif; fill:#34D399; }
+      .cyan-fill { fill:#22D3EE; } .blue-fill { fill:#2AABEE; } .violet-fill { fill:#8B5CF6; } .green-fill { fill:#34D399; }
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="630"/>
+  <path d="M0 72 H1200 M0 558 H1200" stroke="#162130" stroke-width="1"/>
+  <text x="70.0" y="112.0" class="mega" text-anchor="start">DEPLOYMENT STACK</text>
+  <text x="74.0" y="148.0" class="small" text-anchor="start">Installation, benchmarking and deployment path</text>
+  <rect x="150.0" y="205.0" width="850.0" height="50.0" class="panel2" stroke="#22D3EE"/>
+  <text x="190.0" y="237.0" class="label" text-anchor="start">OPERATOR</text>
+  <text x="420.0" y="237.0" class="small" text-anchor="start">README · .env · fable-omega CLI</text>
+  <rect x="172.0" y="277.0" width="806.0" height="50.0" class="panel2" stroke="#2AABEE"/>
+  <text x="212.0" y="309.0" class="label" text-anchor="start">CONTROL PLANE</text>
+  <text x="442.0" y="309.0" class="small" text-anchor="start">FastAPI · Uvicorn · dashboard</text>
+  <rect x="194.0" y="349.0" width="762.0" height="50.0" class="panel2" stroke="#34D399"/>
+  <text x="234.0" y="381.0" class="label" text-anchor="start">RUNTIME</text>
+  <text x="464.0" y="381.0" class="small" text-anchor="start">Async dispatcher · FSM · LRU pool</text>
+  <rect x="216.0" y="421.0" width="718.0" height="50.0" class="panel2" stroke="#8B5CF6"/>
+  <text x="256.0" y="453.0" class="label" text-anchor="start">STATE</text>
+  <text x="486.0" y="453.0" class="small" text-anchor="start">SQLite WAL · orders · credits</text>
+  <rect x="238.0" y="493.0" width="674.0" height="50.0" class="panel2" stroke="#FBBF24"/>
+  <text x="278.0" y="525.0" class="label" text-anchor="start">DEPLOYMENT</text>
+  <text x="508.0" y="525.0" class="small" text-anchor="start">Docker Compose · Dockerfile.slim · Caddy</text>
+  <text x="85.0" y="560.0" class="tiny" text-anchor="start">Primary local command: python run.py · package script: fable-omega · container path: deploy/docker-compose.yml</text>
+</svg>

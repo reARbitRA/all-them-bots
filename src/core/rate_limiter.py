@@ -4,10 +4,9 @@ Prevents Telegram Bot API FloodWait (429) errors without third-party broker depe
 """
 
 from __future__ import annotations
-import time
+
 import asyncio
-from collections import deque
-from typing import Dict, Optional
+import time
 
 
 class TokenBucketRateLimiter:
@@ -28,11 +27,11 @@ class TokenBucketRateLimiter:
         self._global_tokens = global_capacity
         self._global_last_time = time.perf_counter()
         
-        self._peer_tokens: Dict[int, float] = {}
-        self._peer_last_time: Dict[int, float] = {}
+        self._peer_tokens: dict[int, float] = {}
+        self._peer_last_time: dict[int, float] = {}
         self._lock = asyncio.Lock()
 
-    async def acquire(self, peer_id: Optional[int] = None, bypass: bool = False) -> None:
+    async def acquire(self, peer_id: int | None = None, bypass: bool = False) -> None:
         """Asynchronously block until rate permit is available unless bypassed for tests."""
         if bypass:
             return

@@ -4,11 +4,12 @@ Validates that 445+ bots run concurrently within strict memory (< 50MB) and CPU 
 """
 
 from __future__ import annotations
-import sys
-import time
+
+import asyncio
 import json
 import random
-import asyncio
+import sys
+import time
 from pathlib import Path
 
 # Add repository root to python search path
@@ -16,11 +17,17 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
-from src.core.omni_catalog import OMNI_CATALOG
-from src.core.dispatcher import DISPATCHER
-from src.core.database import DB
-from src.core.resource_optimizer import (
-    GLOBAL_BOT_POOL, GLOBAL_WRITE_BUFFER, GLOBAL_RESOURCE_MONITOR
+from src.core.dispatcher import DISPATCHER  # noqa: E402
+from src.core.hub_router import HUB_ROUTER  # noqa: E402
+from src.core.omni_catalog import OMNI_CATALOG  # noqa: E402
+from src.core.reporting import (  # noqa: E402
+    collect_environment_metadata,
+    validate_low_resource_report,
+)
+from src.core.resource_optimizer import (  # noqa: E402
+    GLOBAL_BOT_POOL,
+    GLOBAL_RESOURCE_MONITOR,
+    GLOBAL_WRITE_BUFFER,
 )
 
 
@@ -67,7 +74,7 @@ async def run_benchmark(total_requests: int = 1000, concurrency: int = 50) -> di
                     success_count += 1
                 else:
                     error_count += 1
-            except Exception as e:
+            except Exception:
                 error_count += 1
 
     print(f"⚡ Dispatching {total_requests} requests with {concurrency} concurrent workers across 445 bots...")
@@ -77,7 +84,7 @@ async def run_benchmark(total_requests: int = 1000, concurrency: int = 50) -> di
     total_time = time.perf_counter() - start_bench
 
     # Flush batch writes
-    flushed_writes = await GLOBAL_WRITE_BUFFER.flush()
+    await GLOBAL_WRITE_BUFFER.flush()
 
     # Measure under-load / post-load memory
     mem_under_load = GLOBAL_RESOURCE_MONITOR.get_memory_info()
@@ -116,8 +123,22 @@ async def run_benchmark(total_requests: int = 1000, concurrency: int = 50) -> di
     mem_after_gc = GLOBAL_RESOURCE_MONITOR.get_memory_info()
     print(f"Purged {evicted} cached bot instances. Post-GC RSS: {mem_after_gc['rss_mb']} MB")
 
+    hub_counts = {hub_key: hub["bot_count"] for hub_key, hub in HUB_ROUTER.get_hub_summary().items()}
     report = {
+        "report_schema_version": "1.0",
         "timestamp": time.time(),
+        "environment": collect_environment_metadata(ROOT_DIR),
+        "catalogue": {
+            "total_entries": len(OMNI_CATALOG),
+            "hub_counts": hub_counts,
+            "active_pool_capacity": GLOBAL_BOT_POOL.max_active,
+        },
+        "test_parameters": {
+            "total_requests": total_requests,
+            "concurrency": concurrency,
+            "rate_limit_bypassed": True,
+            "random_seed": None,
+        },
         "total_requests": total_requests,
         "concurrency": concurrency,
         "success_rate_percent": round((success_count / total_requests) * 100, 2),
@@ -146,10 +167,14 @@ async def run_benchmark(total_requests: int = 1000, concurrency: int = 50) -> di
             "memory_reduction_percent": mem_under_load["savings_percent"]
         }
     }
+    validate_low_resource_report(report, expected_total=len(OMNI_CATALOG))
 
     report_path = Path("/home/user/all-them-bots/tests/LOW_RESOURCE_BENCHMARK_REPORT.json")
-    with open(report_path, "w", encoding="utf-8") as f:
-        json.dump(report, f, indent=2, ensure_ascii=False)
+
+    def _write_report() -> None:
+        report_path.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
+
+    await asyncio.to_thread(_write_report)
 
     print(f"💾 Benchmark artifact saved: {report_path}")
     return report

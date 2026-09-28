@@ -4,12 +4,12 @@ Implements zero-cost embedded persistence with WAL (Write-Ahead Logging) concurr
 """
 
 from __future__ import annotations
-import sqlite3
-import json
-import time
+
 import asyncio
-from typing import List, Dict, Any, Optional, Tuple
+import sqlite3
 from pathlib import Path
+from typing import Any
+
 from src.core.config import CONFIG
 
 
@@ -169,7 +169,7 @@ class AsyncDatabase:
                     return cursor.rowcount
             return await loop.run_in_executor(None, _run)
 
-    async def fetch_one(self, query: str, params: tuple = ()) -> Optional[Dict[str, Any]]:
+    async def fetch_one(self, query: str, params: tuple = ()) -> dict[str, Any] | None:
         """Execute read query and return single row as dictionary."""
         loop = asyncio.get_running_loop()
         def _run():
@@ -180,7 +180,7 @@ class AsyncDatabase:
                 return dict(row) if row else None
         return await loop.run_in_executor(None, _run)
 
-    async def fetch_all(self, query: str, params: tuple = ()) -> List[Dict[str, Any]]:
+    async def fetch_all(self, query: str, params: tuple = ()) -> list[dict[str, Any]]:
         """Execute read query and return all matching rows as list of dictionaries."""
         loop = asyncio.get_running_loop()
         def _run():

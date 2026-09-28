@@ -4,12 +4,13 @@ Supports Telegram Stars (XTR), Card-to-Card Receipt Gateways, Crypto TON, and VI
 """
 
 from __future__ import annotations
-import uuid
-import time
+
 import json
-from typing import Dict, Any, Optional, Tuple
+import time
+import uuid
+from typing import Any
+
 from src.core.database import DB
-from src.core.config import CONFIG
 
 
 class PaymentManager:
@@ -22,7 +23,7 @@ class PaymentManager:
         amount: float,
         currency: str,
         payment_method: str,
-        metadata: Optional[Dict[str, Any]] = None
+        metadata: dict[str, Any] | None = None
     ) -> str:
         """Create a new pending order in database."""
         order_id = f"ord_{int(time.time())}_{uuid.uuid4().hex[:6]}"
@@ -37,7 +38,7 @@ class PaymentManager:
         return order_id
 
     @staticmethod
-    async def approve_order(order_id: str) -> Tuple[bool, Optional[Dict[str, Any]]]:
+    async def approve_order(order_id: str) -> tuple[bool, dict[str, Any] | None]:
         """Mark an order as APPROVED and fulfill the digital asset / subscription / credits."""
         order = await DB.fetch_one("SELECT * FROM orders WHERE order_id = ?", (order_id,))
         if not order:
@@ -93,7 +94,7 @@ class PaymentManager:
         return updated > 0
 
     @staticmethod
-    async def get_user_orders(bot_id: str, user_id: int) -> list[Dict[str, Any]]:
+    async def get_user_orders(bot_id: str, user_id: int) -> list[dict[str, Any]]:
         """Fetch transaction history for a user."""
         return await DB.fetch_all(
             "SELECT * FROM orders WHERE bot_id = ? AND user_id = ? ORDER BY created_at DESC LIMIT 20",
@@ -106,7 +107,7 @@ class PaymentManager:
         description: str,
         payload: str,
         stars_amount: int
-    ) -> Dict[str, Any]:
+    ) -> dict[str, Any]:
         """Generate Telegram Bot API sendInvoice payload for Telegram Stars (XTR)."""
         return {
             "title": title,

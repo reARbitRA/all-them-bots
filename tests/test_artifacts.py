@@ -2,9 +2,9 @@ from __future__ import annotations
 
 import pytest
 
-from autofreelance.artifacts import materialize_artifacts, validate_artifacts
-from autofreelance.exceptions import ArtifactValidationError
-from autofreelance.models import ArtifactFile
+from src.autofreelance.artifacts import materialize_artifacts, validate_artifacts
+from src.autofreelance.exceptions import ArtifactValidationError
+from src.autofreelance.models import ArtifactFile
 
 
 def valid_files() -> tuple[ArtifactFile, ...]:

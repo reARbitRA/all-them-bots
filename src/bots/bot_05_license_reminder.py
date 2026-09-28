@@ -4,14 +4,14 @@ Monetization Blueprint: Multi-Asset Expiry Tracking for Domains, SSLs, Licenses,
 """
 
 from __future__ import annotations
+
 import time
 import uuid
-import datetime
-from typing import Dict, Any, List
-from src.core.fsm import AsyncFSM
+from typing import Any
+
 from src.core.database import DB
+from src.core.fsm import AsyncFSM
 from src.core.monetization import PaymentManager
-from src.core.config import CONFIG
 
 
 class LicenseReminderBot:
@@ -19,11 +19,11 @@ class LicenseReminderBot:
 
     BOT_ID = "license_reminder"
 
-    def __init__(self, bot_id: Optional[str] = None) -> None:
+    def __init__(self, bot_id: str | None = None) -> None:
         self.bot_id = bot_id or self.BOT_ID
         self.fsm = AsyncFSM(self.bot_id)
 
-    async def handle_update(self, update: Dict[str, Any]) -> Dict[str, Any]:
+    async def handle_update(self, update: dict[str, Any]) -> dict[str, Any]:
         if "message" in update:
             msg = update["message"]
             user = msg.get("from", {})
@@ -46,7 +46,7 @@ class LicenseReminderBot:
             elif text in ("💼 پلن تجاری نامحدود (تیم‌ها)", "💼 Business Plan", "💎 ارتقا به پلن ویژه (VIP)", "💎 اشتراک VIP و امکانات ویژه"):
                 return self._render_business_plans(user_id)
 
-            state, context, ver = await self.fsm.get_state(user_id)
+            state, context, _ver = await self.fsm.get_state(user_id)
 
             if state in ("AWAITING_TITLE", "AWAITING_INPUT"):
                 await self.fsm.set_state(user_id, "AWAITING_DAYS", {"item_title": text})
@@ -107,7 +107,7 @@ class LicenseReminderBot:
 
         return {"type": "noop"}
 
-    async def _ensure_user(self, user_dict: Dict[str, Any]) -> None:
+    async def _ensure_user(self, user_dict: dict[str, Any]) -> None:
         user_id = user_dict["id"]
         now = time.time()
         await DB.execute("""
@@ -119,7 +119,7 @@ class LicenseReminderBot:
             last_seen_at = excluded.last_seen_at;
         """, (self.bot_id, user_id, user_dict.get("username"), user_dict.get("first_name"), now, now))
 
-    def _main_keyboard(self) -> Dict[str, Any]:
+    def _main_keyboard(self) -> dict[str, Any]:
         return {
             "keyboard": [
                 [{"text": "➕ ثبت یادآور انقضا جدید"}, {"text": "📋 لیست سررسیدهای من"}],
@@ -128,7 +128,7 @@ class LicenseReminderBot:
             "resize_keyboard": True
         }
 
-    async def _render_home(self, user_id: int, name: str) -> Dict[str, Any]:
+    async def _render_home(self, user_id: int, name: str) -> dict[str, Any]:
         count_row = await DB.fetch_one("SELECT COUNT(*) as cnt FROM reminders WHERE bot_id = ? AND user_id = ?", (self.bot_id, user_id))
         count = count_row["cnt"] if count_row else 0
 
@@ -139,7 +139,7 @@ class LicenseReminderBot:
             "reply_markup": self._main_keyboard()
         }
 
-    async def _start_add_reminder(self, user_id: int) -> Dict[str, Any]:
+    async def _start_add_reminder(self, user_id: int) -> dict[str, Any]:
         await self.fsm.set_state(user_id, "AWAITING_TITLE")
         return {
             "type": "text",
@@ -148,7 +148,7 @@ class LicenseReminderBot:
             "reply_markup": {"inline_keyboard": [[{"text": "❌ انصراف", "callback_data": "home"}]]}
         }
 
-    async def _render_reminders_list(self, user_id: int) -> Dict[str, Any]:
+    async def _render_reminders_list(self, user_id: int) -> dict[str, Any]:
         items = await DB.fetch_all("SELECT * FROM reminders WHERE bot_id = ? AND user_id = ? ORDER BY target_date ASC", (self.bot_id, user_id))
         if not items:
             return {
@@ -176,7 +176,7 @@ class LicenseReminderBot:
             "reply_markup": {"inline_keyboard": buttons}
         }
 
-    def _render_business_plans(self, user_id: int) -> Dict[str, Any]:
+    def _render_business_plans(self, user_id: int) -> dict[str, Any]:
         return {
             "type": "text",
             "chat_id": user_id,

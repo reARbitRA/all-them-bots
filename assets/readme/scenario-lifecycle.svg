@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fable-omega-scenario-lifecycle-title fable-omega-scenario-lifecycle-desc" width="100%" height="auto" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid meet">
+  <title id="fable-omega-scenario-lifecycle-title">FABLE OMEGA scenario lifecycle</title>
+  <desc id="fable-omega-scenario-lifecycle-desc">The five lifecycle stages exercised by the fleet verification report.</desc>
+  <defs>
+    <linearGradient id="g-cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#2AABEE" stop-opacity="0.65"/>
+    </linearGradient>
+    <linearGradient id="g-violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.13 0 0 0 0 0.83 0 0 0 0 0.93 0 0 0 0.7 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .bg { fill:#07090C; }
+      .panel { fill:#0B1118; stroke:#162130; stroke-width:1.4; rx:22; }
+      .panel2 { fill:#091019; stroke:#203044; stroke-width:1.2; rx:18; }
+      .line { stroke:#22D3EE; stroke-width:2; stroke-opacity:.58; fill:none; }
+      .rail { stroke:#2AABEE; stroke-width:4; stroke-linecap:round; stroke-opacity:.78; fill:none; }
+      .violet { stroke:#8B5CF6; fill:none; }
+      .green { stroke:#34D399; fill:none; }
+      .label { font: 700 16px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#E6F7FB; }
+      .small { font: 500 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#93A4B7; }
+      .tiny { font: 600 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#93A4B7; letter-spacing:.08em; }
+      .mega { font: 900 52px ui-sans-serif, Inter, Arial, sans-serif; fill:#E6F7FB; letter-spacing:-.05em; }
+      .num { font: 900 36px ui-sans-serif, Inter, Arial, sans-serif; fill:#22D3EE; }
+      .metric { font: 900 28px ui-sans-serif, Inter, Arial, sans-serif; fill:#34D399; }
+      .cyan-fill { fill:#22D3EE; } .blue-fill { fill:#2AABEE; } .violet-fill { fill:#8B5CF6; } .green-fill { fill:#34D399; }
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="630"/>
+  <path d="M0 72 H1200 M0 558 H1200" stroke="#162130" stroke-width="1"/>
+  <text x="70.0" y="112.0" class="mega" text-anchor="start">SCENARIO LIFECYCLE</text>
+  <text x="74.0" y="148.0" class="small" text-anchor="start">All tested stages in tests/test_all_445_bots.py</text>
+  <circle cx="112.0" cy="320.0" r="54.0" fill="#0B1118" stroke="#22D3EE" stroke-width="3"/>
+  <text x="112.0" y="313.0" class="num" text-anchor="middle">01</text>
+  <text x="112.0" y="344.0" class="tiny" text-anchor="middle">START</text>
+  <text x="112.0" y="406.0" class="small" text-anchor="middle">start</text>
+  <path d="M172,320 H272" class="rail"/>
+  <circle cx="332.0" cy="320.0" r="54.0" fill="#0B1118" stroke="#22D3EE" stroke-width="3"/>
+  <text x="332.0" y="313.0" class="num" text-anchor="middle">02</text>
+  <text x="332.0" y="344.0" class="tiny" text-anchor="middle">STATE</text>
+  <text x="332.0" y="406.0" class="small" text-anchor="middle">state</text>
+  <path d="M392,320 H492" class="rail"/>
+  <circle cx="552.0" cy="320.0" r="54.0" fill="#0B1118" stroke="#22D3EE" stroke-width="3"/>
+  <text x="552.0" y="313.0" class="num" text-anchor="middle">03</text>
+  <text x="552.0" y="344.0" class="tiny" text-anchor="middle">INPUT</text>
+  <text x="552.0" y="406.0" class="small" text-anchor="middle">input</text>
+  <path d="M612,320 H712" class="rail"/>
+  <circle cx="772.0" cy="320.0" r="54.0" fill="#0B1118" stroke="#8B5CF6" stroke-width="3"/>
+  <text x="772.0" y="313.0" class="num" text-anchor="middle">04</text>
+  <text x="772.0" y="344.0" class="tiny" text-anchor="middle">CREDIT</text>
+  <text x="772.0" y="406.0" class="small" text-anchor="middle">credit</text>
+  <path d="M832,320 H932" class="rail"/>
+  <circle cx="992.0" cy="320.0" r="54.0" fill="#0B1118" stroke="#8B5CF6" stroke-width="3"/>
+  <text x="992.0" y="313.0" class="num" text-anchor="middle">05</text>
+  <text x="992.0" y="344.0" class="tiny" text-anchor="middle">ORDER / PAYMENT</text>
+  <text x="992.0" y="406.0" class="small" text-anchor="middle">order_or_payment</text>
+  <rect x="228" y="480" width="240" height="70" rx="18" fill="#0B1118" stroke="#34D399" stroke-opacity="0.55"/>
+<text x="246.0" y="508.0" class="tiny" text-anchor="start">VERIFIED</text>
+<text x="246" y="536" class="num" fill="#34D399">445 passed</text>
+  <rect x="498" y="480" width="180" height="70" rx="18" fill="#0B1118" stroke="#F87171" stroke-opacity="0.55"/>
+<text x="516.0" y="508.0" class="tiny" text-anchor="start">FAILED</text>
+<text x="516" y="536" class="num" fill="#F87171">0</text>
+  <rect x="708" y="480" width="200" height="70" rx="18" fill="#0B1118" stroke="#22D3EE" stroke-opacity="0.55"/>
+<text x="726.0" y="508.0" class="tiny" text-anchor="start">CATALOGUE</text>
+<text x="726" y="536" class="num" fill="#22D3EE">445</text>
+</svg>

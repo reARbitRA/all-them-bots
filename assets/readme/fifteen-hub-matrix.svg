@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fable-omega-fifteen-hub-matrix-title fable-omega-fifteen-hub-matrix-desc" width="100%" height="auto" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid meet">
+  <title id="fable-omega-fifteen-hub-matrix-title">FABLE OMEGA fifteen-hub matrix</title>
+  <desc id="fable-omega-fifteen-hub-matrix-desc">Matrix of all fifteen hubs with exact catalogue counts from code.</desc>
+  <defs>
+    <linearGradient id="g-cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#2AABEE" stop-opacity="0.65"/>
+    </linearGradient>
+    <linearGradient id="g-violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.13 0 0 0 0 0.83 0 0 0 0 0.93 0 0 0 0.7 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .bg { fill:#07090C; }
+      .panel { fill:#0B1118; stroke:#162130; stroke-width:1.4; rx:22; }
+      .panel2 { fill:#091019; stroke:#203044; stroke-width:1.2; rx:18; }
+      .line { stroke:#22D3EE; stroke-width:2; stroke-opacity:.58; fill:none; }
+      .rail { stroke:#2AABEE; stroke-width:4; stroke-linecap:round; stroke-opacity:.78; fill:none; }
+      .violet { stroke:#8B5CF6; fill:none; }
+      .green { stroke:#34D399; fill:none; }
+      .label { font: 700 16px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#E6F7FB; }
+      .small { font: 500 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#93A4B7; }
+      .tiny { font: 600 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill:#93A4B7; letter-spacing:.08em; }
+      .mega { font: 900 52px ui-sans-serif, Inter, Arial, sans-serif; fill:#E6F7FB; letter-spacing:-.05em; }
+      .num { font: 900 36px ui-sans-serif, Inter, Arial, sans-serif; fill:#22D3EE; }
+      .metric { font: 900 28px ui-sans-serif, Inter, Arial, sans-serif; fill:#34D399; }
+      .cyan-fill { fill:#22D3EE; } .blue-fill { fill:#2AABEE; } .violet-fill { fill:#8B5CF6; } .green-fill { fill:#34D399; }
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="630"/>
+  <path d="M0 72 H1200 M0 558 H1200" stroke="#162130" stroke-width="1"/>
+  <text x="58.0" y="98.0" class="mega" text-anchor="start">FIFTEEN-HUB MATRIX</text>
+  <text x="62.0" y="130.0" class="small" text-anchor="start">Exact current code counts from HUB_ROUTER.get_hub_summary()</text>
+  <rect x="50.0" y="160.0" width="1100.0" height="412.0" class="panel2" />
+  <text x="82.0" y="194.0" class="tiny" text-anchor="start">01</text>
+  <text x="117.0" y="194.0" class="small" text-anchor="start">هاب فروشگاه‌ساز و سفارش‌گیری هوشمند</text>
+  <rect x="397" y="180" width="150" height="16" rx="8" fill="#111827"/>
+  <rect x="397" y="180" width="8.2" height="16" rx="8" fill="#34D399" opacity="0.9"/>
+  <text x="562.0" y="194.0" class="label" text-anchor="start">8</text>
+  <text x="82.0" y="239.0" class="tiny" text-anchor="start">02</text>
+  <text x="117.0" y="239.0" class="small" text-anchor="start">هاب اشتراک‌های ویژه و کانال‌های VIP</text>
+  <rect x="397" y="225" width="150" height="16" rx="8" fill="#111827"/>
+  <rect x="397" y="225" width="5.1" height="16" rx="8" fill="#34D399" opacity="0.9"/>
+  <text x="562.0" y="239.0" class="label" text-anchor="start">5</text>
+  <text x="82.0" y="284.0" class="tiny" text-anchor="start">03</text>
+  <text x="117.0" y="284.0" class="small" text-anchor="start">هاب جامع استودیو هوش مصنوعی</text>
+  <rect x="397" y="270" width="150" height="16" rx="8" fill="#111827"/>
+  <rect x="397" y="270" width="94.8" height="16" rx="8" fill="#34D399" opacity="0.9"/>
+  <text x="562.0" y="284.0" class="label" text-anchor="start">93</text>
+  <text x="82.0" y="329.0" class="tiny" text-anchor="start">04</text>
+  <text x="117.0" y="329.0" class="small" text-anchor="start">هاب ارزیابی و مصاحبه برنامه‌نویسی</text>
+  <rect x="397" y="315" width="150" height="16" rx="8" fill="#111827"/>
+  <rect x="397" y="315" width="0.0" height="16" rx="8" fill="#F87171" opacity="0.9"/>
+  <text x="562.0" y="329.0" class="label" text-anchor="start">0</text>
+  <text x="82.0" y="374.0" class="tiny" text-anchor="start">05</text>
+  <text x="117.0" y="374.0" class="small" text-anchor="start">هاب سررسید و یادآور انقضا</text>
+  <rect x="397" y="360" width="150" height="16" rx="8" fill="#111827"/>
+  <rect x="397" y="360" width="6.1" height="16" rx="8" fill="#34D399" opacity="0.9"/>
+  <text x="562.0" y="374.0" class="label" text-anchor="start">6</text>
+  <text x="82.0" y="419.0" class="tiny" text-anchor="start">06</text>
+  <text x="117.0" y="419.0" class="small" text-anchor="start">هاب فین‌تک، ارز و سیگنال‌های مالی</text>
+  <rect x="397" y="405" width="150" height="16" rx="8" fill="#111827"/>
+  <rect x="397" y="405" width="2.0" height="16" rx="8" fill="#34D399" opacity="0.9"/>
+  <text x="562.0" y="419.0" class="label" text-anchor="start">2</text>
+  <text x="82.0" y="464.0" class="tiny" text-anchor="start">07</text>
+  <text x="117.0" y="464.0" class="small" text-anchor="start">هاب آموزش، فلش‌کارت و زبان</text>
+  <rect x="397" y="450" width="150" height="16" rx="8" fill="#111827"/>
+  <rect x="397" y="450" width="12.2" height="16" rx="8" fill="#34D399" opacity="0.9"/>
+  <text x="562.0" y="464.0" class="label" text-anchor="start">12</text>
+  <text x="82.0" y="509.0" class="tiny" text-anchor="start">08</text>
+  <text x="117.0" y="509.0" class="small" text-anchor="start">هاب لیدجنریشن و وایرال مارکتینگ</text>
+  <rect x="397" y="495" width="150" height="16" rx="8" fill="#111827"/>
+  <rect x="397" y="495" width="2.0" height="16" rx="8" fill="#34D399" opacity="0.9"/>
+  <text x="562.0" y="509.0" class="label" text-anchor="start">2</text>
+  <text x="622.0" y="194.0" class="tiny" text-anchor="start">09</text>
+  <text x="657.0" y="194.0" class="small" text-anchor="start">هاب سلامت، تناسب اندام و ردیاب عادت‌ها</text>
+  <rect x="937" y="180" width="150" height="16" rx="8" fill="#111827"/>
+  <rect x="937" y="180" width="3.1" height="16" rx="8" fill="#34D399" opacity="0.9"/>
+  <text x="1102.0" y="194.0" class="label" text-anchor="start">3</text>
+  <text x="622.0" y="239.0" class="tiny" text-anchor="start">10</text>
+  <text x="657.0" y="239.0" class="small" text-anchor="start">هاب املاک، اجاره‌نشینی و قراردادها</text>
+  <rect x="937" y="225" width="150" height="16" rx="8" fill="#111827"/>
+  <rect x="937" y="225" width="2.0" height="16" rx="8" fill="#34D399" opacity="0.9"/>
+  <text x="1102.0" y="239.0" class="label" text-anchor="start">2</text>
+  <text x="622.0" y="284.0" class="tiny" text-anchor="start">11</text>
+  <text x="657.0" y="284.0" class="small" text-anchor="start">هاب اسناد، جست‌وجوی داخلی و بهره‌وری</text>
+  <rect x="937" y="270" width="150" height="16" rx="8" fill="#111827"/>
+  <rect x="937" y="270" width="4.1" height="16" rx="8" fill="#34D399" opacity="0.9"/>
+  <text x="1102.0" y="284.0" class="label" text-anchor="start">4</text>
+  <text x="622.0" y="329.0" class="tiny" text-anchor="start">12</text>
+  <text x="657.0" y="329.0" class="small" text-anchor="start">هاب بهینه‌سازی فایل و ابزارهای رسانه</text>
+  <rect x="937" y="315" width="150" height="16" rx="8" fill="#111827"/>
+  <rect x="937" y="315" width="1.0" height="16" rx="8" fill="#34D399" opacity="0.9"/>
+  <text x="1102.0" y="329.0" class="label" text-anchor="start">1</text>
+  <text x="622.0" y="374.0" class="tiny" text-anchor="start">13</text>
+  <text x="657.0" y="374.0" class="small" text-anchor="start">هاب پیام‌رسان‌های بومی و کارت‌به‌کارت</text>
+  <rect x="937" y="360" width="150" height="16" rx="8" fill="#111827"/>
+  <rect x="937" y="360" width="51.0" height="16" rx="8" fill="#34D399" opacity="0.9"/>
+  <text x="1102.0" y="374.0" class="label" text-anchor="start">50</text>
+  <text x="622.0" y="419.0" class="tiny" text-anchor="start">14</text>
+  <text x="657.0" y="419.0" class="small" text-anchor="start">هاب پیش‌بینی، گیمیفیکیشن و تورنمنت</text>
+  <rect x="937" y="405" width="150" height="16" rx="8" fill="#111827"/>
+  <rect x="937" y="405" width="2.0" height="16" rx="8" fill="#34D399" opacity="0.9"/>
+  <text x="1102.0" y="419.0" class="label" text-anchor="start">2</text>
+  <text x="622.0" y="464.0" class="tiny" text-anchor="start">15</text>
+  <text x="657.0" y="464.0" class="small" text-anchor="start">کارخانه بات و پنل اختصاصی مشتریان</text>
+  <rect x="937" y="450" width="150" height="16" rx="8" fill="#111827"/>
+  <rect x="937" y="450" width="150.0" height="16" rx="8" fill="#34D399" opacity="0.9"/>
+  <text x="1102.0" y="464.0" class="label" text-anchor="start">255</text>
+  <text x="76.0" y="548.0" class="label" text-anchor="start">Total routed catalogue entries: 445 / 445</text>
+</svg>

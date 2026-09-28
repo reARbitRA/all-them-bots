@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import pytest
 
-from autofreelance.models import FreelanceJob, JobStatus
-from autofreelance.store import JobStore
+from src.autofreelance.models import FreelanceJob, JobStatus
+from src.autofreelance.store import JobStore
 
 
 @pytest.mark.asyncio

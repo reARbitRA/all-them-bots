@@ -1,24 +1,25 @@
 """
 Fable-Omega Ultra-Low-Resource Kernel & Runtime Optimizer
-Zero-Idle-Cost Multi-Tenant Orchestration Engine for 445+ Telegram & Messaging Bots.
+Bounded-memory multi-tenant orchestration engine for 445 Telegram catalogue scenarios.
 
 Key Architectural Guarantees:
-1. Single-Process Multi-Tenant Async Kernel: Runs all 445+ bots in one lightweight process (~35-45 MB RAM total vs 22+ GB in traditional architectures).
-2. LRU Lazy Instantiation: Inactive bots consume 0 MB RAM; active bots cached with bounded LRU pool and auto-eviction.
+1. Single-Process Multi-Tenant Async Kernel: dispatches 445 catalogue scenarios through one shared process with measured RSS reported by tests.
+2. LRU Lazy Instantiation: inactive scenario objects are not retained in the hot pool; active objects are cached with bounded LRU eviction.
 3. Unified Webhook Demultiplexer: Eliminates 445 continuous polling HTTP loops, replacing them with a single passive webhook ingress.
 4. WAL Batch Commit Buffer: Micro-batches non-critical database writes to reduce disk I/O operations by up to 90%.
 5. Real-Time Resource Telemetry: Tracks Process RSS, peak memory, event loop latency, and cache efficiency.
 """
 
 from __future__ import annotations
+
+import asyncio
+import collections
 import gc
 import os
+import resource
 import sys
 import time
-import asyncio
-import resource
-import collections
-from typing import Dict, Any, Optional, Tuple, List, Callable
+from typing import Any
 
 
 class LRUBotPool:
@@ -30,12 +31,12 @@ class LRUBotPool:
     def __init__(self, max_active: int = 64, idle_ttl_seconds: float = 300.0) -> None:
         self.max_active = max_active
         self.idle_ttl = idle_ttl_seconds
-        self._pool: collections.OrderedDict[str, Tuple[Any, float]] = collections.OrderedDict()
+        self._pool: collections.OrderedDict[str, tuple[Any, float]] = collections.OrderedDict()
         self.cache_hits: int = 0
         self.cache_misses: int = 0
         self.evictions: int = 0
 
-    def get(self, bot_id: str) -> Optional[Any]:
+    def get(self, bot_id: str) -> Any | None:
         """Retrieve cached bot instance and bump to most recently used."""
         if bot_id in self._pool:
             instance, _ = self._pool.pop(bot_id)
@@ -51,7 +52,7 @@ class LRUBotPool:
             self._pool.pop(bot_id)
         elif len(self._pool) >= self.max_active:
             # Evict oldest entry
-            evicted_id, (evicted_bot, _) = self._pool.popitem(last=False)
+            _evicted_id, (evicted_bot, _) = self._pool.popitem(last=False)
             self.evictions += 1
             del evicted_bot
 
@@ -102,9 +103,9 @@ class BatchWriteBuffer:
     def __init__(self, flush_interval: float = 0.5, max_batch_size: int = 100) -> None:
         self.flush_interval = flush_interval
         self.max_batch_size = max_batch_size
-        self._queue: List[Tuple[str, tuple]] = []
+        self._queue: list[tuple[str, tuple]] = []
         self._lock = asyncio.Lock()
-        self._flush_task: Optional[asyncio.Task] = None
+        self._flush_task: asyncio.Task | None = None
         self.total_batched_writes: int = 0
         self.total_flushes: int = 0
         self.is_running: bool = False
@@ -156,7 +157,7 @@ class BatchWriteBuffer:
             return 0
 
     @staticmethod
-    def _execute_batch_sync(db_path: str, batch: List[Tuple[str, tuple]]) -> None:
+    def _execute_batch_sync(db_path: str, batch: list[tuple[str, tuple]]) -> None:
         import sqlite3
         with sqlite3.connect(db_path, timeout=30.0) as conn:
             conn.execute("PRAGMA journal_mode = WAL;")
@@ -173,7 +174,7 @@ class BatchWriteBuffer:
                 await self.flush()
             except asyncio.CancelledError:
                 break
-            except Exception as e:
+            except Exception:
                 await asyncio.sleep(self.flush_interval)
 
 
@@ -211,7 +212,7 @@ class ResourceMonitor:
         self._loop_lag_ms = round(lag, 3)
         return self._loop_lag_ms
 
-    def get_memory_info(self) -> Dict[str, Any]:
+    def get_memory_info(self) -> dict[str, Any]:
         """Extract exact Linux RSS memory metrics with zero external dependencies."""
         rss_kb = 0
         peak_kb = 0
@@ -219,7 +220,7 @@ class ResourceMonitor:
         # Try reading /proc/self/status for precise Linux metrics
         try:
             if os.path.exists("/proc/self/status"):
-                with open("/proc/self/status", "r") as f:
+                with open("/proc/self/status") as f:
                     for line in f:
                         if line.startswith("VmRSS:"):
                             rss_kb = int(line.split()[1])
@@ -251,7 +252,7 @@ class ResourceMonitor:
             "savings_percent": savings_percent,
         }
 
-    def get_system_telemetry(self, pool: LRUBotPool, batch_buffer: BatchWriteBuffer, total_catalog_size: int = 445) -> Dict[str, Any]:
+    def get_system_telemetry(self, pool: LRUBotPool, batch_buffer: BatchWriteBuffer, total_catalog_size: int = 445) -> dict[str, Any]:
         """Aggregate full system health & efficiency metrics."""
         mem = self.get_memory_info()
         uptime_seconds = int(time.time() - self.start_time)

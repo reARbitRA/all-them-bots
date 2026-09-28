@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fable-Omega :: ناوگان جامع و تجمیعی تمامی ربات‌های ریپازیتوری (۴۴۵+ ربات)</title>
+    <title>FABLE OMEGA :: کنترل‌پلین کاتالوگ ۴۴۵ سناریو</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
@@ -23,13 +23,13 @@
                 <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center font-black text-xl shadow-lg">⚡</div>
                 <div>
                     <h1 class="font-extrabold text-xl tracking-tight bg-gradient-to-r from-white via-indigo-200 to-purple-300 bg-clip-text text-transparent">FABLE-OMEGA SUPER FLEET</h1>
-                    <p class="text-xs text-purple-400 font-mono">445+ Autonomous Telegram Bots • Multi-Source Master Registry</p>
+                    <p class="text-xs text-purple-400 font-mono">445 Catalogue Scenarios • 15 Hub Router • Shared Runtime</p>
                 </div>
             </div>
             <div class="flex items-center space-x-4 space-x-reverse">
                 <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-emerald-950/80 text-emerald-400 border border-emerald-800/50">
                     <span class="w-2 h-2 rounded-full bg-emerald-400 mr-1.5 animate-pulse"></span>
-                    ۴۴۵+ ربات فعال (Opus + GPT + Gemini + Rubika)
+                    ۴۴۵ سناریوی کاتالوگی (Opus + GPT + Gemini + Rubika + AI)
                 </span>
                 <button @click="refreshAll()" class="p-2 rounded-lg bg-gray-800 hover:bg-gray-700 text-gray-300 transition text-sm flex items-center space-x-1 space-x-reverse">
                     <span>🔄</span>
@@ -84,7 +84,7 @@
                             <h2 class="text-base font-extrabold text-white">میکرو-ران‌تایم فوق‌بهینه (Zero-Idle Multi-Tenant Kernel)</h2>
                             <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-950 text-emerald-400 border border-emerald-800/60 animate-pulse">LIVE 99.8% RESOURCE SAVINGS</span>
                         </div>
-                        <p class="text-xs text-gray-400 mt-0.5">اجرای تمامی ۴۴۵ ربات در یک پروسس واحد فوق‌سبک با حافظه پویا، وب‌هوک اشتراکی و بافر دیتابیس WAL</p>
+                        <p class="text-xs text-gray-400 mt-0.5">دیسپچ ۴۴۵ سناریوی کاتالوگی در یک پروسس مشترک با LRU pool، وب‌هوک اشتراکی و بافر دیتابیس WAL</p>
                     </div>
                 </div>
 
@@ -119,7 +119,7 @@
                     </div>
                     <div class="text-xl font-black text-indigo-300" x-text="(runtimeStats?.bot_pool?.active_cached_bots || 0) + ' / ' + (runtimeStats?.bot_pool?.max_pool_capacity || 64) + ' فعال'">12 / 64 فعال</div>
                     <div class="text-[11px] text-gray-400 mt-1">
-                        ۴۴۵ ربات مجازی‌سازی‌شده (مصرف Idle صفر)
+                        ۴۴۵ سناریوی کاتالوگی با فعال‌سازی تنبل و LRU pool
                     </div>
                 </div>
 
@@ -155,7 +155,7 @@
                 <div>
                     <h2 class="text-lg font-bold flex items-center space-x-2 space-x-reverse">
                         <span class="text-purple-400">📚</span>
-                        <span>فهرست تجمیعی و جست‌وجوی زنده ۴۴۵+ ربات</span>
+                        <span>فهرست تجمیعی و جست‌وجوی کاتالوگ ۴۴۵ سناریو</span>
                     </h2>
                     <p class="text-xs text-gray-400 mt-0.5">روی هر ربات کلیک کنید تا بلافاصله در شبیه‌ساز تلگرام اجرا و تست شود</p>
                 </div>
@@ -232,7 +232,7 @@
                         <span class="text-emerald-400">📱</span>
                         <span>شبیه‌ساز تلگرام (Interactive Webhook)</span>
                     </h2>
-                    <span class="text-xs text-emerald-400 font-mono">۴۴۵+ ربات آماده</span>
+                    <span class="text-xs text-emerald-400 font-mono">۴۴۵ سناریوی قابل شبیه‌سازی</span>
                 </div>
 
                 <div class="glass rounded-2xl overflow-hidden flex flex-col h-[670px] border border-gray-700/60 shadow-2xl">
@@ -242,7 +242,7 @@
                             <div class="w-9 h-9 rounded-full bg-indigo-600/30 text-indigo-400 border border-indigo-500/30 flex items-center justify-center font-bold text-sm">🤖</div>
                             <div>
                                 <div class="font-bold text-xs text-white" x-text="currentBotTitle"></div>
-                                <div class="text-[10px] text-emerald-400">آنلاین • پاسخگویی آنی (&lt;15ms)</div>
+                                <div class="text-[10px] text-emerald-400">Simulator route • measured by local reports</div>
                             </div>
                         </div>
                         <button @click="resetSimulation()" class="text-xs text-gray-400 hover:text-white px-2 py-1 rounded bg-gray-800">ریست</button>

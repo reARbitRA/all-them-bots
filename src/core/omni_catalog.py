@@ -4,10 +4,10 @@ Compiles and indexes 600+ bots across Opus 150 (Code), ChatGPT 150 (Playbooks), 
 """
 
 from __future__ import annotations
+
 import re
 from pathlib import Path
-from typing import Dict, Any, List
-
+from typing import Any
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
@@ -23,12 +23,12 @@ def find_md_file(filename: str) -> Path:
     return BASE_DIR / filename
 
 
-def extract_opus_150() -> Dict[str, Dict[str, Any]]:
+def extract_opus_150() -> dict[str, dict[str, Any]]:
     """Extract Opus 150 Full-Code bot implementations from FULLOPUSTELBOT.md."""
     md_file = find_md_file("FULLOPUSTELBOT.md")
     if not md_file.exists():
         return {}
-    with open(md_file, "r", encoding="utf-8") as f:
+    with open(md_file, encoding="utf-8") as f:
         text = f.read()
 
     # Match Idea #N: Title
@@ -57,12 +57,12 @@ def extract_opus_150() -> Dict[str, Dict[str, Any]]:
     return bots
 
 
-def extract_chatgpt_150() -> Dict[str, Dict[str, Any]]:
+def extract_chatgpt_150() -> dict[str, dict[str, Any]]:
     """Extract ChatGPT 150 Playbook bots from 150 TELEGRAM BOT.md."""
     md_file = find_md_file("150 TELEGRAM BOT.md")
     if not md_file.exists():
         return {}
-    with open(md_file, "r", encoding="utf-8") as f:
+    with open(md_file, encoding="utf-8") as f:
         text = f.read()
 
     pattern = r'([0-9]{1,3})\)\s*\*\*([^\*]+)\*\*\s*[—–-]\s*([^—–\n]+)\s*[—–-]\s*([^—–\n]+)\s*[—–-]\s*([^\n]+)'
@@ -90,12 +90,12 @@ def extract_chatgpt_150() -> Dict[str, Dict[str, Any]]:
     return bots
 
 
-def extract_gemini_730() -> Dict[str, Dict[str, Any]]:
+def extract_gemini_730() -> dict[str, dict[str, Any]]:
     """Extract Gemini 730 Ranked Bot Market Analysis from ANALYZE730.md."""
     md_file = find_md_file("ANALYZE730.md")
     if not md_file.exists():
         return {}
-    with open(md_file, "r", encoding="utf-8") as f:
+    with open(md_file, encoding="utf-8") as f:
         text = f.read()
 
     # Extract table rows: | Rank | Bot Idea | Category | Score | Effort | Monetization |
@@ -127,12 +127,12 @@ def extract_gemini_730() -> Dict[str, Dict[str, Any]]:
     return bots
 
 
-def extract_rubika_56() -> Dict[str, Dict[str, Any]]:
+def extract_rubika_56() -> dict[str, dict[str, Any]]:
     """Extract 56 Rubika/Baleh Domestic Micro-SaaS Opportunities from Untitled.md."""
     md_file = find_md_file("Untitled.md")
     if not md_file.exists():
         return {}
-    with open(md_file, "r", encoding="utf-8") as f:
+    with open(md_file, encoding="utf-8") as f:
         text = f.read()
 
     pattern = r'\|\s*([0-9]{1,2})\s*\|\s*([^\|]+)\|\s*([^\|]+)\|\s*([^\|]+)\|\s*([^\|]+)\|'
@@ -166,20 +166,20 @@ def extract_rubika_56() -> Dict[str, Dict[str, Any]]:
     return bots
 
 
-def extract_ai_businesses() -> Dict[str, Dict[str, Any]]:
+def extract_ai_businesses() -> dict[str, dict[str, Any]]:
     """Extract AI businesses from Listaibusinesses.md."""
     md_file = find_md_file("Listaibusinesses.md")
     if not md_file.exists():
         return {}
-    with open(md_file, "r", encoding="utf-8") as f:
+    with open(md_file, encoding="utf-8") as f:
         lines = f.readlines()
 
     bots = {}
     current_cat = "خدمات هوش مصنوعی"
     count = 0
     
-    for l in lines:
-        line = l.strip()
+    for raw_line in lines:
+        line = raw_line.strip()
         if not line:
             continue
         if re.match(r'^[A-H]\s+', line):
@@ -209,7 +209,7 @@ def extract_ai_businesses() -> Dict[str, Dict[str, Any]]:
     return bots
 
 
-def load_all_omnibot_collections() -> Dict[str, Dict[str, Any]]:
+def load_all_omnibot_collections() -> dict[str, dict[str, Any]]:
     """Merge all 5 collections into one comprehensive 600+ bot registry."""
     omni = {}
     

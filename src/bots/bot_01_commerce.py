@@ -4,13 +4,13 @@ Monetization Blueprint: Product Catalog, Multi-Item Cart, Card-to-Card Receipt G
 """
 
 from __future__ import annotations
+
 import time
-import json
-from typing import Dict, Any, List, Optional
-from src.core.fsm import AsyncFSM
+from typing import Any
+
 from src.core.database import DB
+from src.core.fsm import AsyncFSM
 from src.core.monetization import PaymentManager
-from src.core.config import CONFIG
 
 
 class CommerceBot:
@@ -18,11 +18,11 @@ class CommerceBot:
 
     BOT_ID = "commerce"
 
-    def __init__(self, bot_id: Optional[str] = None) -> None:
+    def __init__(self, bot_id: str | None = None) -> None:
         self.bot_id = bot_id or self.BOT_ID
         self.fsm = AsyncFSM(self.bot_id)
 
-    async def handle_update(self, update: Dict[str, Any]) -> Dict[str, Any]:
+    async def handle_update(self, update: dict[str, Any]) -> dict[str, Any]:
         """Process incoming Telegram update dictionary and return response actions."""
         # 1. Message Handling
         if "message" in update:
@@ -47,7 +47,7 @@ class CommerceBot:
                 await self.fsm.reset(user_id)
                 return self._render_main_menu(user_id, user.get("first_name", "کاربر گرامی"))
 
-            state, context, ver = await self.fsm.get_state(user_id)
+            state, context, _ver = await self.fsm.get_state(user_id)
 
             if state in ("AWAITING_SHIPPING_INFO", "AWAITING_INPUT"):
                 return await self._handle_shipping_info_submit(user_id, text, context)
@@ -108,7 +108,7 @@ class CommerceBot:
 
         return {"type": "noop"}
 
-    async def _ensure_user(self, user_dict: Dict[str, Any]) -> None:
+    async def _ensure_user(self, user_dict: dict[str, Any]) -> None:
         user_id = user_dict["id"]
         now = time.time()
         await DB.execute("""
@@ -120,7 +120,7 @@ class CommerceBot:
             last_seen_at = excluded.last_seen_at;
         """, (self.bot_id, user_id, user_dict.get("username"), user_dict.get("first_name"), now, now))
 
-    def _main_keyboard(self) -> Dict[str, Any]:
+    def _main_keyboard(self) -> dict[str, Any]:
         return {
             "keyboard": [
                 [{"text": "🛍 مشاهده محصولات"}, {"text": "🛒 سبد خرید"}],
@@ -129,7 +129,7 @@ class CommerceBot:
             "resize_keyboard": True
         }
 
-    def _render_main_menu(self, user_id: int, name: str) -> Dict[str, Any]:
+    def _render_main_menu(self, user_id: int, name: str) -> dict[str, Any]:
         return {
             "type": "text",
             "chat_id": user_id,
@@ -137,7 +137,7 @@ class CommerceBot:
             "reply_markup": self._main_keyboard()
         }
 
-    async def _render_catalog(self, user_id: int) -> Dict[str, Any]:
+    async def _render_catalog(self, user_id: int) -> dict[str, Any]:
         products = await DB.fetch_all("SELECT * FROM products WHERE is_active = 1")
         if not products:
             return {"type": "text", "chat_id": user_id, "text": "در حال حاضر محصولی در فروشگاه ثبت نشده است."}
@@ -156,7 +156,7 @@ class CommerceBot:
             "reply_markup": {"inline_keyboard": buttons}
         }
 
-    async def _handle_add_to_cart(self, user_id: int, prod_id: str) -> Dict[str, Any]:
+    async def _handle_add_to_cart(self, user_id: int, prod_id: str) -> dict[str, Any]:
         prod = await DB.fetch_one("SELECT * FROM products WHERE product_id = ?", (prod_id,))
         if not prod:
             return {"type": "text", "chat_id": user_id, "text": "محصول مورد نظر یافت نشد."}
@@ -176,8 +176,8 @@ class CommerceBot:
             }
         }
 
-    async def _start_checkout(self, user_id: int) -> Dict[str, Any]:
-        state, context, ver = await self.fsm.get_state(user_id)
+    async def _start_checkout(self, user_id: int) -> dict[str, Any]:
+        _state, context, _ver = await self.fsm.get_state(user_id)
         prod = context.get("selected_product")
         if not prod:
             return await self._render_catalog(user_id)
@@ -191,7 +191,7 @@ class CommerceBot:
             "reply_markup": {"inline_keyboard": [[{"text": "❌ انصراف", "callback_data": "main_menu"}]]}
         }
 
-    async def _handle_shipping_info_submit(self, user_id: int, info_text: str, context: Dict[str, Any]) -> Dict[str, Any]:
+    async def _handle_shipping_info_submit(self, user_id: int, info_text: str, context: dict[str, Any]) -> dict[str, Any]:
         prod = context.get("selected_product") or {
             "product_id": "prod_01",
             "title": "Comprehensive Telegram Growth Blueprint",
@@ -226,7 +226,7 @@ class CommerceBot:
             }
         }
 
-    async def _start_card_receipt_upload(self, user_id: int, order_id: str) -> Dict[str, Any]:
+    async def _start_card_receipt_upload(self, user_id: int, order_id: str) -> dict[str, Any]:
         await self.fsm.set_state(user_id, "AWAITING_RECEIPT_PHOTO", {"order_id": order_id})
         return {
             "type": "text",
@@ -235,8 +235,8 @@ class CommerceBot:
             "reply_markup": {"inline_keyboard": [[{"text": "❌ انصراف", "callback_data": "main_menu"}]]}
         }
 
-    async def _handle_receipt_photo(self, user_id: int, photo_list: List[Dict[str, Any]]) -> Dict[str, Any]:
-        state, context, ver = await self.fsm.get_state(user_id)
+    async def _handle_receipt_photo(self, user_id: int, photo_list: list[dict[str, Any]]) -> dict[str, Any]:
+        state, context, _ver = await self.fsm.get_state(user_id)
         order_id = context.get("order_id")
 
         if state not in ("AWAITING_RECEIPT_PHOTO", "AWAITING_PAYMENT") or not order_id:
@@ -256,13 +256,13 @@ class CommerceBot:
             "reply_markup": self._main_keyboard()
         }
 
-    async def _generate_stars_invoice(self, user_id: int, order_id: str) -> Dict[str, Any]:
-        state, context, ver = await self.fsm.get_state(user_id)
+    async def _generate_stars_invoice(self, user_id: int, order_id: str) -> dict[str, Any]:
+        _state, context, _ver = await self.fsm.get_state(user_id)
         prod = context.get("selected_product", {})
         stars = prod.get("price_xtr", 100)
 
         # In production this triggers sendInvoice Bot API; in engine returns ready invoice payload
-        invoice = PaymentManager.generate_stars_invoice_payload(
+        _invoice = PaymentManager.generate_stars_invoice_payload(
             title=prod.get("title", "Digital Order"),
             description="Instant delivery digital access pass",
             payload=order_id,
@@ -278,8 +278,8 @@ class CommerceBot:
             "reply_markup": self._main_keyboard()
         }
 
-    async def _render_cart(self, user_id: int) -> Dict[str, Any]:
-        state, context, ver = await self.fsm.get_state(user_id)
+    async def _render_cart(self, user_id: int) -> dict[str, Any]:
+        _state, context, _ver = await self.fsm.get_state(user_id)
         prod = context.get("selected_product")
         if not prod:
             return {
@@ -295,7 +295,7 @@ class CommerceBot:
             "reply_markup": {"inline_keyboard": [[{"text": "💳 نهایی‌سازی و پرداخت", "callback_data": "checkout_cart"}]]}
         }
 
-    async def _render_order_history(self, user_id: int) -> Dict[str, Any]:
+    async def _render_order_history(self, user_id: int) -> dict[str, Any]:
         orders = await PaymentManager.get_user_orders(self.bot_id, user_id)
         if not orders:
             return {"type": "text", "chat_id": user_id, "text": "📦 شما تاکنون سفارشی در این بات ثبت نکرده‌اید."}
