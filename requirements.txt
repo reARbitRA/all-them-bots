@@ -1,6 +1,9 @@
 aiosqlite>=0.21,<1
+aiohttp>=3.11,<4
 fastapi>=0.115,<1
 httpx>=0.28,<1
+playwright>=1.58,<2
+PyGithub>=2.8,<3
 pydantic>=2.10,<3
 pydantic-settings>=2.7,<3
 python-json-logger>=3.2,<4

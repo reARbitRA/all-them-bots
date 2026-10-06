@@ -4,14 +4,12 @@ Automates the creation and configuration of Telegram Bots via MTProto Userbot se
 """
 
 from __future__ import annotations
-import os
-import sys
-import time
+
+import asyncio
 import json
 import random
-import asyncio
 from pathlib import Path
-from typing import List, Dict, Any
+from typing import Any
 
 # Minimum and maximum safety delays between BotFather commands to prevent FloodWait/Ban
 MIN_COMMAND_DELAY_SEC = 15.0
@@ -30,13 +28,13 @@ class BotFatherProvisioner:
         return f"{prefix}_{clean_id}_{rnd}_{suffix}"
 
     @staticmethod
-    def load_catalog_specs(json_catalog_path: Path) -> List[Dict[str, Any]]:
+    def load_catalog_specs(json_catalog_path: Path) -> list[dict[str, Any]]:
         """Load bot specs from omni-catalog."""
         from src.core.omni_catalog import OMNI_CATALOG
         return list(OMNI_CATALOG.values())
 
     @staticmethod
-    async def simulate_safe_creation_plan(target_count: int = 445) -> Dict[str, Any]:
+    async def simulate_safe_creation_plan(target_count: int = 445) -> dict[str, Any]:
         """
         Calculates the required Telegram accounts, time schedule, and safety batching
         to create the fleet without triggering Telegram anti-spam detection.

@@ -11,6 +11,7 @@ requires-python = ">=3.11"
 license = { text = "MIT" }
 authors = [{ name = "FABLE OMEGA maintainers" }]
 dependencies = [
+  "aiohttp>=3.11,<4",
   "aiosqlite>=0.21,<1",
   "fastapi>=0.115,<1",
   "httpx>=0.28,<1",

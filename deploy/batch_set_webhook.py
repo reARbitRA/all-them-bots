@@ -4,12 +4,11 @@ High-speed asynchronous webhook registrar for bulk Telegram Bot tokens with rate
 """
 
 from __future__ import annotations
-import sys
-import time
-import json
+
 import asyncio
+from typing import Any
+
 import aiohttp
-from typing import Dict, Any, List
 
 
 async def register_bot_webhook(
@@ -17,19 +16,22 @@ async def register_bot_webhook(
     bot_token: str,
     bot_id: str,
     public_webhook_base_url: str,
-    drop_pending_updates: bool = True
-) -> Dict[str, Any]:
+    drop_pending_updates: bool = True,
+    secret_token: str | None = None,
+) -> dict[str, Any]:
     """Set webhook for a single bot token pointing to our multi-tenant server."""
-    # Webhook endpoint URL
     webhook_url = f"{public_webhook_base_url.rstrip('/')}/webhook/{bot_id}"
     api_url = f"https://api.telegram.org/bot{bot_token}/setWebhook"
-    
-    payload = {
+
+    payload: dict[str, Any] = {
         "url": webhook_url,
         "max_connections": 100,
         "drop_pending_updates": drop_pending_updates,
-        "allowed_updates": ["message", "callback_query", "pre_checkout_query"]
+        "allowed_updates": ["message", "callback_query", "pre_checkout_query"],
     }
+    if secret_token:
+        # Telegram only accepts 1-256 characters of A-Za-z0-9_-
+        payload["secret_token"] = secret_token
 
     try:
         async with session.post(api_url, json=payload, timeout=10) as resp:
@@ -43,20 +45,30 @@ async def register_bot_webhook(
 
 
 async def bulk_register_webhooks(
-    tokens_map: Dict[str, str], # {"opus_001": "123456:ABC-DEF...", ...}
+    tokens_map: dict[str, str],  # {"opus_001": "123456:ABC-DEF...", ...}
     public_webhook_base_url: str,
-    max_concurrency: int = 15
-) -> List[Dict[str, Any]]:
+    max_concurrency: int = 15,
+    secret_token: str | None = None,
+) -> list[dict[str, Any]]:
     """Register hundreds of bot webhooks concurrently in seconds."""
+    import os
+
+    secret_token = secret_token or os.getenv("WEBHOOK_SECRET_TOKEN") or None
     semaphore = asyncio.Semaphore(max_concurrency)
     results = []
 
     async with aiohttp.ClientSession() as session:
+
         async def _worker(bot_id: str, token: str):
             async with semaphore:
-                # 50ms pacing to stay safely under Telegram API burst limits
-                await asyncio.sleep(0.05)
-                res = await register_bot_webhook(session, token, bot_id, public_webhook_base_url)
+                await asyncio.sleep(0.05)  # 50ms pacing under Telegram burst limits
+                res = await register_bot_webhook(
+                    session,
+                    token,
+                    bot_id,
+                    public_webhook_base_url,
+                    secret_token=secret_token,
+                )
                 results.append(res)
                 return res
 
@@ -67,5 +79,24 @@ async def bulk_register_webhooks(
 
 
 if __name__ == "__main__":
-    print("⚡ Batch Webhook Configurator Ready.")
-    print("Usage: Call bulk_register_webhooks(tokens_dict, 'https://yourdomain.com')")
+    import os
+
+    url = os.getenv("PUBLIC_WEBHOOK_BASE_URL")
+    if not url:
+        print("Set PUBLIC_WEBHOOK_BASE_URL=https://yourdomain.com to register.")
+        raise SystemExit(1)
+    # Pull bot tokens from env (e.g. COMMERCE_BOT_TOKEN, VIP_BOT_TOKEN, ...)
+    bot_token_vars = [
+        ("commerce", "COMMERCE_BOT_TOKEN"),
+        ("vip_paywall", "VIP_BOT_TOKEN"),
+        ("ai_gateway", "AI_BOT_TOKEN"),
+        ("kata_runner", "KATA_BOT_TOKEN"),
+        ("license_reminder", "LICENSE_BOT_TOKEN"),
+    ]
+    tokens = {bid: os.environ[var] for bid, var in bot_token_vars if os.getenv(var)}
+    if not tokens:
+        print("No BOT tokens found in environment. Set *_BOT_TOKEN before running.")
+        raise SystemExit(1)
+    results = asyncio.run(bulk_register_webhooks(tokens, url))
+    for r in results:
+        print(f"  {r['bot_id']:<18} {r['status']:<8} {r.get('error') or ''}")
